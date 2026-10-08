@@ -4,7 +4,9 @@
   "type": "module",
   "scripts": {
     "build": "node build.mjs",
-    "build:release": "node build.mjs --release"
+    "build:release": "node build.mjs --release",
+    "deploy": "npm run build && npx wrangler deploy",
+    "deploy:preview": "npm run build && npx wrangler versions upload"
   },
   "engines": { "node": ">=22" }
 }
