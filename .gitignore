@@ -1,2 +1,4 @@
 /dist/
 /factionfall-pages.zip
+/node_modules/
+/.wrangler/

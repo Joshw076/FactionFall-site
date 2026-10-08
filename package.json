@@ -1,0 +1,10 @@
+{
+  "name": "factionfall-website",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "build:release": "node build.mjs --release"
+  },
+  "engines": { "node": ">=22" }
+}
