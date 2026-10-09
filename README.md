@@ -48,3 +48,9 @@ Official references:
 - [Cloudflare custom domains](https://developers.cloudflare.com/pages/configuration/custom-domains/)
 - [Google Play User Data](https://support.google.com/googleplay/android-developer/answer/10144311?hl=en)
 - [Google Play account deletion](https://support.google.com/googleplay/android-developer/answer/13327111?hl=en)
+
+## Automatic deletion setup (implementation awaiting deployment verification)
+
+Set `apiBaseUrl` in `site.config.json` to the backend HTTPS origin. Deploy the backend changes and configure `WEBSITE_ORIGINS` to the exact site origins. Google verification uses the backend OAuth popup and requires its existing Google client ID, client secret, and callback configuration. Credentials are held in page memory, not cookies or browser storage. The page requires JavaScript and calls `DELETE /api/auth/account` after verification and explicit permanent-deletion confirmation.
+
+The backend requires MongoDB transaction support (replica set or Atlas). Test on a disposable database, including rejection of wrong credentials, Google account mismatch, expired verification, partial-write rollback, sign-in after deletion, token rejection, and simultaneous gameplay/deletion. No production accounts have been deleted by this change. The in-game UI still needs to invoke this API or link to the website flow. Backups, logs, third-party data, and possible indirect identification through remaining match history require a retention/anonymisation review before publication. The PowerShell build now delegates to the Node build so both outputs have the same deletion form and security headers.

@@ -378,3 +378,13 @@ ol, ul { padding-left: 24px; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
 }
+
+.deletion-warning { border: 1px solid #f87171; background: #3a1726; padding: 20px 24px; border-radius: 14px; margin: 28px 0; }
+#account-deletion { max-width: 640px; background: var(--surface); border: 1px solid var(--line); padding: 24px; border-radius: 14px; }
+#account-deletion label { display: block; margin: 16px 0 6px; }
+#account-deletion input:not([type=checkbox]) { width: 100%; padding: 12px; font: inherit; color: var(--text); background: var(--bg); border: 1px solid var(--muted); border-radius: 6px; }
+#account-deletion button { font: inherit; cursor: pointer; margin: 16px 8px 0 0; }
+#account-deletion .button-danger { background: #b42336; color: white; border-color: #f87171; }
+#account-deletion [hidden] { display: none; }
+#account-deletion button:disabled { opacity: .55; cursor: wait; }
+#account-deletion input:focus-visible, #account-deletion button:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }

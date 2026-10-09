@@ -5,6 +5,9 @@ import { dirname, join } from 'node:path';
 const root = dirname(fileURLToPath(import.meta.url));
 const read = name => readFile(join(root, name), 'utf8');
 const config = JSON.parse(await read('site.config.json'));
+const apiBaseUrl = (config.apiBaseUrl || '').replace(/\/$/, '');
+if (apiBaseUrl && !/^https:\/\/[^/]+$/.test(apiBaseUrl)) throw new Error('apiBaseUrl must be an HTTPS origin.');
+if (config.readyToPublish && !apiBaseUrl) throw new Error('Configure apiBaseUrl before publishing account deletion.');
 const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let policy = await read('privacy-policy.md');
 for (const [placeholder, value] of Object.entries({
@@ -46,12 +49,14 @@ for (const [route, title, content] of pages) {
   const dir = join(root, 'dist', route); await mkdir(dir, { recursive: true });
   const body = content
     .replaceAll('{{email}}', escape(config.email))
+    .replaceAll('{{apiBaseUrl}}', escape(apiBaseUrl))
     .replaceAll('{{website}}', escape(config.website));
   const current = path => route === path ? ' aria-current="page"' : '';
   await writeFile(join(dir, 'index.html'), `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">${draft ? '<meta name="robots" content="noindex,nofollow">' : ''}<title>${escape(title)} | ${escape(config.game)}</title><meta name="description" content="FactionFall privacy, player support, and account deletion information."><link rel="stylesheet" href="/styles.css"></head><body><a class="skip" href="#main">Skip to content</a><header class="site-header"><div class="header-inner"><a class="brand" href="/"><span class="brand-mark" aria-hidden="true">F</span><span class="brand-name">${escape(config.game)}<span>PLAYER INFORMATION</span></span></a><nav class="site-nav" aria-label="Main navigation"><a href="/"${current('')}>Home</a><a href="${escape(config.website)}" rel="external">Game</a><a href="/support"${current('support')}>Support</a><a href="/privacy"${current('privacy')}>Privacy</a><a class="nav-delete" href="/delete-account"${current('delete-account')}>Account deletion</a></nav></div></header><main class="page-main" id="main">${banner}${body}</main><footer class="site-footer"><p>${escape(config.game)} &middot; ${escape(config.developer)}</p><div class="footer-links"><a href="/privacy">Privacy policy</a><a href="/support">Support</a><a href="/delete-account">Account deletion</a></div></footer></body></html>`);
 }
 await copyFile(join(root, 'styles.css'), join(root, 'dist/styles.css'));
+await copyFile(join(root, 'delete-account.js'), join(root, 'dist/delete-account.js'));
 await writeFile(join(root, 'dist/404.html'), '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found | FactionFall</title><link rel="stylesheet" href="/styles.css"></head><body><main><h1>Page not found</h1><a href="/">Return to FactionFall</a></main></body></html>');
-await writeFile(join(root, 'dist/_headers'), `/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  X-Frame-Options: DENY\n  Content-Security-Policy: default-src 'none'; style-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'\n${draft ? '  X-Robots-Tag: noindex, nofollow\n' : ''}`);
+await writeFile(join(root, 'dist/_headers'), `/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: no-referrer\n  X-Frame-Options: DENY\n  Content-Security-Policy: default-src 'none'; style-src 'self'; script-src 'self'; connect-src 'self' ${apiBaseUrl}; base-uri 'none'; form-action 'none'; frame-ancestors 'none'\n${draft ? '  X-Robots-Tag: noindex, nofollow\n' : ''}`);
 console.log('Built dist/' + (draft ? ' (draft preview)' : ' (release)'));

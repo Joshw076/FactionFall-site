@@ -1,4 +1,4 @@
-﻿# Privacy Policy
+# Privacy Policy
 
 **Effective Date:** October 8, 2026
 **Game:** [Game Name]
@@ -45,11 +45,13 @@ Google is the confirmed sign-in provider.
 
 ## 8. Account and Data Deletion
 
-For questions about account or data deletion, contact [Privacy Contact Email].
+Use the account deletion page to verify ownership and permanently delete your account without emailing us. Successful deletion is immediate in the active database, with no recovery period. Signing up again creates a new account.
 
 **Account Deletion Page:** [Account Deletion URL]
 
-**Before publication:** [Confirm the working deletion procedure, ownership verification, information deleted or retained, completion timeframe, and any in-app account deletion option.]
+The backend deletion implementation removes the account record (email, name, avatar, password hash, wallets, and verification/reset tokens), saved decks, inventory, and matchmaking references. It removes identifying fields from affected match records and retains combined gameplay counters without player identifiers. Existing access and refresh tokens stop working when the account record is removed.
+
+**Before publication:** [Verify the deployed website and in-app deletion flows, transaction support, concurrent gameplay behavior, retention of backups and logs, third-party erasure, and whether remaining match records can identify a player indirectly. Confirm any actual legal retention obligations and their duration.]
 
 ## 9. Website and Support Requests
 
