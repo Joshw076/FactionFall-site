@@ -33,13 +33,21 @@ FactionFall's current analytics do not collect demographic or location informati
 
 Google is the confirmed sign-in provider.
 
-**Before publication:** [Identify any backend, storage, analytics, crash reporting, advertising, or purchase services actually used, the information they process, and why it is shared. Confirm whether ads or purchases are present.]
+Purchases in the Google Play version of FactionFall will be processed through Google Play Billing. Arbor Studios does not collect or store payment card numbers, card security codes, or bank account details. Google processes payment information under its own privacy policy: https://policies.google.com/privacy
+
+We retain the minimum payment and accounting records necessary for taxation and auditing, including after account deletion, for the period required by applicable law. These records are used for those purposes and do not allow recovery of a deleted game account. We remove links to the game account and directly identifying information wherever they are not legally required. Records that remain identifiable are treated as personal data and restricted accordingly; using Google Play does not by itself make transaction records anonymous.
+
+**Before publication:** [Verify the Google Play Billing integration and the actual records retained, including financial exports, order IDs, purchase tokens, and any buyer information. Confirm the applicable tax jurisdiction, retention period, access restrictions, and which identifiers can be removed after deletion. Do not claim that all payment records contain no personal information unless their anonymity has been verified.]
+
+**Before publication:** [Identify any backend, storage, analytics, crash reporting, or advertising services actually used, the information they process, and why it is shared. Confirm whether purchases are live or planned and whether ads are present.]
 
 ## 6. Intended Audience
 
 **Before publication:** [Confirm intended player ages and any applicable age screening or parental consent process. Describe only child protections actually implemented.]
 
 ## 7. Storage, Security, and Retention
+
+Payment and accounting records required for taxation and auditing are retained separately from the game account for the legally required period. Account deletion does not erase these required records or restore access to the deleted account. We delete or anonymise them when the applicable retention requirement ends. Google may retain its own payment records under its policies and legal obligations.
 
 **Before publication:** [Describe where names and card analytics are stored, the security measures actually used, retention periods, and backup or legal retention exceptions.]
 
@@ -50,6 +58,8 @@ Use the account deletion page to verify ownership and permanently delete your ac
 **Account Deletion Page:** [Account Deletion URL]
 
 The backend deletion implementation removes the account record (email, name, avatar, password hash, wallets, and verification/reset tokens), saved decks, inventory, and matchmaking references. It removes identifying fields from affected match records and retains combined gameplay counters without player identifiers. Existing access and refresh tokens stop working when the account record is removed.
+
+Account deletion is final, but it does not delete payment and accounting records that we must retain for taxation and auditing. We retain only what is necessary, remove unnecessary identifying details and account links, and do not retain payment card details. See Sections 5 and 7 for the retention exception and Google's independent processing.
 
 **Before publication:** [Verify the deployed website and in-app deletion flows, transaction support, concurrent gameplay behavior, retention of backups and logs, third-party erasure, and whether remaining match records can identify a player indirectly. Confirm any actual legal retention obligations and their duration.]
 
