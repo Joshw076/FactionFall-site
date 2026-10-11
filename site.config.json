@@ -1,6 +1,6 @@
 {
   "game": "FactionFall",
-  "apiBaseUrl": "",
+  "apiBaseUrl": "https://arbor-cardfall-backend.onrender.com",
   "developer": "Arbor Studios",
   "email": "Admin@factionfall.com",
   "website": "https://factionfall.com",

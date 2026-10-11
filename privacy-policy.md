@@ -53,15 +53,17 @@ Payment and accounting records required for taxation and auditing are retained s
 
 ## 8. Account and Data Deletion
 
-Use the account deletion page to verify ownership and permanently delete your account without emailing us. Successful deletion is immediate in the active database, with no recovery period. Signing up again creates a new account.
+Open Settings > Delete account in FactionFall, or visit the account deletion page directly without installing the game. The page verifies ownership using your password or a fresh Google sign-in and asks you to type DELETE MY ACCOUNT before confirming. It does not require emailing us. Once the backend confirms successful deletion, the account is removed from the active database with no recovery period. Signing up again creates a new account.
 
 **Account Deletion Page:** [Account Deletion URL]
 
-The backend deletion implementation removes the account record (email, name, avatar, password hash, wallets, and verification/reset tokens), saved decks, inventory, and matchmaking references. It removes identifying fields from affected match records and retains combined gameplay counters without player identifiers. Existing access and refresh tokens stop working when the account record is removed.
+The backend deletion implementation removes the account record (email, name, avatar, password hash, linked Play Games identifier, wallets, and verification/reset tokens), saved decks, inventory, ranked ratings and associated leaderboard entries, and matchmaking references. It removes identifying fields from affected match records and retains combined gameplay counters without player identifiers. Existing access and refresh tokens stop working when the account record is removed. Deleting a FactionFall account does not delete your Google account or Google Play Games profile.
 
 Account deletion is final, but it does not delete payment and accounting records that we must retain for taxation and auditing. We retain only what is necessary, remove unnecessary identifying details and account links, and do not retain payment card details. See Sections 5 and 7 for the retention exception and Google's independent processing.
 
 **Before publication:** [Verify the deployed website and in-app deletion flows, transaction support, concurrent gameplay behavior, retention of backups and logs, third-party erasure, and whether remaining match records can identify a player indirectly. Confirm any actual legal retention obligations and their duration.]
+
+**Before publication:** [Implement and verify provider deletion procedures for associated Unity authentication/Relay and advertising data. State the actual completion time for provider erasure and backup expiry separately from active-database deletion. Do not describe all copies as instantly erased.]
 
 ## 9. Website and Support Requests
 

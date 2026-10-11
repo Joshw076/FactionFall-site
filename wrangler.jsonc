@@ -1,6 +1,6 @@
 {
   "$schema": "https://unpkg.com/wrangler/config-schema.json",
-  "name": "factionfall-website",
+  "name": "factionfall-site",
   "compatibility_date": "2026-10-08",
   "assets": {
     "directory": "./dist",
