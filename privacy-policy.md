@@ -25,7 +25,11 @@ FactionFall includes built-in analytics about cards. These analytics concern gam
 
 ## 4. Demographic and Location Information
 
-FactionFall's current analytics do not collect demographic or location information.
+Regional leaderboards use the country and optional region you choose in competition settings. These preferences are saved with your account; they are not ephemeral. We do not need GPS coordinates for this feature. You can clear your selection or disable regional visibility. Public and regional standings require visibility settings and eligibility checks. Account-linked ratings, match results, reward balances, and bounded match economy evidence are stored to operate competition, award Flux, and investigate invalid match reports.
+
+Google Play Games friends are requested when you choose the friends comparison or refresh it. The backend uses the returned friend identifiers temporarily to find eligible friends who opted into rank sharing, then returns their display names and available ranks. It does not save the Google friends list or their authorization tokens. The game clears the displayed friends list when the competition panel closes. Your own linked Play Games identifier is saved until you disconnect it or delete your account. Short-lived leaderboard pagination snapshots are stored separately; regional snapshots include country/region filters and expire automatically.
+
+Optional region selection and temporary friends processing still involve personal information. We protect access to these features and do not treat temporary processing as exempt from privacy disclosure.
 
 **Before publication:** [Confirm whether sign-in, any backend, and website hosting process IP addresses or other technical information separately from card analytics and disclose applicable processing.]
 
