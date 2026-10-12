@@ -39,3 +39,9 @@ Scope: read-only review of C:/Users/jjwil/backend-auth source at commit 026fc2e9
 Google Play expects a policy describing actual access, collection, use, sharing, retention and deletion, including SDK practices. Align Data safety and runtime disclosures with the shipped build rather than this backend inventory alone.
 
 References reviewed: https://support.google.com/googleplay/android-developer/answer/10144311?hl=en and https://support.google.com/googleplay/android-developer/answer/13327111?hl=en
+
+## Follow-on changes in this session
+
+Nickname changes now store nicknameChangedAt and use a server-enforced rolling 30-day limit through both the old profile PATCH and the new nickname POST. New Google accounts receive generated player nicknames without importing their name or image at creation; existing Google accounts preserve their names and may still refresh the Google avatar URL. Apple source integration adds an app/developer-scoped appleSubject and verified email, including private-relay addresses. It requests email only, uses generated nicknames, and does not silently link accounts by email. Ordinary Apple tokens are transient; deletion verification temporarily stores an Apple refresh token in process memory for revocation with an account-bound five-minute proof. See backend Docs/AppleSignIn.md for deployment requirements. These source changes have not been verified against live providers or production data.
+
+The developer confirmed the intended audience includes children under 13 with parental consent. No verified parental-consent system is currently implemented. See backend Docs/ChildSafetyReview.md for specific gaps; policy text records this draft status rather than claiming the protections already exist.

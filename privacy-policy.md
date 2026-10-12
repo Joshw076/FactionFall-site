@@ -14,11 +14,15 @@ This policy describes how Arbor Studios handles information in FactionFall to pr
 
 ## 2. Accounts and Sign-In
 
-We store your email address, player name, profile image URL if provided, internal account identifier, account creation and update times, and email verification status. You can update your player name and profile image URL.
+We store your email address, player nickname, profile image URL if provided, internal account identifier, account creation and update times, and email verification status. Settings > Account lets you change your nickname once every 30 days. We store the last successful change time to enforce that limit. Initial assignment is separate from a nickname change. Nicknames can be visible to other players; avoid using your real name or contact details.
 
 For email/password accounts, we process your password to authenticate you and store a password hash rather than the password itself. Email verification and password reset use stored token hashes and expiry times. Verification links are valid for 24 hours and password reset links for 30 minutes; expiry does not itself erase the stored fields. Our email delivery service receives your address and message contents.
 
-Google sign-in requests email and profile access. We verify Google's response and use the verified email, profile name, and profile image URL to create or update your account. Google identifiers and authentication tokens are also processed during verification; this is more than collecting a name alone. The backend does not have a persistent Google sign-in token field. Temporary sign-in sessions hold authentication state and completed game tokens; deletion verification can also temporarily hold a Google ID token. Sessions are consumed when retrieved or expire after five minutes.
+Google sign-in requests email and profile access. We verify Google's response and use the verified email to create or find your account. New Google accounts receive a generated player nickname; we do not automatically use the Google profile name as their nickname. Existing account nicknames are preserved, and existing accounts' profile image URLs may be updated from Google. Google profile information, identifiers and authentication tokens are processed during verification. The backend does not have a persistent Google sign-in token field. Temporary sign-in sessions hold authentication state and completed game tokens; deletion verification can also temporarily hold a Google ID token. Sessions are consumed when retrieved or expire after five minutes.
+
+When Apple sign-in is enabled, we request email access and verify Apple's identity token. We store your app/developer-scoped Apple user identifier and verified email, which may be an Apple private-relay address if you choose Hide My Email. New Apple accounts receive a generated nickname; we do not request your Apple profile name. Matching an email alone does not link Apple to an existing game account. Authentication codes and Apple tokens are processed to verify your sign-in. Normal sign-in does not persist Apple access or refresh tokens. Deletion verification temporarily retains a provider refresh token on the server with an account-bound authorization proof, expiring after five minutes, so we can revoke Apple authorization. Game sign-in tokens are returned once from a temporary session. Apple's privacy policy: https://www.apple.com/legal/privacy/
+
+**Before publication:** [Confirm Apple Developer configuration, real sign-in and private-relay behavior, token revocation, and which released platforms enable Apple.]
 
 We issue game access and refresh tokens and store an account token version to control session validity. Google's privacy policy: https://policies.google.com/privacy
 
@@ -86,11 +90,11 @@ Most account, match, rating, deck, inventory, and reward records do not have aut
 
 ## 9. Account and Data Deletion
 
-Open Settings > Delete account in FactionFall, or use [Account Deletion URL] without installing the game. Verify ownership with your password or a fresh Google sign-in and type DELETE MY ACCOUNT. Deletion does not require a support email.
+Open Settings > Delete account in FactionFall, or use [Account Deletion URL] without installing the game. Verify ownership with your password or a fresh Google or Apple sign-in and type DELETE MY ACCOUNT. Apple-linked accounts require fresh Apple verification so that Apple authorization can be revoked as part of deletion. Deletion does not require a support email.
 
 Once the backend confirms successful deletion, removal from the active game database is immediate and final, with no account recovery period. Signing up again creates a new account. This does not mean every provider-held copy, backup, or log is instantly erased.
 
-The deletion implementation removes the user profile, email, password hash, stored verification/reset token hashes, wallets, linked Play Games identifier, purchase-token hash and entitlement, balances, card frames, decks, inventory, Flux reward and ad-event records, ratings, rating transactions, competitive cosmetics and standings, affected ranked results, legacy friendships, and owned leaderboard snapshots. It removes your rows from other leaderboard snapshots and removes or updates matchmaking and party references.
+The deletion implementation removes the user profile, email, nickname and last-change time, Apple user identifier, password hash, stored verification/reset token hashes, wallets, linked Play Games identifier, purchase-token hash and entitlement, balances, card frames, decks, inventory, Flux reward and ad-event records, ratings, rating transactions, competitive cosmetics and standings, affected ranked results, legacy friendships, and owned leaderboard snapshots. It removes your rows from other leaderboard snapshots and removes or updates matchmaking and party references.
 
 Affected match records have your player identifier, name, profile image URL, and deck contents removed. Connection information, join codes, and peer evidence reports are cleared. Match metadata, team and deck index, timestamps, and other participants' records can remain. These records must not be described as fully anonymous without assessing indirect identification.
 
@@ -100,7 +104,9 @@ Separately, deletion adds gameplay totals to combined counters without player id
 
 ## 10. Audience, Choices, and Contact
 
-**Before publication:** [Confirm intended ages and actual age screening or parental consent. Competition eligibility flags are not proof of age verification or parental consent.]
+The intended audience includes children under 13 with parental consent. The current build does not yet implement verified parental consent, parent controls, or age screening. It must not be released for under-13 accounts until those protections and the related provider/SDK practices are implemented and verified.
+
+**Before publication:** [Replace this draft status with the actual age screening, verified parental-consent method, parental choices/access/revocation/deletion process, and child-data retention rules after implementation. Competition eligibility flags and Google/Apple sign-in are not proof of parental consent.]
 
 You can update your player profile, change sharing preferences, clear your chosen region, disconnect Play Games, or delete your account. For information questions or requests, contact [Privacy Contact Email]. We may need to verify ownership before acting on a request.
 

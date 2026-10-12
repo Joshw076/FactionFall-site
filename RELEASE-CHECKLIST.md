@@ -8,7 +8,9 @@ The policy remains a draft. The October 12, 2026 source review is recorded in PR
 - [ ] Confirm deployed backend commit and enabled features, especially Google Play Games, purchases, LevelPlay ads, wallet linking, and multiplayer modes. Remove inactive feature descriptions from the final release policy.
 - [ ] Confirm Arbor Studios identity matches the store listing, Admin@factionfall.com receives requests, and any applicable business contact address.
 - [ ] Inventory the shipped client SDKs and provider-held data: Google, Unity Authentication/Relay, LevelPlay and every enabled ad partner, database host, Render, Cloudflare, SMTP, analytics/crash services. Add verified provider privacy links and storage locations.
-- [ ] Confirm intended ages, actual age/parental-consent process, and advertising consent requirements. Eligibility flags and SDK consent settings alone are insufficient evidence.
+- [ ] Intended audience now includes children under 13 with parental consent. Implement and verify age screening, genuine verified parental consent, parent controls and revocation, server gates, child-data retention and SDK/ad-partner configuration before releasing to that audience. Eligibility flags and social-provider sign-in alone are insufficient evidence. See backend Docs/ChildSafetyReview.md.
+- [ ] Enable and test Apple Developer Services ID/key/HTTPS return URL, Hide My Email and deletion/revocation. See backend Docs/AppleSignIn.md. Code presence does not establish live Apple support.
+- [ ] Verify nickname Settings UI and server cooldown on-device and against the live database, including concurrent changes, legacy accounts, boundary timing and deletion.
 - [ ] Establish retention periods or meaningful criteria for accounts, match/economy evidence, ratings, expired queue tickets, support messages, diagnostics and backups. Most current persistent models have no automatic age-based deletion.
 - [ ] Verify production request logging/redaction, including provider logs. Verification/OAuth/ad callback URLs can contain sensitive parameters.
 - [ ] Verify HTTPS, database TLS, storage/access controls and backup lifecycle on deployed infrastructure.
