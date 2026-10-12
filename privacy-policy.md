@@ -1,4 +1,4 @@
-﻿# Privacy Policy
+# Privacy Policy
 
 **Draft revised:** October 12, 2026
 **Effective Date:** [Confirm publication effective date]
@@ -23,6 +23,14 @@ Google sign-in requests email and profile access. We verify Google's response an
 When Apple sign-in is enabled, we request email access and verify Apple's identity token. We store your app/developer-scoped Apple user identifier and verified email, which may be an Apple private-relay address if you choose Hide My Email. New Apple accounts receive a generated nickname; we do not request your Apple profile name. Matching an email alone does not link Apple to an existing game account. Authentication codes and Apple tokens are processed to verify your sign-in. Normal sign-in does not persist Apple access or refresh tokens. Deletion verification temporarily retains a provider refresh token on the server with an account-bound authorization proof, expiring after five minutes, so we can revoke Apple authorization. Game sign-in tokens are returned once from a temporary session. Apple's privacy policy: https://www.apple.com/legal/privacy/
 
 **Before publication:** [Confirm Apple Developer configuration, real sign-in and private-relay behavior, token revocation, and which released platforms enable Apple.]
+
+When Facebook or Discord sign-in is enabled, we process provider authorization codes and tokens and store your provider-scoped account identifier and shared email. Discord sign-in requests identity and email access and requires a verified Discord email. Facebook sign-in requests public profile and email access; we use the app-scoped identifier to authenticate you, and do not treat this as our own email verification. New accounts receive a generated nickname. We do not import their public names or avatars, request messages/friends/server membership, or silently link an existing game account by email. Provider tokens are processed temporarily; fresh deletion verification temporarily retains an account-bound provider token/proof to revoke authorization, expiring after five minutes. Facebook and Discord have their own age requirements; their sign-in is not an under-13 parental-consent method.
+
+The email-first login screen processes the email you enter to select a login or registration screen. That lookup is rate-limited and does not authenticate you. Choosing different screens necessarily reveals whether the address is registered. Transient lookup/reset rate-limit state uses email hashes and expiry times; these hashes are not assumed anonymous. Password-reset emails contain one-time links valid for 30 minutes. A successful reset consumes the stored token hash and revokes previous game sessions.
+
+Facebook/Meta privacy policy: https://www.facebook.com/privacy/policy/ ; Discord privacy policy: https://discord.com/privacy
+
+**Before publication:** [Confirm Facebook and Discord app configuration, provider age/eligibility controls, actual scopes, real OAuth and deletion/revocation, SMTP delivery and verification/reset links, and the public membership-discovery privacy tradeoff.]
 
 We issue game access and refresh tokens and store an account token version to control session validity. Google's privacy policy: https://policies.google.com/privacy
 
@@ -90,11 +98,11 @@ Most account, match, rating, deck, inventory, and reward records do not have aut
 
 ## 9. Account and Data Deletion
 
-Open Settings > Delete account in FactionFall, or use [Account Deletion URL] without installing the game. Verify ownership with your password or a fresh Google or Apple sign-in and type DELETE MY ACCOUNT. Apple-linked accounts require fresh Apple verification so that Apple authorization can be revoked as part of deletion. Deletion does not require a support email.
+Open Settings > Delete account in FactionFall, or use [Account Deletion URL] without installing the game. Verify ownership with your password or a fresh sign-in using your original provider and type DELETE MY ACCOUNT. Apple, Facebook and Discord accounts require fresh provider verification so authorization can be revoked as part of deletion. Deletion does not require a support email.
 
 Once the backend confirms successful deletion, removal from the active game database is immediate and final, with no account recovery period. Signing up again creates a new account. This does not mean every provider-held copy, backup, or log is instantly erased.
 
-The deletion implementation removes the user profile, email, nickname and last-change time, Apple user identifier, password hash, stored verification/reset token hashes, wallets, linked Play Games identifier, purchase-token hash and entitlement, balances, card frames, decks, inventory, Flux reward and ad-event records, ratings, rating transactions, competitive cosmetics and standings, affected ranked results, legacy friendships, and owned leaderboard snapshots. It removes your rows from other leaderboard snapshots and removes or updates matchmaking and party references.
+The deletion implementation removes the user profile, email, nickname and last-change time, Apple, Facebook and Discord user identifiers, password hash, stored verification/reset token hashes, wallets, linked Play Games identifier, purchase-token hash and entitlement, balances, card frames, decks, inventory, Flux reward and ad-event records, ratings, rating transactions, competitive cosmetics and standings, affected ranked results, legacy friendships, and owned leaderboard snapshots. It removes your rows from other leaderboard snapshots and removes or updates matchmaking and party references.
 
 Affected match records have your player identifier, name, profile image URL, and deck contents removed. Connection information, join codes, and peer evidence reports are cleared. Match metadata, team and deck index, timestamps, and other participants' records can remain. These records must not be described as fully anonymous without assessing indirect identification.
 

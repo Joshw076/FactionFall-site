@@ -4,6 +4,8 @@ const verify = document.querySelector('#verify-account');
 const confirm = document.querySelector('#confirm-deletion');
 const google = document.querySelector('#google-verify');
 const apple = document.querySelector('#apple-verify');
+const facebook = document.querySelector('#facebook-verify');
+const discord = document.querySelector('#discord-verify');
 const api = panel.dataset.api.replace(/\/$/, '');
 let credentials = null, polling = null, generation = 0, busy = false;
 const message = text => { status.textContent = text; };
@@ -18,17 +20,17 @@ async function request(path, options = {}) {
 function reset() {
   generation++; clearTimeout(polling); credentials = null;
   verify.reset(); confirm.reset(); confirm.hidden = true;
-  verify.hidden = google.hidden = apple.hidden = false; busy = false;
+  verify.hidden = google.hidden = apple.hidden = facebook.hidden = discord.hidden = false; busy = false;
 }
 function verified(data, password, email) {
-  credentials = { accessToken: data.accessToken, googleIdToken: data.googleIdToken, appleDeletionProof: data.appleDeletionProof, password };
-  verify.reset(); verify.hidden = google.hidden = apple.hidden = true; confirm.hidden = false;
+  credentials = { accessToken: data.accessToken, googleIdToken: data.googleIdToken, appleDeletionProof: data.appleDeletionProof, socialDeletionProof: data.socialDeletionProof, password };
+  verify.reset(); verify.hidden = google.hidden = apple.hidden = facebook.hidden = discord.hidden = true; confirm.hidden = false;
   document.querySelector('#verified-account').textContent = email ? `Verified account: ${email}` : 'Your account is verified.';
   message('Ownership verified. Read the warning before confirming deletion.');
   document.querySelector('#delete-confirmation').focus();
 }
 if (!api) message('Account deletion is not available yet: the website’s server connection is awaiting configuration.');
-else { verify.hidden = google.hidden = apple.hidden = false; message('Sign in with the account you want to permanently delete.'); }
+else { verify.hidden = google.hidden = apple.hidden = facebook.hidden = discord.hidden = false; message('Sign in with the account you want to permanently delete.'); }
 verify.addEventListener('submit', async event => {
   event.preventDefault(); if (busy) return; busy = true;
   const attempt = ++generation;
@@ -51,7 +53,8 @@ async function verifyProvider(provider, label) {
     const data = await request(`/${provider}/start?purpose=deletion`);
     if (attempt !== generation) { popup.close(); return; }
     const authUrl = new URL(data.authUrl);
-    if (authUrl.protocol !== 'https:' || authUrl.hostname !== (provider === 'apple' ? 'appleid.apple.com' : 'accounts.google.com'))
+    const expected = { apple: 'appleid.apple.com', google: 'accounts.google.com', facebook: 'www.facebook.com', discord: 'discord.com' }[provider];
+    if (authUrl.protocol !== 'https:' || authUrl.hostname !== expected)
       throw new Error('Invalid sign-in provider address. Please try again.');
     popup.location.replace(authUrl.href);
     const expires = Date.now() + data.expiresIn * 1000;
@@ -72,6 +75,8 @@ async function verifyProvider(provider, label) {
 }
 google.addEventListener('click', () => verifyProvider('google', 'Google'));
 apple.addEventListener('click', () => verifyProvider('apple', 'Apple'));
+facebook.addEventListener('click', () => verifyProvider('facebook', 'Facebook'));
+discord.addEventListener('click', () => verifyProvider('discord', 'Discord'));
 confirm.addEventListener('submit', async event => {
   event.preventDefault(); if (busy || !credentials) return; busy = true;
   const buttons = confirm.querySelectorAll('button'); buttons.forEach(b => { b.disabled = true; });
@@ -80,8 +85,8 @@ confirm.addEventListener('submit', async event => {
     const result = await request('/account', { method: 'DELETE',
       headers: { Authorization: `Bearer ${credentials.accessToken}` },
       body: JSON.stringify({ confirmation: document.querySelector('#delete-confirmation').value,
-        password: credentials.password, googleIdToken: credentials.googleIdToken, appleDeletionProof: credentials.appleDeletionProof }) });
-    reset(); verify.hidden = google.hidden = apple.hidden = true; message(result.message);
+        password: credentials.password, googleIdToken: credentials.googleIdToken, appleDeletionProof: credentials.appleDeletionProof, socialDeletionProof: credentials.socialDeletionProof }) });
+    reset(); verify.hidden = google.hidden = apple.hidden = facebook.hidden = discord.hidden = true; message(result.message);
   } catch (error) {
     reset(); message(`${error.message} If the connection was interrupted, deletion may have completed. Verify again before retrying.`);
   } finally { busy = false; buttons.forEach(b => { b.disabled = false; }); }
