@@ -1,22 +1,23 @@
-# Confirm before publishing
+﻿# Confirm before publishing
 
-The supplied policy is a draft. Resolve these points against the release build before marking it ready.
+The policy remains a draft. The October 12, 2026 source review is recorded in PRIVACY-DATA-AUDIT.md. It replaces the earlier name-only sign-in assumption: the backend stores email, profile name/image, and substantial account-linked gameplay and competition information. Source inspection does not confirm deployment or provider settings.
 
-Confirmed by the developer: Google sign-in; the name is the reported captured sign-in data; built-in card analytics; no demographic or location analytics. The policy has been narrowed to those facts. The original supplied text is preserved in `privacy-policy.original-draft.md`. Actual authentication processing, storage, and analytics fields remain to be verified.
+- [x] Inventory backend account, gameplay, competitive, social, purchase, ad, wallet, and technical processing from source.
+- [x] Update policy and deletion-page disclosures to distinguish persistent data, temporary processing, expiry, and actual deletion.
+- [x] Preserve original supplied policy in privacy-policy.original-draft.md.
+- [ ] Confirm deployed backend commit and enabled features, especially Google Play Games, purchases, LevelPlay ads, wallet linking, and multiplayer modes. Remove inactive feature descriptions from the final release policy.
+- [ ] Confirm Arbor Studios identity matches the store listing, Admin@factionfall.com receives requests, and any applicable business contact address.
+- [ ] Inventory the shipped client SDKs and provider-held data: Google, Unity Authentication/Relay, LevelPlay and every enabled ad partner, database host, Render, Cloudflare, SMTP, analytics/crash services. Add verified provider privacy links and storage locations.
+- [ ] Confirm intended ages, actual age/parental-consent process, and advertising consent requirements. Eligibility flags and SDK consent settings alone are insufficient evidence.
+- [ ] Establish retention periods or meaningful criteria for accounts, match/economy evidence, ratings, expired queue tickets, support messages, diagnostics and backups. Most current persistent models have no automatic age-based deletion.
+- [ ] Verify production request logging/redaction, including provider logs. Verification/OAuth/ad callback URLs can contain sensitive parameters.
+- [ ] Verify HTTPS, database TLS, storage/access controls and backup lifecycle on deployed infrastructure.
+- [ ] Inventory financial exports and any external accounting records actually retained. Confirm legal basis/jurisdiction/duration, necessary fields, access restrictions, and account unlinking. Backend purchase hash is deleted with User; there is no separate accounting ledger in reviewed source.
+- [ ] Test web and in-app deletion against live replica-set transactions, rollback, concurrent gameplay/reward callbacks, token invalidation, and historical match records. Assess retained match metadata for indirect identification.
+- [ ] Implement/verify associated Unity and ad-provider erasure procedures and disclose completion times and backup expiry separately from active database deletion.
+- [ ] Confirm privacy-rights request handling, support retention, and website cookies/analytics.
+- [ ] Align Google Play Data safety and runtime disclosures with actual release game/SDK behavior.
+- [ ] Set effective date only when the finalized policy takes effect; resolve every publication placeholder before readyToPublish=true.
+- [ ] Verify public HTTPS privacy/support/deletion pages on mobile signed out and policy/deletion links inside the release app.
 
-- [x] Set the supplied developer identity and contact details: Arbor Studios, Admin@factionfall.com, https://factionfall.com.
-- [ ] Confirm the developer identity matches Google Play, the email receives requests, and any applicable business contact address.
-- [ ] List actual sign-in services. Remove Google, Play Games, or Apple if not used; identify whether providers share email, profile name, or other data in addition to identifiers.
-- [ ] Confirm each gameplay, friends, leaderboard, location/region, age, and diagnostic data category. Remove planned features; describe how any IP-derived region is obtained if used.
-- [ ] Name actual backend, hosting, multiplayer, analytics, crash reporting, advertising, and purchase providers. Explain data shared with each and why; add relevant provider privacy links. Replace the promise to identify providers later.
-- [ ] Confirm whether ads or purchases exist and whether the draft's no-targeted-advertising statements are accurate.
-- [ ] Verify the planned Google Play Billing flow and actual retained payment/accounting records. Confirm tax jurisdiction and retention period, remove unnecessary buyer information and game-account links, restrict legally required identifiable records, and test that deletion preserves required accounting records without enabling account recovery. Verify that card and bank details are never collected or stored by Arbor Studios. Google Play transaction IDs and purchase tokens must not be assumed anonymous.
-- [ ] Confirm intended ages in Play Console and actual age screening/parental consent/social safeguards. â€œWe intend toâ€ safeguards are not proof they exist. If children are included, review the applicable Families and children's privacy requirements against the implemented game.
-- [ ] Describe retention periods or meaningful criteria, including inactive accounts, diagnostics, backups, and legal/security exceptions. Establish the actual deletion response workflow and expected completion timeframe, then publish those details.
-- [ ] If accounts can be created, implement a discoverable in-app deletion request option and test the external verified automatic deletion flow. Confirm deletion reaches each relevant service; uninstalling or disconnecting Google alone is not account deletion.
-- [ ] Describe the website's own hosting/contact processing where applicable: Cloudflare processes web requests and email requests contain sender information. Do not confuse the site's lack of analytics scripts with the absence of all hosting logs.
-- [ ] Align Play Console's Data safety answers with actual game/SDK behavior. A privacy policy does not replace that form.
-- [ ] Set the effective date to the actual date this finalized policy takes effect.
-- [ ] Test the public HTTPS pages on mobile without sign-in, including contacts and deletion instructions; link the policy inside the app.
-
-References: [Google Play User Data](https://support.google.com/googleplay/android-developer/answer/10144311?hl=en), [account deletion](https://support.google.com/googleplay/android-developer/answer/13327111?hl=en), [Families requirements](https://support.google.com/googleplay/android-developer/answer/9893335?hl=en).
+References: https://support.google.com/googleplay/android-developer/answer/10144311?hl=en and https://support.google.com/googleplay/android-developer/answer/13327111?hl=en

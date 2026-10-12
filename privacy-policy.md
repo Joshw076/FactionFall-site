@@ -1,87 +1,116 @@
-# Privacy Policy
+﻿# Privacy Policy
 
-**Effective Date:** October 8, 2026
+**Draft revised:** October 12, 2026
+**Effective Date:** [Confirm publication effective date]
 **Game:** [Game Name]
 **Developer:** [Developer or Company Name]
 **Contact Email:** [Privacy Contact Email]
 
 ## 1. About This Policy
 
-This policy describes how Arbor Studios handles information in FactionFall. The current version uses Google sign-in and built-in card analytics. Details marked for confirmation must be resolved before publication.
+This policy describes how Arbor Studios handles information in FactionFall to provide accounts, gameplay, multiplayer, competition, purchases, and optional rewarded ads. This draft reflects the current backend implementation. Features requiring provider configuration may not be enabled in every build.
 
-## 2. Google Sign-In
+**Before publication:** [Confirm the deployed server version, enabled features, release SDKs, and outstanding release checklist items.]
 
-FactionFall supports Google sign-in. The information Arbor Studios reports capturing from sign-in is the player's name provided by Google.
+## 2. Accounts and Sign-In
 
-**Before publication:** [Confirm how the name is used and stored and whether authentication processes or providers also process account identifiers, email addresses, profile images, or authentication tokens.]
+We store your email address, player name, profile image URL if provided, internal account identifier, account creation and update times, and email verification status. You can update your player name and profile image URL.
 
-Google processes sign-in information under its own privacy policy: https://policies.google.com/privacy
+For email/password accounts, we process your password to authenticate you and store a password hash rather than the password itself. Email verification and password reset use stored token hashes and expiry times. Verification links are valid for 24 hours and password reset links for 30 minutes; expiry does not itself erase the stored fields. Our email delivery service receives your address and message contents.
 
-## 3. Card Analytics
+Google sign-in requests email and profile access. We verify Google's response and use the verified email, profile name, and profile image URL to create or update your account. Google identifiers and authentication tokens are also processed during verification; this is more than collecting a name alone. The backend does not have a persistent Google sign-in token field. Temporary sign-in sessions hold authentication state and completed game tokens; deletion verification can also temporarily hold a Google ID token. Sessions are consumed when retrieved or expire after five minutes.
 
-FactionFall includes built-in analytics about cards. These analytics concern gameplay cards rather than player demographics or location.
+We issue game access and refresh tokens and store an account token version to control session validity. Google's privacy policy: https://policies.google.com/privacy
 
-**Before publication:** [Specify the card events and statistics recorded, their purpose, whether they stay on the device or are transmitted, and whether they are linked to a player's name or account.]
+## 3. Gameplay and Multiplayer Information
 
-## 4. Demographic and Location Information
+We store account-linked card inventory, card quantities and qualities, shards, saved deck names and contents, selected and favorite decks, deck usage and win statistics, Flux balances, purchase entitlements, and unlocked or equipped card frames.
 
-Regional leaderboards use the country and optional region you choose in competition settings. These preferences are saved with your account; they are not ephemeral. We do not need GPS coordinates for this feature. You can clear your selection or disable regional visibility. Public and regional standings require visibility settings and eligibility checks. Account-linked ratings, match results, reward balances, and bounded match economy evidence are stored to operate competition, award Flux, and investigate invalid match reports.
+Multiplayer records include player identifiers, names and profile image URLs, teams, selected decks and relevant deck contents, party membership, invitation and match codes, host assignment, connection information, game build version, matchmaking region, reported latency, match status, results, disconnects, and timestamps. These records support finding matches, connecting players, tracking progress, and awarding rewards.
 
-Google Play Games friends are requested when you choose the friends comparison or refresh it. The backend uses the returned friend identifiers temporarily to find eligible friends who opted into rank sharing, then returns their display names and available ranks. It does not save the Google friends list or their authorization tokens. The game clears the displayed friends list when the competition panel closes. Your own linked Play Games identifier is saved until you disconnect it or delete your account. Short-lived leaderboard pagination snapshots are stored separately; regional snapshots include country/region filters and expire automatically.
+To validate results and prevent invalid rewards, we store player-submitted results and bounded gameplay evidence: reported duration, card and resource events, sequence and timing, team, amounts, source identifiers, unit spawn identifiers and types, evidence hashes, and validation outcomes or rejection reasons. These reports are linked to participants. Gameplay analytics are not automatically anonymous.
 
-Optional region selection and temporary friends processing still involve personal information. We protect access to these features and do not treat temporary processing as exempt from privacy disclosure.
+Other participants receive information needed to join and play matches, including player profile and connection information. The client integrates Unity Authentication and Relay for multiplayer identity and traffic routing. Unity's processing is separate from our game account database.
 
-**Before publication:** [Confirm whether sign-in, any backend, and website hosting process IP addresses or other technical information separately from card analytics and disclose applicable processing.]
+**Before publication:** [Confirm the released multiplayer configuration, Unity data categories and privacy link, retention, and provider deletion procedures.]
 
-## 5. Services, Advertising, and Purchases
+## 4. Competition, Friends, and Region Preferences
 
-Google is the confirmed sign-in provider.
+We store ranked points, internal matchmaking ratings and uncertainty, season results and standings, wins, losses, draws, streaks, recent results, rating changes, titles and badges, and competition eligibility or restriction status. These records operate matchmaking, rankings, rewards, and integrity checks.
 
-Purchases in the Google Play version of FactionFall will be processed through Google Play Billing. Arbor Studios does not collect or store payment card numbers, card security codes, or bank account details. Google processes payment information under its own privacy policy: https://policies.google.com/privacy
+Public, friends, and regional rank visibility depend on account preferences and eligibility checks. Eligible players who enable sharing can have their player name, rank, points, and equipped competitive cosmetics shown in the relevant standings.
 
-We retain the minimum payment and accounting records necessary for taxation and auditing, including after account deletion, for the period required by applicable law. These records are used for those purposes and do not allow recovery of a deleted game account. We remove links to the game account and directly identifying information wherever they are not legally required. Records that remain identifiable are treated as personal data and restricted accordingly; using Google Play does not by itself make transaction records anonymous.
+Country and optional region are choices you provide in competition settings. We store these preferences and change/eligibility times; they are not temporary location data. You can clear your selection or disable visibility. This feature does not require GPS or derive your selected country from your IP address. Matchmaking region is also processed to group matches. Network providers can separately process IP addresses.
 
-**Before publication:** [Verify the Google Play Billing integration and the actual records retained, including financial exports, order IDs, purchase tokens, and any buyer information. Confirm the applicable tax jurisdiction, retention period, access restrictions, and which identifiers can be removed after deletion. Do not claim that all payment records contain no personal information unless their anonymity has been verified.]
+If you connect Google Play Games, we store your verified app-scoped player identifier and link time until you disconnect or delete your account. When you request a friends comparison, we process a fresh authorization code, Google access token, friends' player identifiers and display names, and friends-sharing status to retrieve the list and compare eligible friends who share their ranks. The backend does not persist the Google friends list or those authorization tokens. Disconnecting Play Games also disables friends rank sharing.
 
-**Before publication:** [Identify any backend, storage, analytics, crash reporting, or advertising services actually used, the information they process, and why it is shared. Confirm whether purchases are live or planned and whether ads are present.]
+Leaderboard pagination stores account-linked snapshots containing player identifiers and points and your country/region filters. Snapshots become unusable after five minutes and are scheduled for automatic database deletion; physical removal can occur later. Legacy in-game friendship records may remain from earlier versions, although current friendship actions direct players to Play Games.
 
-## 6. Intended Audience
+## 5. Purchases and Optional Rewarded Ads
 
-**Before publication:** [Confirm intended player ages and any applicable age screening or parental consent process. Describe only child protections actually implemented.]
+When Google Play purchases are enabled, we process your purchase token to verify the purchase with Google and acknowledge it. Google receives an obfuscated game-account identifier for ownership matching. We store your entitlement status and a hash of the purchase token to prevent duplicate linking and handle revocation. This hash remains account-linked personal information. The current backend does not persist the raw purchase token or a separate order/accounting ledger.
 
-## 7. Storage, Security, and Retention
+Arbor Studios' purchase integration does not request or store payment card numbers, card security codes, or bank account details. Google processes payments under its own policies.
 
-Payment and accounting records required for taxation and auditing are retained separately from the game account for the legally required period. Account deletion does not erase these required records or restore access to the deleted account. We delete or anonymise them when the applicable retention requirement ends. Google may retain its own payment records under its policies and legal obligations.
+When rewarded ads are enabled, Unity LevelPlay receives a generated ad session identifier and a signed reward offer containing game-account and reward identifiers. We process signed ad-completion callbacks and store the completion event identifier, whether the reward was doubled, reward amounts, and account/match links. This validates completion and prevents duplicate rewards.
 
-**Before publication:** [Describe where names and card analytics are stored, the security measures actually used, retention periods, and backup or legal retention exceptions.]
+The advertising SDK and enabled advertising partners may process additional device, network, and advertising information. The client sets consent to false and a do-not-sell setting before initializing LevelPlay; these settings alone do not establish that the SDK collects no personal information or that all required consent is satisfied.
 
-## 8. Account and Data Deletion
+**Before publication:** [Confirm enabled ads and purchases, actual LevelPlay partners and SDK data categories, provider privacy links, applicable consent and age controls, and provider retention/deletion.]
 
-Open Settings > Delete account in FactionFall, or visit the account deletion page directly without installing the game. The page verifies ownership using your password or a fresh Google sign-in and asks you to type DELETE MY ACCOUNT before confirming. It does not require emailing us. Once the backend confirms successful deletion, the account is removed from the active database with no recovery period. Signing up again creates a new account.
+Payment/accounting records outside this backend, such as Google Play financial reports, may need retention for taxation or auditing. Deleting a game account does not delete Google's records or restore the deleted account.
 
-**Account Deletion Page:** [Account Deletion URL]
+**Before publication:** [Identify accounting records Arbor Studios actually retains outside the game database, their fields and legal basis, applicable jurisdiction, retention period, access restrictions, and removal of unnecessary account links. Do not describe an unimplemented separate ledger as an existing retention system.]
 
-The backend deletion implementation removes the account record (email, name, avatar, password hash, linked Play Games identifier, wallets, and verification/reset tokens), saved decks, inventory, ranked ratings and associated leaderboard entries, and matchmaking references. It removes identifying fields from affected match records and retains combined gameplay counters without player identifiers. Existing access and refresh tokens stop working when the account record is removed. Deleting a FactionFall account does not delete your Google account or Google Play Games profile.
+## 6. Optional Wallet Information
 
-Account deletion is final, but it does not delete payment and accounting records that we must retain for taxation and auditing. We retain only what is necessary, remove unnecessary identifying details and account links, and do not retain payment card details. See Sections 5 and 7 for the retention exception and Google's independent processing.
+The backend supports submitting a wallet address and network and stores them with your account and link time if you use this feature. Wallet addresses can identify or link activity and are not assumed anonymous. The data model also supports card token identifiers and deck instance identifiers; their presence does not establish that blockchain or NFT features are active.
 
-**Before publication:** [Verify the deployed website and in-app deletion flows, transaction support, concurrent gameplay behavior, retention of backups and logs, third-party erasure, and whether remaining match records can identify a player indirectly. Confirm any actual legal retention obligations and their duration.]
+**Before publication:** [Confirm whether wallet linking or token-linked cards are accessible in the release; remove inactive-feature descriptions or explain actual blockchain sharing and public ledger implications.]
 
-**Before publication:** [Implement and verify provider deletion procedures for associated Unity authentication/Relay and advertising data. State the actual completion time for provider erasure and backup expiry separately from active-database deletion. Do not describe all copies as instantly erased.]
+## 7. Technical Processing and Service Providers
 
-## 9. Website and Support Requests
+Our backend uses MongoDB to store account and game records. The website currently points to a Render backend address and is configured for Cloudflare asset hosting. Hosting, network, database, and email providers process information needed to deliver their services, which can include IP addresses and request metadata. The backend uses IP-based rate limits to prevent abuse; this is separate from gameplay analytics.
 
-If you email Arbor Studios, your email includes your email address and the information you choose to provide. Do not send passwords or sign-in codes.
+The backend enables development request logging outside production and can log operational errors. Request URLs can contain personal information, including email verification parameters or ad callback data. Disabling development logging does not establish that hosting providers keep no logs.
 
-These pages are prepared for Cloudflare Pages hosting.
+**Before publication:** [Confirm active hosting/database providers, storage locations, SMTP provider, production logging and URL redaction, access controls, provider privacy links, and additional analytics or crash-reporting services in the shipped build.]
 
-**Before publication:** [Confirm hosting is active and describe relevant website request processing and support-email retention.]
+## 8. Storage, Security, and Retention
 
-## 10. Policy Changes
+Account and gameplay records are stored in the backend database for the purposes described above. The code uses password hashing, authentication and ownership checks, signed tokens and provider callbacks, rate limits, and database TLS requirements in production. These measures reduce risk but do not guarantee security.
 
-Updates will be posted on this page with an updated effective date. We will update the policy when the game's information practices change.
+Most account, match, rating, deck, inventory, and reward records do not have automatic age-based deletion schedules in the current code. Authentication session and leaderboard snapshot expiry are described above. Queue ticket expiry controls matchmaking eligibility and does not by itself prove records are erased. Account deletion removes or updates the records described below.
 
-## 11. Contact
+**Before publication:** [Establish and disclose actual retention periods or criteria for active/inactive accounts, historical matches and evidence, expired queue records, support messages, diagnostics, backups, and legal/accounting records. Verify deployed HTTPS, database settings, storage locations, and backup access/expiry.]
+
+## 9. Account and Data Deletion
+
+Open Settings > Delete account in FactionFall, or use [Account Deletion URL] without installing the game. Verify ownership with your password or a fresh Google sign-in and type DELETE MY ACCOUNT. Deletion does not require a support email.
+
+Once the backend confirms successful deletion, removal from the active game database is immediate and final, with no account recovery period. Signing up again creates a new account. This does not mean every provider-held copy, backup, or log is instantly erased.
+
+The deletion implementation removes the user profile, email, password hash, stored verification/reset token hashes, wallets, linked Play Games identifier, purchase-token hash and entitlement, balances, card frames, decks, inventory, Flux reward and ad-event records, ratings, rating transactions, competitive cosmetics and standings, affected ranked results, legacy friendships, and owned leaderboard snapshots. It removes your rows from other leaderboard snapshots and removes or updates matchmaking and party references.
+
+Affected match records have your player identifier, name, profile image URL, and deck contents removed. Connection information, join codes, and peer evidence reports are cleared. Match metadata, team and deck index, timestamps, and other participants' records can remain. These records must not be described as fully anonymous without assessing indirect identification.
+
+Separately, deletion adds gameplay totals to combined counters without player identifiers, deck contents, or individual player timestamps. Existing game access and refresh tokens stop working when the account record is removed. Deleting FactionFall does not delete your Google account or Play Games profile.
+
+**Before publication:** [Verify deployed in-app/web flows, live database transactions, concurrent gameplay/callback behavior, indirect identification in retained matches, backups/logs, Unity and advertising-provider erasure, and accounting retention. State provider erasure and backup expiry times separately.]
+
+## 10. Audience, Choices, and Contact
+
+**Before publication:** [Confirm intended ages and actual age screening or parental consent. Competition eligibility flags are not proof of age verification or parental consent.]
+
+You can update your player profile, change sharing preferences, clear your chosen region, disconnect Play Games, or delete your account. For information questions or requests, contact [Privacy Contact Email]. We may need to verify ownership before acting on a request.
+
+If you email us, we receive your email address and information you choose to provide. Do not send passwords or sign-in codes. Website hosting also processes requests to deliver these pages.
+
+**Before publication:** [Confirm support-email retention, applicable privacy rights and request procedures, and website cookies or analytics actually enabled.]
+
+## 11. Policy Changes
+
+We will post updates here with an updated effective date when our practices change.
 
 **Developer:** [Developer or Company Name]
 **Email:** [Privacy Contact Email]
