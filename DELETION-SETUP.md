@@ -4,7 +4,7 @@
 
 Game Settings now includes **Delete account**, opening `https://factionfall.com/delete-account` without sending account credentials in the URL. The website independently verifies password or fresh Google sign-in and requires `DELETE MY ACCOUNT`. Google explicitly allows this web-based in-app path: https://support.google.com/googleplay/android-developer/answer/13327111?hl=en
 
-Website `apiBaseUrl` now matches the game's existing backend: `https://arbor-cardfall-backend.onrender.com`. The website remains a draft; this is not evidence the deployed backend or domain is ready.
+Website `apiBaseUrl` now matches the game's existing backend: `https://factionfall.onrender.com`. The website remains a draft; this is not evidence the deployed backend or domain is ready.
 
 ## Settings needed from the owner
 
