@@ -64,7 +64,7 @@ When Google Play purchases are enabled, we process your purchase token to verify
 
 Arbor Studios' purchase integration does not request or store payment card numbers, card security codes, or bank account details. Google processes payments under its own policies.
 
-When rewarded ads are enabled, Unity LevelPlay receives a generated ad session identifier and a signed reward offer containing game-account and reward identifiers. We process signed ad-completion callbacks and store the completion event identifier, whether the reward was doubled, reward amounts, and account/match links. This validates completion and prevents duplicate rewards.
+When rewarded ads are enabled, Unity LevelPlay receives a generated ad session identifier and a signed reward offer containing game-account and reward identifiers. We process signed ad-completion callbacks and store the completion event identifier, whether an ad bonus was claimed, its random multiplier, reward amounts, and account/match links. This validates completion and prevents duplicate rewards.
 
 The advertising SDK and enabled advertising partners may process additional device, network, and advertising information. The client sets consent to false and a do-not-sell setting before initializing LevelPlay; these settings alone do not establish that the SDK collects no personal information or that all required consent is satisfied.
 
