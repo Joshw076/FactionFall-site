@@ -1,6 +1,10 @@
-# FactionFall player information website
+# FactionFall website
 
-Static Cloudflare Pages site. No JavaScript, cookies, analytics, external fonts, or form backend is included. Email links open the player's email app; requests must be handled by the developer.
+Static Cloudflare website with a game showcase, player support, privacy information, and account deletion. Branding images and fonts are served from the same origin. The account-deletion form calls the configured backend. No analytics were added.
+
+## Local visual preview
+
+Run `npm run build`, then `npm run preview`, and open `http://127.0.0.1:4173`. The preview server serves the built pages with their configured security headers. The release/draft configuration is preserved. See `ASSET-SOURCES.md` for the game artwork, branding sources, and the outstanding Google banner source.
 
 ## Edit and build
 

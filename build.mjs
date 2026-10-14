@@ -1,4 +1,4 @@
-import { readFile, writeFile, mkdir, copyFile } from 'node:fs/promises';
+import { readFile, writeFile, mkdir, copyFile, cp } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
@@ -40,7 +40,7 @@ function markdown(text) {
 const draft = !config.readyToPublish;
 const banner = draft ? '<aside class="draft" role="note"><strong>Draft - pending confirmation.</strong> Game practices must be confirmed before release.</aside>' : '';
 const pages = [
-  ['', 'Player support & privacy', await read('templates/home.html')],
+  ['', 'Claim the arena', await read('templates/home.html')],
   ['privacy', 'Privacy policy', markdown(policy)],
   ['support', 'Support', await read('templates/support.html')],
   ['delete-account', 'Account & data deletion', await read('templates/delete-account.html')]
@@ -53,10 +53,11 @@ for (const [route, title, content] of pages) {
     .replaceAll('{{website}}', escape(config.website));
   const current = path => route === path ? ' aria-current="page"' : '';
   await writeFile(join(dir, 'index.html'), `<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">${draft ? '<meta name="robots" content="noindex,nofollow">' : ''}<title>${escape(title)} | ${escape(config.game)}</title><meta name="description" content="FactionFall privacy, player support, and account deletion information."><link rel="stylesheet" href="/styles.css"></head><body><a class="skip" href="#main">Skip to content</a><header class="site-header"><div class="header-inner"><a class="brand" href="/"><span class="brand-mark" aria-hidden="true">F</span><span class="brand-name">${escape(config.game)}<span>PLAYER INFORMATION</span></span></a><nav class="site-nav" aria-label="Main navigation"><a href="/"${current('')}>Home</a><a href="${escape(config.website)}" rel="external">Game</a><a href="/support"${current('support')}>Support</a><a href="/privacy"${current('privacy')}>Privacy</a><a class="nav-delete" href="/delete-account"${current('delete-account')}>Account deletion</a></nav></div></header><main class="page-main" id="main">${banner}${body}</main><footer class="site-footer"><p>${escape(config.game)} &middot; ${escape(config.developer)}</p><div class="footer-links"><a href="/privacy">Privacy policy</a><a href="/support">Support</a><a href="/delete-account">Account deletion</a></div></footer></body></html>`);
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">${draft ? '<meta name="robots" content="noindex,nofollow">' : ''}<title>${escape(title)} | ${escape(config.game)}</title><meta name="description" content="${route ? 'FactionFall privacy, player support, and account deletion information.' : 'Meet the units of FactionFall. Build your deck, deploy your faction, and claim the arena.'}"><link rel="icon" href="/assets/brand/crest.png"><link rel="stylesheet" href="/styles.css"></head><body class="${route ? 'information-page' : 'game-home'}"><a class="skip" href="#main">Skip to content</a><header class="site-header"><div class="header-inner"><a class="brand" href="/"><img class="brand-crest" src="/assets/brand/crest.png" alt="" width="512" height="512"><span class="brand-name">${escape(config.game)}<span>THREE FACTIONS. YOUR BATTLE.</span></span></a><nav class="site-nav" aria-label="Main navigation"><a href="/"${current('')}>Home</a><a href="/#characters">The units</a><a href="/support"${current('support')}>Support</a><a href="/privacy"${current('privacy')}>Privacy</a><a class="nav-delete" href="/delete-account"${current('delete-account')}>Account deletion</a></nav></div></header><main class="page-main" id="main">${banner}${body}</main><footer class="site-footer"><p>${escape(config.game)} &middot; ${escape(config.developer)}</p><div class="footer-links"><a href="/privacy">Privacy policy</a><a href="/support">Support</a><a href="/delete-account">Account deletion</a></div></footer></body></html>`);
 }
 await copyFile(join(root, 'styles.css'), join(root, 'dist/styles.css'));
 await copyFile(join(root, 'delete-account.js'), join(root, 'dist/delete-account.js'));
+await cp(join(root, 'assets'), join(root, 'dist/assets'), { recursive: true });
 await writeFile(join(root, 'dist/404.html'), '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found | FactionFall</title><link rel="stylesheet" href="/styles.css"></head><body><main><h1>Page not found</h1><a href="/">Return to FactionFall</a></main></body></html>');
-await writeFile(join(root, 'dist/_headers'), `/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: no-referrer\n  X-Frame-Options: DENY\n  Content-Security-Policy: default-src 'none'; style-src 'self'; script-src 'self'; connect-src 'self' ${apiBaseUrl}; base-uri 'none'; form-action 'none'; frame-ancestors 'none'\n${draft ? '  X-Robots-Tag: noindex, nofollow\n' : ''}`);
+await writeFile(join(root, 'dist/_headers'), `/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: no-referrer\n  X-Frame-Options: DENY\n  Content-Security-Policy: default-src 'none'; img-src 'self'; font-src 'self'; style-src 'self'; script-src 'self'; connect-src 'self' ${apiBaseUrl}; base-uri 'none'; form-action 'none'; frame-ancestors 'none'\n${draft ? '  X-Robots-Tag: noindex, nofollow\n' : ''}`);
 console.log('Built dist/' + (draft ? ' (draft preview)' : ' (release)'));
