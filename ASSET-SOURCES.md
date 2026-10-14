@@ -18,3 +18,11 @@ The three character portraits are rendered at 768 × 768 with the same three-qua
 Unit descriptions come from the corresponding `Assets/Resources/Cards` definitions. The standalone Google branding banner has not yet been located; the hero uses the verified crest, wordmark font, and game backdrop instead. No unapproved Plague Beast artwork or Study B models are included.
 
 The build copies these assets to `dist/assets`. Images and fonts are served from the same origin, allowed explicitly by the existing restrictive Content Security Policy. No external fonts, image services, tracking, or analytics were added.
+
+## Website card browser
+
+The `/units` page and its 39 static detail pages use `assets/data/cards.json`, exported read-only from Unity's canonical `Assets/Resources/CardRegistry.asset` by `Assets/Editor/WebsiteCardCatalogExport.cs`. Health, movement, range, intervals, charge, spell stats and damage come from the app definitions and `CardDamageDetails.Read`, without assumed buffs. This is a build-time snapshot, not a live backend feed.
+
+Refresh by running Unity's `CRR.EditorTools.WebsiteCardCatalogExport.Export`, then `node scripts/import-game-cards.mjs C:/Users/jjwil/CardFall` and `node build.mjs` here. The import preserves canonical IDs and numeric values. Most art uses the card's actual app portrait; Skitter Pack, Rotball and Bastion use the already reviewed website renders, including the new DesignReview Bastion. No Study B models are introduced. Cards without faction tribe metadata appear under Other rather than assigning a faction.
+
+Search/filter/sort is progressive enhancement; every card and detail route is usable without JavaScript. No authentication, cookies, owned-card data or account requests are needed for this catalog. Preview changes remain local until deployed.

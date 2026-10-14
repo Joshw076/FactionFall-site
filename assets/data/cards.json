@@ -1,0 +1,4076 @@
+{
+  "exportedAt": "2026-10-14T02:55:14.0285764+00:00",
+  "cards": [
+    {
+      "id": "Aegis",
+      "name": "Aegis",
+      "description": "Flying melee tank. Charges its ward over time and when damaged. Blocks the next damage event for a nearby ally, or itself when alone.",
+      "type": "Unit",
+      "faction": "Constructs",
+      "portrait": "Assets/Art/Cards/Illustrations/Portraits/Aegis.png",
+      "details": "Health: 1200 | Speed: 1.75\r\nTribes: Robot | Flying | Combat unit\r\nMelee | Range: 1.1 | Attack interval: 1.8s\r\nUltimate: AegisWard | Required charge: 100\r\nCharge: 5.56/s, 0/hit, 10/damage taken, 0/kill",
+      "foreground": "Assets/Art/Cards/Illustrations/Layers/Foregrounds/Aegis.png",
+      "background": "Assets/Art/Cards/Illustrations/Layers/Backgrounds/Robot.png",
+      "frame": "Assets/Art/UI/Resources/UI/BattleKit/CardFrameNeutral.png",
+      "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
+      "ultimateCrest": "Assets/Art/UI/Resources/UI/BattleKit/UltimateCrestNeutral.png",
+      "mana": 4,
+      "tags": [
+        "Flying",
+        "Melee"
+      ],
+      "stats": [
+        {
+          "group": "Unit stats",
+          "label": "Health",
+          "suffix": "",
+          "metric": "health",
+          "value": 1200
+        },
+        {
+          "group": "Unit stats",
+          "label": "Movement speed",
+          "suffix": "",
+          "metric": "movementSpeed",
+          "value": 1.75
+        },
+        {
+          "group": "Unit stats",
+          "label": "Attack range",
+          "suffix": "",
+          "metric": "attackRange",
+          "value": 1.100000023841858
+        },
+        {
+          "group": "Unit stats",
+          "label": "Attack interval",
+          "suffix": " sec",
+          "metric": "attackInterval",
+          "value": 1.7999999523162842
+        },
+        {
+          "group": "Ultimate: AegisWard",
+          "label": "Required charge",
+          "suffix": "",
+          "metric": "charge",
+          "value": 100
+        },
+        {
+          "group": "Ultimate: AegisWard",
+          "label": "Passive charge",
+          "suffix": " / sec",
+          "metric": "passiveCharge",
+          "value": 5.55555534362793
+        },
+        {
+          "group": "Ultimate: AegisWard",
+          "label": "Charge per damage taken",
+          "suffix": "",
+          "metric": "chargePerDamage",
+          "value": 10
+        },
+        {
+          "group": "Attack damage",
+          "label": "Damage per hit",
+          "suffix": "",
+          "metric": "damage",
+          "value": 30
+        }
+      ],
+      "artWindow": [
+        {
+          "x": 0.1708860695362091,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.8291139006614685,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.12656250596046448
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.8270041942596436,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.17299577593803406,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.12656250596046448
+        }
+      ],
+      "image": "/assets/cards/aegis.png",
+      "foregroundImage": "/assets/cards/aegis-foreground.png",
+      "backgroundImage": "/assets/cards/aegis-background.png",
+      "frameImage": "/assets/cards/aegis-frame.png",
+      "costIndicatorImage": "/assets/cards/aegis-costIndicator.png",
+      "ultimateCrestImage": "/assets/cards/aegis-ultimateCrest.png"
+    },
+    {
+      "id": "Bastion",
+      "name": "Bastion",
+      "description": "Slow armored tank with a short-range splash attack.",
+      "type": "Unit",
+      "faction": "Constructs",
+      "portrait": "Assets/Art/Cards/Illustrations/Portraits/Bastion.png",
+      "details": "Health: 940 | Speed: 1\r\nTribes: Robot | Ground | Combat unit\r\nMelee | Range: 1.5 | Attack interval: 2s",
+      "foreground": "Assets/Art/Cards/Illustrations/Layers/Foregrounds/Bastion.png",
+      "background": "Assets/Art/Cards/Illustrations/Layers/Backgrounds/Robot.png",
+      "frame": "Assets/Art/UI/Resources/UI/BattleKit/CardFrameNeutral.png",
+      "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
+      "ultimateCrest": "",
+      "mana": 3,
+      "tags": [
+        "Ground",
+        "Melee"
+      ],
+      "stats": [
+        {
+          "group": "Unit stats",
+          "label": "Health",
+          "suffix": "",
+          "metric": "health",
+          "value": 940
+        },
+        {
+          "group": "Unit stats",
+          "label": "Movement speed",
+          "suffix": "",
+          "metric": "movementSpeed",
+          "value": 1
+        },
+        {
+          "group": "Unit stats",
+          "label": "Attack range",
+          "suffix": "",
+          "metric": "attackRange",
+          "value": 1.5
+        },
+        {
+          "group": "Unit stats",
+          "label": "Attack interval",
+          "suffix": " sec",
+          "metric": "attackInterval",
+          "value": 2
+        },
+        {
+          "group": "Attack damage",
+          "label": "Area damage per target",
+          "suffix": "",
+          "metric": "damage",
+          "value": 70
+        },
+        {
+          "group": "Attack damage",
+          "label": "Area radius",
+          "suffix": "",
+          "metric": "radius",
+          "value": 1
+        }
+      ],
+      "artWindow": [
+        {
+          "x": 0.1708860695362091,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.8291139006614685,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.12656250596046448
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.8270041942596436,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.17299577593803406,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.12656250596046448
+        }
+      ],
+      "image": "/assets/cards/bastion.png",
+      "foregroundImage": "/assets/cards/bastion-foreground.png",
+      "backgroundImage": "/assets/cards/bastion-background.png",
+      "frameImage": "/assets/cards/bastion-frame.png",
+      "costIndicatorImage": "/assets/cards/bastion-costIndicator.png"
+    },
+    {
+      "id": "Corpse Wagon",
+      "name": "Corpse Wagon",
+      "description": "Slow siege wagon carrying two Plague Husks. Detonates on enemy buildings for 450 damage (900 against master bases) and releases passengers after its death animation.",
+      "type": "Unit",
+      "faction": "Undead",
+      "portrait": "Assets/Art/Cards/Illustrations/Portraits/Corpse Wagon.png",
+      "details": "Health: 480 | Speed: 1\r\nTribes: Undead | Ground | Combat unit\r\nMelee | Range: 0.65 | Attack interval: 1s",
+      "foreground": "Assets/Art/Cards/Illustrations/Layers/Foregrounds/Corpse Wagon.png",
+      "background": "Assets/Art/Cards/Illustrations/Layers/Backgrounds/Undead.png",
+      "frame": "Assets/Art/UI/Resources/UI/BattleKit/CardFrameNeutral.png",
+      "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
+      "ultimateCrest": "",
+      "mana": 7,
+      "tags": [
+        "Contact detonation",
+        "Ground",
+        "Siege"
+      ],
+      "stats": [
+        {
+          "group": "Unit stats",
+          "label": "Health",
+          "suffix": "",
+          "metric": "health",
+          "value": 480
+        },
+        {
+          "group": "Unit stats",
+          "label": "Movement speed",
+          "suffix": "",
+          "metric": "movementSpeed",
+          "value": 1
+        },
+        {
+          "group": "Unit stats",
+          "label": "Attack range",
+          "suffix": "",
+          "metric": "attackRange",
+          "value": 0.6499999761581421
+        },
+        {
+          "group": "Unit stats",
+          "label": "Attack interval",
+          "suffix": " sec",
+          "metric": "attackInterval",
+          "value": 1
+        },
+        {
+          "group": "Contact damage",
+          "label": "Damage per hit",
+          "suffix": "",
+          "metric": "damage",
+          "value": 450
+        }
+      ],
+      "artWindow": [
+        {
+          "x": 0.1708860695362091,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.8291139006614685,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.12656250596046448
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.8270041942596436,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.17299577593803406,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.12656250596046448
+        }
+      ],
+      "image": "/assets/cards/corpse-wagon.png",
+      "foregroundImage": "/assets/cards/corpse-wagon-foreground.png",
+      "backgroundImage": "/assets/cards/corpse-wagon-background.png",
+      "frameImage": "/assets/cards/corpse-wagon-frame.png",
+      "costIndicatorImage": "/assets/cards/corpse-wagon-costIndicator.png"
+    },
+    {
+      "id": "Crawling Hands",
+      "name": "Crawling Hands",
+      "description": "Three extremely weak bodies for cycling and sacrifice.",
+      "type": "Unit",
+      "faction": "Undead",
+      "portrait": "Assets/Art/Cards/Illustrations/Portraits/Crawling Hands.png",
+      "details": "Squad: 3 units | Circle formation\r\n3x Crawling Hand: Health: 120 | Speed: 2\r\nTribes: Undead | Ground | Combat unit\r\nMelee | Range: 1.6 | Attack interval: 1.8s",
+      "foreground": "Assets/Art/Cards/Illustrations/Layers/Foregrounds/Crawling Hands.png",
+      "background": "Assets/Art/Cards/Illustrations/Layers/Backgrounds/Undead.png",
+      "frame": "Assets/Art/UI/Resources/UI/BattleKit/CardFrameNeutral.png",
+      "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
+      "ultimateCrest": "",
+      "mana": 2,
+      "tags": [
+        "3 units",
+        "Ground",
+        "Melee"
+      ],
+      "stats": [
+        {
+          "group": "Crawling Hand · per unit",
+          "label": "Health",
+          "suffix": "",
+          "metric": "health",
+          "value": 120
+        },
+        {
+          "group": "Crawling Hand · per unit",
+          "label": "Movement speed",
+          "suffix": "",
+          "metric": "movementSpeed",
+          "value": 2
+        },
+        {
+          "group": "Crawling Hand · per unit",
+          "label": "Attack range",
+          "suffix": "",
+          "metric": "attackRange",
+          "value": 1.600000023841858
+        },
+        {
+          "group": "Crawling Hand · per unit",
+          "label": "Attack interval",
+          "suffix": " sec",
+          "metric": "attackInterval",
+          "value": 1.7999999523162842
+        },
+        {
+          "group": "Crawling Hand (per unit): Attack damage",
+          "label": "Damage per hit",
+          "suffix": "",
+          "metric": "damage",
+          "value": 30
+        }
+      ],
+      "artWindow": [
+        {
+          "x": 0.1708860695362091,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.8291139006614685,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.12656250596046448
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.8270041942596436,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.17299577593803406,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.12656250596046448
+        }
+      ],
+      "image": "/assets/cards/crawling-hands.png",
+      "foregroundImage": "/assets/cards/crawling-hands-foreground.png",
+      "backgroundImage": "/assets/cards/crawling-hands-background.png",
+      "frameImage": "/assets/cards/crawling-hands-frame.png",
+      "costIndicatorImage": "/assets/cards/crawling-hands-costIndicator.png"
+    },
+    {
+      "id": "Deaths Bargain",
+      "name": "Deaths Bargain",
+      "description": "Sacrifice friendlies in an area to raise three Shardlings.",
+      "type": "Spell",
+      "faction": "Undead",
+      "portrait": "Assets/Art/Cards/Illustrations/Portraits/Deaths Bargain.png",
+      "details": "Impact radius: 2.5\r\nDuration: 0s | Travel speed: 9\r\nMovement: Parabolic | Origin: SpawnAtCastPoint",
+      "foreground": "Assets/Art/Cards/Illustrations/Layers/Foregrounds/Deaths Bargain.png",
+      "background": "Assets/Art/Cards/Illustrations/Layers/Backgrounds/Undead.png",
+      "frame": "Assets/Art/UI/Resources/UI/BattleKit/CardFrameSpellNeutral.png",
+      "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
+      "ultimateCrest": "",
+      "mana": 2,
+      "tags": [],
+      "stats": [
+        {
+          "group": "Spell",
+          "label": "Impact radius",
+          "suffix": "",
+          "metric": "impactRadius",
+          "value": 2.5
+        },
+        {
+          "group": "Spell",
+          "label": "Duration",
+          "suffix": " sec",
+          "metric": "duration",
+          "value": 0
+        },
+        {
+          "group": "Spell",
+          "label": "Travel speed",
+          "suffix": "",
+          "metric": "travelSpeed",
+          "value": 9
+        }
+      ],
+      "artWindow": [
+        {
+          "x": 0.31283602118492126,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.6871640086174011,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.23169417679309845
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.7683058381080627
+        },
+        {
+          "x": 0.6871640086174011,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.31283602118492126,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.7683058381080627
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.23169417679309845
+        }
+      ],
+      "image": "/assets/cards/deaths-bargain.png",
+      "foregroundImage": "/assets/cards/deaths-bargain-foreground.png",
+      "backgroundImage": "/assets/cards/deaths-bargain-background.png",
+      "frameImage": "/assets/cards/deaths-bargain-frame.png",
+      "costIndicatorImage": "/assets/cards/deaths-bargain-costIndicator.png"
+    },
+    {
+      "id": "Delver",
+      "name": "Delver",
+      "description": "Harvests mana. Charges 20/100 per second, then burrows toward a mine or enemy building at speed 4, then erupts for area damage.",
+      "type": "Unit",
+      "faction": "Constructs",
+      "portrait": "Assets/Art/Cards/Illustrations/Portraits/Delver.png",
+      "details": "Health: 540 | Speed: 1.5\r\nTribes: Robot | Ground | Robot Miner\r\nMelee | Range: 1.6 | Attack interval: 1.4s\r\nAbility: DelverBurrow | Required charge: 100\r\nCharge: 20/s, 0/hit, 0/damage taken, 0/kill",
+      "foreground": "Assets/Art/Cards/Illustrations/Layers/Foregrounds/Delver.png",
+      "background": "Assets/Art/Cards/Illustrations/Layers/Backgrounds/Robot.png",
+      "frame": "Assets/Art/UI/Resources/UI/BattleKit/CardFrameNeutral.png",
+      "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
+      "ultimateCrest": "",
+      "mana": 2,
+      "tags": [
+        "Ground",
+        "Melee",
+        "Miner"
+      ],
+      "stats": [
+        {
+          "group": "Unit stats",
+          "label": "Health",
+          "suffix": "",
+          "metric": "health",
+          "value": 540
+        },
+        {
+          "group": "Unit stats",
+          "label": "Movement speed",
+          "suffix": "",
+          "metric": "movementSpeed",
+          "value": 1.5
+        },
+        {
+          "group": "Unit stats",
+          "label": "Attack range",
+          "suffix": "",
+          "metric": "attackRange",
+          "value": 1.600000023841858
+        },
+        {
+          "group": "Unit stats",
+          "label": "Attack interval",
+          "suffix": " sec",
+          "metric": "attackInterval",
+          "value": 1.399999976158142
+        },
+        {
+          "group": "Ability: DelverBurrow",
+          "label": "Required charge",
+          "suffix": "",
+          "metric": "charge",
+          "value": 100
+        },
+        {
+          "group": "Ability: DelverBurrow",
+          "label": "Passive charge",
+          "suffix": " / sec",
+          "metric": "passiveCharge",
+          "value": 20
+        },
+        {
+          "group": "Attack damage",
+          "label": "Damage per hit",
+          "suffix": "",
+          "metric": "damage",
+          "value": 60
+        }
+      ],
+      "artWindow": [
+        {
+          "x": 0.1708860695362091,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.8291139006614685,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.12656250596046448
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.8270041942596436,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.17299577593803406,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.12656250596046448
+        }
+      ],
+      "image": "/assets/cards/delver.png",
+      "foregroundImage": "/assets/cards/delver-foreground.png",
+      "backgroundImage": "/assets/cards/delver-background.png",
+      "frameImage": "/assets/cards/delver-frame.png",
+      "costIndicatorImage": "/assets/cards/delver-costIndicator.png"
+    },
+    {
+      "id": "Diminish",
+      "name": "Diminish",
+      "description": "Weakens enemy damage and movement inside a lingering zone.",
+      "type": "Spell",
+      "faction": "Undead",
+      "portrait": "Assets/Art/Cards/Illustrations/Portraits/Diminish.png",
+      "details": "Impact radius: 3.5\r\nDuration: 5s | Travel speed: 9\r\nMovement: Parabolic | Origin: SpawnAtCastPoint\r\nPersistent zone ticks every 1s",
+      "foreground": "Assets/Art/Cards/Illustrations/Layers/Foregrounds/Diminish.png",
+      "background": "Assets/Art/Cards/Illustrations/Layers/Backgrounds/Undead.png",
+      "frame": "Assets/Art/UI/Resources/UI/BattleKit/CardFrameSpellNeutral.png",
+      "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
+      "ultimateCrest": "",
+      "mana": 2,
+      "tags": [],
+      "stats": [
+        {
+          "group": "Spell",
+          "label": "Impact radius",
+          "suffix": "",
+          "metric": "impactRadius",
+          "value": 3.5
+        },
+        {
+          "group": "Spell",
+          "label": "Duration",
+          "suffix": " sec",
+          "metric": "duration",
+          "value": 5
+        },
+        {
+          "group": "Spell",
+          "label": "Travel speed",
+          "suffix": "",
+          "metric": "travelSpeed",
+          "value": 9
+        },
+        {
+          "group": "Spell",
+          "label": "Zone interval",
+          "suffix": " sec",
+          "metric": "zoneInterval",
+          "value": 1
+        }
+      ],
+      "artWindow": [
+        {
+          "x": 0.31283602118492126,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.6871640086174011,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.23169417679309845
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.7683058381080627
+        },
+        {
+          "x": 0.6871640086174011,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.31283602118492126,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.7683058381080627
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.23169417679309845
+        }
+      ],
+      "image": "/assets/cards/diminish.png",
+      "foregroundImage": "/assets/cards/diminish-foreground.png",
+      "backgroundImage": "/assets/cards/diminish-background.png",
+      "frameImage": "/assets/cards/diminish-frame.png",
+      "costIndicatorImage": "/assets/cards/diminish-costIndicator.png"
+    },
+    {
+      "id": "Echo Caller",
+      "name": "Echo Caller",
+      "description": "Ranged summoner; fires spectral projectiles from its staff.",
+      "type": "Unit",
+      "faction": "Undead",
+      "portrait": "Assets/Art/Cards/Illustrations/Portraits/Echo Caller.png",
+      "details": "Health: 400 | Speed: 1.5\r\nTribes: Undead | Ground | Combat unit\r\nRanged | Range: 4 | Attack interval: 1.3s\r\nUltimate: Ultimate_BoneCaller | Required charge: 64\r\nCharge: 8/s, 0/hit, 0/damage taken, 0/kill",
+      "foreground": "Assets/Art/Cards/Illustrations/Layers/Foregrounds/Echo Caller.png",
+      "background": "Assets/Art/Cards/Illustrations/Layers/Backgrounds/Undead.png",
+      "frame": "Assets/Art/UI/Resources/UI/BattleKit/CardFrameNeutral.png",
+      "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
+      "ultimateCrest": "Assets/Art/UI/Resources/UI/BattleKit/UltimateCrestNeutral.png",
+      "mana": 4,
+      "tags": [
+        "Ground",
+        "Ranged"
+      ],
+      "stats": [
+        {
+          "group": "Unit stats",
+          "label": "Health",
+          "suffix": "",
+          "metric": "health",
+          "value": 400
+        },
+        {
+          "group": "Unit stats",
+          "label": "Movement speed",
+          "suffix": "",
+          "metric": "movementSpeed",
+          "value": 1.5
+        },
+        {
+          "group": "Unit stats",
+          "label": "Attack range",
+          "suffix": "",
+          "metric": "attackRange",
+          "value": 4
+        },
+        {
+          "group": "Unit stats",
+          "label": "Attack interval",
+          "suffix": " sec",
+          "metric": "attackInterval",
+          "value": 1.2999999523162842
+        },
+        {
+          "group": "Ultimate: Ultimate BoneCaller",
+          "label": "Required charge",
+          "suffix": "",
+          "metric": "charge",
+          "value": 64
+        },
+        {
+          "group": "Ultimate: Ultimate BoneCaller",
+          "label": "Passive charge",
+          "suffix": " / sec",
+          "metric": "passiveCharge",
+          "value": 8
+        },
+        {
+          "group": "Attack damage",
+          "label": "Area damage per target",
+          "suffix": "",
+          "metric": "damage",
+          "value": 190
+        },
+        {
+          "group": "Attack damage",
+          "label": "Area radius",
+          "suffix": "",
+          "metric": "radius",
+          "value": 0.20000000298023224
+        }
+      ],
+      "artWindow": [
+        {
+          "x": 0.1708860695362091,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.8291139006614685,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.12656250596046448
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.8270041942596436,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.17299577593803406,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.12656250596046448
+        }
+      ],
+      "image": "/assets/cards/echo-caller.png",
+      "foregroundImage": "/assets/cards/echo-caller-foreground.png",
+      "backgroundImage": "/assets/cards/echo-caller-background.png",
+      "frameImage": "/assets/cards/echo-caller-frame.png",
+      "costIndicatorImage": "/assets/cards/echo-caller-costIndicator.png",
+      "ultimateCrestImage": "/assets/cards/echo-caller-ultimateCrest.png"
+    },
+    {
+      "id": "Fireball",
+      "name": "Fireball",
+      "description": "Lobs a projectile at the selected area.",
+      "type": "Spell",
+      "faction": "Constructs",
+      "portrait": "Assets/Art/Cards/Illustrations/Portraits/Fireball.png",
+      "details": "Impact radius: 2\r\nDuration: 0s | Travel speed: 8\r\nMovement: Parabolic | Origin: LobFromPlayerBase",
+      "foreground": "Assets/Art/Cards/Illustrations/Layers/Foregrounds/Fireball.png",
+      "background": "Assets/Art/Cards/Illustrations/Layers/Backgrounds/Robot.png",
+      "frame": "Assets/Art/UI/Resources/UI/BattleKit/CardFrameSpellNeutral.png",
+      "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
+      "ultimateCrest": "",
+      "mana": 4,
+      "tags": [],
+      "stats": [
+        {
+          "group": "Spell",
+          "label": "Impact radius",
+          "suffix": "",
+          "metric": "impactRadius",
+          "value": 2
+        },
+        {
+          "group": "Spell",
+          "label": "Duration",
+          "suffix": " sec",
+          "metric": "duration",
+          "value": 0
+        },
+        {
+          "group": "Spell",
+          "label": "Travel speed",
+          "suffix": "",
+          "metric": "travelSpeed",
+          "value": 8
+        },
+        {
+          "group": "Spell damage",
+          "label": "Area damage per target · units",
+          "suffix": "",
+          "metric": "damage",
+          "value": 400
+        },
+        {
+          "group": "Spell damage",
+          "label": "Area damage per target · buildings",
+          "suffix": "",
+          "metric": "damage",
+          "value": 200
+        },
+        {
+          "group": "Spell damage",
+          "label": "Area radius",
+          "suffix": "",
+          "metric": "radius",
+          "value": 2
+        }
+      ],
+      "artWindow": [
+        {
+          "x": 0.31283602118492126,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.6871640086174011,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.23169417679309845
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.7683058381080627
+        },
+        {
+          "x": 0.6871640086174011,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.31283602118492126,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.7683058381080627
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.23169417679309845
+        }
+      ],
+      "image": "/assets/cards/fireball.png",
+      "foregroundImage": "/assets/cards/fireball-foreground.png",
+      "backgroundImage": "/assets/cards/fireball-background.png",
+      "frameImage": "/assets/cards/fireball-frame.png",
+      "costIndicatorImage": "/assets/cards/fireball-costIndicator.png"
+    },
+    {
+      "id": "Gearling Foundry",
+      "name": "Gearling Foundry",
+      "description": "Periodically manufactures a Pip while it remains active.",
+      "type": "Unit",
+      "faction": "Constructs",
+      "portrait": "Assets/Art/Cards/Illustrations/Portraits/Gearling Foundry.png",
+      "details": "Health: 400 | Speed: 1\r\nTribes: Robot | Ground | Combat unit\r\nMelee | Range: 1.6 | Attack interval: 1.3s\r\nUltimate: Ultimate_Replicator | Required charge: 60\r\nCharge: 10/s, 0/hit, 0/damage taken, 0/kill",
+      "foreground": "Assets/Art/Cards/Illustrations/Layers/Foregrounds/Gearling Foundry.png",
+      "background": "Assets/Art/Cards/Illustrations/Layers/Backgrounds/Robot.png",
+      "frame": "Assets/Art/UI/Resources/UI/BattleKit/CardFrameNeutral.png",
+      "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
+      "ultimateCrest": "Assets/Art/UI/Resources/UI/BattleKit/UltimateCrestNeutral.png",
+      "mana": 5,
+      "tags": [
+        "Ground",
+        "Melee"
+      ],
+      "stats": [
+        {
+          "group": "Unit stats",
+          "label": "Health",
+          "suffix": "",
+          "metric": "health",
+          "value": 400
+        },
+        {
+          "group": "Unit stats",
+          "label": "Movement speed",
+          "suffix": "",
+          "metric": "movementSpeed",
+          "value": 1
+        },
+        {
+          "group": "Unit stats",
+          "label": "Attack range",
+          "suffix": "",
+          "metric": "attackRange",
+          "value": 1.600000023841858
+        },
+        {
+          "group": "Unit stats",
+          "label": "Attack interval",
+          "suffix": " sec",
+          "metric": "attackInterval",
+          "value": 1.2999999523162842
+        },
+        {
+          "group": "Ultimate: Ultimate Replicator",
+          "label": "Required charge",
+          "suffix": "",
+          "metric": "charge",
+          "value": 60
+        },
+        {
+          "group": "Ultimate: Ultimate Replicator",
+          "label": "Passive charge",
+          "suffix": " / sec",
+          "metric": "passiveCharge",
+          "value": 10
+        },
+        {
+          "group": "Attack damage",
+          "label": "Damage per hit",
+          "suffix": "",
+          "metric": "damage",
+          "value": 190
+        }
+      ],
+      "artWindow": [
+        {
+          "x": 0.1708860695362091,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.8291139006614685,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.12656250596046448
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.8270041942596436,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.17299577593803406,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.12656250596046448
+        }
+      ],
+      "image": "/assets/cards/gearling-foundry.png",
+      "foregroundImage": "/assets/cards/gearling-foundry-foreground.png",
+      "backgroundImage": "/assets/cards/gearling-foundry-background.png",
+      "frameImage": "/assets/cards/gearling-foundry-frame.png",
+      "costIndicatorImage": "/assets/cards/gearling-foundry-costIndicator.png",
+      "ultimateCrestImage": "/assets/cards/gearling-foundry-ultimateCrest.png"
+    },
+    {
+      "id": "Gearlings",
+      "name": "Gearlings",
+      "description": "Four orderly melee Pips.",
+      "type": "Unit",
+      "faction": "Constructs",
+      "portrait": "Assets/Art/Cards/Illustrations/Portraits/Gearlings.png",
+      "details": "Squad: 4 units | Grid formation\r\n4x Gearling: Health: 400 | Speed: 1.5\r\nTribes: Robot | Ground | Combat unit\r\nMelee | Range: 1.6 | Attack interval: 1.6s",
+      "foreground": "Assets/Art/Cards/Illustrations/Layers/Foregrounds/Gearlings.png",
+      "background": "Assets/Art/Cards/Illustrations/Layers/Backgrounds/Robot.png",
+      "frame": "Assets/Art/UI/Resources/UI/BattleKit/CardFrameNeutral.png",
+      "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
+      "ultimateCrest": "",
+      "mana": 5,
+      "tags": [
+        "4 units",
+        "Ground",
+        "Melee"
+      ],
+      "stats": [
+        {
+          "group": "Gearling · per unit",
+          "label": "Health",
+          "suffix": "",
+          "metric": "health",
+          "value": 400
+        },
+        {
+          "group": "Gearling · per unit",
+          "label": "Movement speed",
+          "suffix": "",
+          "metric": "movementSpeed",
+          "value": 1.5
+        },
+        {
+          "group": "Gearling · per unit",
+          "label": "Attack range",
+          "suffix": "",
+          "metric": "attackRange",
+          "value": 1.600000023841858
+        },
+        {
+          "group": "Gearling · per unit",
+          "label": "Attack interval",
+          "suffix": " sec",
+          "metric": "attackInterval",
+          "value": 1.600000023841858
+        },
+        {
+          "group": "Gearling (per unit): Attack damage",
+          "label": "Damage per hit",
+          "suffix": "",
+          "metric": "damage",
+          "value": 70
+        }
+      ],
+      "artWindow": [
+        {
+          "x": 0.1708860695362091,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.8291139006614685,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.12656250596046448
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.8270041942596436,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.17299577593803406,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.12656250596046448
+        }
+      ],
+      "image": "/assets/cards/gearlings.png",
+      "foregroundImage": "/assets/cards/gearlings-foreground.png",
+      "backgroundImage": "/assets/cards/gearlings-background.png",
+      "frameImage": "/assets/cards/gearlings-frame.png",
+      "costIndicatorImage": "/assets/cards/gearlings-costIndicator.png"
+    },
+    {
+      "id": "Glider",
+      "name": "Glider",
+      "description": "Flying Robot interceptor. Fires a blue cannon bolt at ground or flying enemies.",
+      "type": "Unit",
+      "faction": "Constructs",
+      "portrait": "Assets/Art/Cards/Illustrations/Portraits/Glider.png",
+      "details": "Health: 170 | Speed: 1.75\r\nTribes: Robot | Flying | Combat unit\r\nRanged | Range: 2.5 | Attack interval: 1.1s",
+      "foreground": "Assets/Art/Cards/Illustrations/Layers/Foregrounds/Glider.png",
+      "background": "Assets/Art/Cards/Illustrations/Layers/Backgrounds/Robot.png",
+      "frame": "Assets/Art/UI/Resources/UI/BattleKit/CardFrameNeutral.png",
+      "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
+      "ultimateCrest": "",
+      "mana": 3,
+      "tags": [
+        "Flying",
+        "Ranged"
+      ],
+      "stats": [
+        {
+          "group": "Unit stats",
+          "label": "Health",
+          "suffix": "",
+          "metric": "health",
+          "value": 170
+        },
+        {
+          "group": "Unit stats",
+          "label": "Movement speed",
+          "suffix": "",
+          "metric": "movementSpeed",
+          "value": 1.75
+        },
+        {
+          "group": "Unit stats",
+          "label": "Attack range",
+          "suffix": "",
+          "metric": "attackRange",
+          "value": 2.5
+        },
+        {
+          "group": "Unit stats",
+          "label": "Attack interval",
+          "suffix": " sec",
+          "metric": "attackInterval",
+          "value": 1.100000023841858
+        },
+        {
+          "group": "Attack damage",
+          "label": "Damage per hit",
+          "suffix": "",
+          "metric": "damage",
+          "value": 160
+        }
+      ],
+      "artWindow": [
+        {
+          "x": 0.1708860695362091,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.8291139006614685,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.12656250596046448
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.8270041942596436,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.17299577593803406,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.12656250596046448
+        }
+      ],
+      "image": "/assets/cards/glider.png",
+      "foregroundImage": "/assets/cards/glider-foreground.png",
+      "backgroundImage": "/assets/cards/glider-background.png",
+      "frameImage": "/assets/cards/glider-frame.png",
+      "costIndicatorImage": "/assets/cards/glider-costIndicator.png"
+    },
+    {
+      "id": "Healing Aura",
+      "name": "Healing Aura",
+      "description": "Immediately repairs allied units and continues healing the area.",
+      "type": "Spell",
+      "faction": "Constructs",
+      "portrait": "Assets/Art/Cards/Illustrations/Portraits/Healing Aura.png",
+      "details": "Impact radius: 3.4\r\nDuration: 4s | Travel speed: 9\r\nMovement: Parabolic | Origin: SpawnAtCastPoint\r\nPersistent zone ticks every 1s",
+      "foreground": "Assets/Art/Cards/Illustrations/Layers/Foregrounds/Healing Aura.png",
+      "background": "Assets/Art/Cards/Illustrations/Layers/Backgrounds/Robot.png",
+      "frame": "Assets/Art/UI/Resources/UI/BattleKit/CardFrameSpellNeutral.png",
+      "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
+      "ultimateCrest": "",
+      "mana": 3,
+      "tags": [],
+      "stats": [
+        {
+          "group": "Spell",
+          "label": "Impact radius",
+          "suffix": "",
+          "metric": "impactRadius",
+          "value": 3.4000000953674316
+        },
+        {
+          "group": "Spell",
+          "label": "Duration",
+          "suffix": " sec",
+          "metric": "duration",
+          "value": 4
+        },
+        {
+          "group": "Spell",
+          "label": "Travel speed",
+          "suffix": "",
+          "metric": "travelSpeed",
+          "value": 9
+        },
+        {
+          "group": "Spell",
+          "label": "Zone interval",
+          "suffix": " sec",
+          "metric": "zoneInterval",
+          "value": 1
+        }
+      ],
+      "artWindow": [
+        {
+          "x": 0.31283602118492126,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.6871640086174011,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.23169417679309845
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.7683058381080627
+        },
+        {
+          "x": 0.6871640086174011,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.31283602118492126,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.7683058381080627
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.23169417679309845
+        }
+      ],
+      "image": "/assets/cards/healing-aura.png",
+      "foregroundImage": "/assets/cards/healing-aura-foreground.png",
+      "backgroundImage": "/assets/cards/healing-aura-background.png",
+      "frameImage": "/assets/cards/healing-aura-frame.png",
+      "costIndicatorImage": "/assets/cards/healing-aura-costIndicator.png"
+    },
+    {
+      "id": "Hushfield",
+      "name": "Hushfield",
+      "description": "Immediately creates a lingering corruption field.",
+      "type": "Spell",
+      "faction": "Undead",
+      "portrait": "Assets/Art/Cards/Illustrations/Portraits/Hushfield.png",
+      "details": "Impact radius: 3.2\r\nDuration: 8s | Travel speed: 9\r\nMovement: Parabolic | Origin: SpawnAtCastPoint\r\nPersistent zone ticks every 1s",
+      "foreground": "Assets/Art/Cards/Illustrations/Layers/Foregrounds/Hushfield.png",
+      "background": "Assets/Art/Cards/Illustrations/Layers/Backgrounds/Undead.png",
+      "frame": "Assets/Art/UI/Resources/UI/BattleKit/CardFrameSpellNeutral.png",
+      "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
+      "ultimateCrest": "",
+      "mana": 3,
+      "tags": [],
+      "stats": [
+        {
+          "group": "Spell",
+          "label": "Impact radius",
+          "suffix": "",
+          "metric": "impactRadius",
+          "value": 3.200000047683716
+        },
+        {
+          "group": "Spell",
+          "label": "Duration",
+          "suffix": " sec",
+          "metric": "duration",
+          "value": 8
+        },
+        {
+          "group": "Spell",
+          "label": "Travel speed",
+          "suffix": "",
+          "metric": "travelSpeed",
+          "value": 9
+        },
+        {
+          "group": "Spell",
+          "label": "Zone interval",
+          "suffix": " sec",
+          "metric": "zoneInterval",
+          "value": 1
+        },
+        {
+          "group": "Spell damage · lingering area",
+          "label": "Damage per tick · units",
+          "suffix": "",
+          "metric": "damage",
+          "value": 70
+        },
+        {
+          "group": "Spell damage · lingering area",
+          "label": "Damage per tick · buildings",
+          "suffix": "",
+          "metric": "damage",
+          "value": 35
+        },
+        {
+          "group": "Spell damage · lingering area",
+          "label": "Area damage / sec · units",
+          "suffix": "",
+          "metric": "dps",
+          "value": 70
+        },
+        {
+          "group": "Spell damage · lingering area",
+          "label": "Tick interval",
+          "suffix": " sec",
+          "metric": "interval",
+          "value": 1
+        },
+        {
+          "group": "Spell damage · lingering area",
+          "label": "Area duration",
+          "suffix": " sec",
+          "metric": "duration",
+          "value": 8
+        },
+        {
+          "group": "Spell damage · lingering area",
+          "label": "Area radius",
+          "suffix": "",
+          "metric": "radius",
+          "value": 3.200000047683716
+        }
+      ],
+      "artWindow": [
+        {
+          "x": 0.31283602118492126,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.6871640086174011,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.23169417679309845
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.7683058381080627
+        },
+        {
+          "x": 0.6871640086174011,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.31283602118492126,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.7683058381080627
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.23169417679309845
+        }
+      ],
+      "image": "/assets/cards/hushfield.png",
+      "foregroundImage": "/assets/cards/hushfield-foreground.png",
+      "backgroundImage": "/assets/cards/hushfield-background.png",
+      "frameImage": "/assets/cards/hushfield-frame.png",
+      "costIndicatorImage": "/assets/cards/hushfield-costIndicator.png"
+    },
+    {
+      "id": "Keepsake",
+      "name": "Keepsake",
+      "description": "Nearby allied Undead and summoned units deal 25% more damage. Multiple copies do not stack.",
+      "type": "Unit",
+      "faction": "Undead",
+      "portrait": "Assets/Art/Cards/Illustrations/Portraits/Keepsake.png",
+      "details": "Health: 680 | Speed: 1\r\nTribes: Undead | Ground | Combat unit\r\nMelee | Range: 1.7 | Attack interval: 1.4s",
+      "foreground": "Assets/Art/Cards/Illustrations/Layers/Foregrounds/Keepsake.png",
+      "background": "Assets/Art/Cards/Illustrations/Layers/Backgrounds/Undead.png",
+      "frame": "Assets/Art/UI/Resources/UI/BattleKit/CardFrameNeutral.png",
+      "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
+      "ultimateCrest": "",
+      "mana": 4,
+      "tags": [
+        "Ground",
+        "Melee"
+      ],
+      "stats": [
+        {
+          "group": "Unit stats",
+          "label": "Health",
+          "suffix": "",
+          "metric": "health",
+          "value": 680
+        },
+        {
+          "group": "Unit stats",
+          "label": "Movement speed",
+          "suffix": "",
+          "metric": "movementSpeed",
+          "value": 1
+        },
+        {
+          "group": "Unit stats",
+          "label": "Attack range",
+          "suffix": "",
+          "metric": "attackRange",
+          "value": 1.7000000476837158
+        },
+        {
+          "group": "Unit stats",
+          "label": "Attack interval",
+          "suffix": " sec",
+          "metric": "attackInterval",
+          "value": 1.399999976158142
+        },
+        {
+          "group": "Attack damage",
+          "label": "Damage per hit",
+          "suffix": "",
+          "metric": "damage",
+          "value": 60
+        }
+      ],
+      "artWindow": [
+        {
+          "x": 0.1708860695362091,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.8291139006614685,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.12656250596046448
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.8270041942596436,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.17299577593803406,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.12656250596046448
+        }
+      ],
+      "image": "/assets/cards/keepsake.png",
+      "foregroundImage": "/assets/cards/keepsake-foreground.png",
+      "backgroundImage": "/assets/cards/keepsake-background.png",
+      "frameImage": "/assets/cards/keepsake-frame.png",
+      "costIndicatorImage": "/assets/cards/keepsake-costIndicator.png"
+    },
+    {
+      "id": "Leech",
+      "name": "Leech",
+      "description": "Heals itself for thirty percent of the damage it deals.",
+      "type": "Unit",
+      "faction": "Undead",
+      "portrait": "Assets/Art/Cards/Illustrations/Portraits/Leech.png",
+      "details": "Health: 1040 | Speed: 1.5\r\nTribes: Undead | Ground | Combat unit\r\nMelee | Range: 1.9 | Attack interval: 1.7s",
+      "foreground": "Assets/Art/Cards/Illustrations/Layers/Foregrounds/Leech.png",
+      "background": "Assets/Art/Cards/Illustrations/Layers/Backgrounds/Undead.png",
+      "frame": "Assets/Art/UI/Resources/UI/BattleKit/CardFrameNeutral.png",
+      "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
+      "ultimateCrest": "",
+      "mana": 3,
+      "tags": [
+        "Ground",
+        "Melee"
+      ],
+      "stats": [
+        {
+          "group": "Unit stats",
+          "label": "Health",
+          "suffix": "",
+          "metric": "health",
+          "value": 1040
+        },
+        {
+          "group": "Unit stats",
+          "label": "Movement speed",
+          "suffix": "",
+          "metric": "movementSpeed",
+          "value": 1.5
+        },
+        {
+          "group": "Unit stats",
+          "label": "Attack range",
+          "suffix": "",
+          "metric": "attackRange",
+          "value": 1.899999976158142
+        },
+        {
+          "group": "Unit stats",
+          "label": "Attack interval",
+          "suffix": " sec",
+          "metric": "attackInterval",
+          "value": 1.7000000476837158
+        },
+        {
+          "group": "Attack damage",
+          "label": "Damage per hit",
+          "suffix": "",
+          "metric": "damage",
+          "value": 110
+        }
+      ],
+      "artWindow": [
+        {
+          "x": 0.1708860695362091,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.8291139006614685,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.12656250596046448
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.8270041942596436,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.17299577593803406,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.12656250596046448
+        }
+      ],
+      "image": "/assets/cards/leech.png",
+      "foregroundImage": "/assets/cards/leech-foreground.png",
+      "backgroundImage": "/assets/cards/leech-background.png",
+      "frameImage": "/assets/cards/leech-frame.png",
+      "costIndicatorImage": "/assets/cards/leech-costIndicator.png"
+    },
+    {
+      "id": "Lodestone",
+      "name": "Lodestone",
+      "description": "Charges a ranged bolt that forms a vortex, pulling nearby enemies together.",
+      "type": "Unit",
+      "faction": "Constructs",
+      "portrait": "Assets/Art/Cards/Illustrations/Portraits/Lodestone.png",
+      "details": "Health: 3400 | Speed: 1.5\r\nTribes: Robot | Ground | Combat unit\r\nRanged | Range: 4.5 | Attack interval: 4.5s",
+      "foreground": "Assets/Art/Cards/Illustrations/Layers/Foregrounds/Lodestone.png",
+      "background": "Assets/Art/Cards/Illustrations/Layers/Backgrounds/Robot.png",
+      "frame": "Assets/Art/UI/Resources/UI/BattleKit/CardFrameNeutral.png",
+      "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
+      "ultimateCrest": "",
+      "mana": 6,
+      "tags": [
+        "Ground",
+        "Ranged"
+      ],
+      "stats": [
+        {
+          "group": "Unit stats",
+          "label": "Health",
+          "suffix": "",
+          "metric": "health",
+          "value": 3400
+        },
+        {
+          "group": "Unit stats",
+          "label": "Movement speed",
+          "suffix": "",
+          "metric": "movementSpeed",
+          "value": 1.5
+        },
+        {
+          "group": "Unit stats",
+          "label": "Attack range",
+          "suffix": "",
+          "metric": "attackRange",
+          "value": 4.5
+        },
+        {
+          "group": "Unit stats",
+          "label": "Attack interval",
+          "suffix": " sec",
+          "metric": "attackInterval",
+          "value": 4.5
+        },
+        {
+          "group": "Attack damage",
+          "label": "Area damage per target",
+          "suffix": "",
+          "metric": "damage",
+          "value": 120
+        },
+        {
+          "group": "Attack damage",
+          "label": "Area radius",
+          "suffix": "",
+          "metric": "radius",
+          "value": 0.3499999940395355
+        }
+      ],
+      "artWindow": [
+        {
+          "x": 0.1708860695362091,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.8291139006614685,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.12656250596046448
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.8270041942596436,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.17299577593803406,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.12656250596046448
+        }
+      ],
+      "image": "/assets/cards/lodestone.png",
+      "foregroundImage": "/assets/cards/lodestone-foreground.png",
+      "backgroundImage": "/assets/cards/lodestone-background.png",
+      "frameImage": "/assets/cards/lodestone-frame.png",
+      "costIndicatorImage": "/assets/cards/lodestone-costIndicator.png"
+    },
+    {
+      "id": "Mender",
+      "name": "Mender",
+      "description": "Heals injured allies through a continuous beam; joins melee combat when nearby allies are healthy.",
+      "type": "Unit",
+      "faction": "Constructs",
+      "portrait": "Assets/Art/Cards/Illustrations/Portraits/Mender.png",
+      "details": "Health: 480 | Speed: 1.75\r\nTribes: Robot | Flying | Combat unit\r\nMelee | Range: 1.6 | Attack interval: 1.5s",
+      "foreground": "Assets/Art/Cards/Illustrations/Layers/Foregrounds/Mender.png",
+      "background": "Assets/Art/Cards/Illustrations/Layers/Backgrounds/Robot.png",
+      "frame": "Assets/Art/UI/Resources/UI/BattleKit/CardFrameNeutral.png",
+      "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
+      "ultimateCrest": "",
+      "mana": 4,
+      "tags": [
+        "Flying",
+        "Melee"
+      ],
+      "stats": [
+        {
+          "group": "Unit stats",
+          "label": "Health",
+          "suffix": "",
+          "metric": "health",
+          "value": 480
+        },
+        {
+          "group": "Unit stats",
+          "label": "Movement speed",
+          "suffix": "",
+          "metric": "movementSpeed",
+          "value": 1.75
+        },
+        {
+          "group": "Unit stats",
+          "label": "Attack range",
+          "suffix": "",
+          "metric": "attackRange",
+          "value": 1.600000023841858
+        },
+        {
+          "group": "Unit stats",
+          "label": "Attack interval",
+          "suffix": " sec",
+          "metric": "attackInterval",
+          "value": 1.5
+        },
+        {
+          "group": "Attack damage",
+          "label": "Damage per hit",
+          "suffix": "",
+          "metric": "damage",
+          "value": 60
+        }
+      ],
+      "artWindow": [
+        {
+          "x": 0.1708860695362091,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.8291139006614685,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.12656250596046448
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.8270041942596436,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.17299577593803406,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.12656250596046448
+        }
+      ],
+      "image": "/assets/cards/mender.png",
+      "foregroundImage": "/assets/cards/mender-foreground.png",
+      "backgroundImage": "/assets/cards/mender-background.png",
+      "frameImage": "/assets/cards/mender-frame.png",
+      "costIndicatorImage": "/assets/cards/mender-costIndicator.png"
+    },
+    {
+      "id": "Monolith",
+      "name": "Monolith",
+      "description": "Massive tank that erupts into crystal shrapnel on death.",
+      "type": "Unit",
+      "faction": "Undead",
+      "portrait": "Assets/Art/Cards/Illustrations/Portraits/Monolith.png",
+      "details": "Health: 2900 | Speed: 1\r\nTribes: Undead | Ground | Combat unit\r\nMelee | Range: 1.9 | Attack interval: 2.7s",
+      "foreground": "Assets/Art/Cards/Illustrations/Layers/Foregrounds/Monolith.png",
+      "background": "Assets/Art/Cards/Illustrations/Layers/Backgrounds/Undead.png",
+      "frame": "Assets/Art/UI/Resources/UI/BattleKit/CardFrameNeutral.png",
+      "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
+      "ultimateCrest": "",
+      "mana": 6,
+      "tags": [
+        "Ground",
+        "Melee"
+      ],
+      "stats": [
+        {
+          "group": "Unit stats",
+          "label": "Health",
+          "suffix": "",
+          "metric": "health",
+          "value": 2900
+        },
+        {
+          "group": "Unit stats",
+          "label": "Movement speed",
+          "suffix": "",
+          "metric": "movementSpeed",
+          "value": 1
+        },
+        {
+          "group": "Unit stats",
+          "label": "Attack range",
+          "suffix": "",
+          "metric": "attackRange",
+          "value": 1.899999976158142
+        },
+        {
+          "group": "Unit stats",
+          "label": "Attack interval",
+          "suffix": " sec",
+          "metric": "attackInterval",
+          "value": 2.700000047683716
+        },
+        {
+          "group": "Attack damage",
+          "label": "Damage per hit",
+          "suffix": "",
+          "metric": "damage",
+          "value": 180
+        },
+        {
+          "group": "On death",
+          "label": "Area damage per target",
+          "suffix": "",
+          "metric": "damage",
+          "value": 265
+        },
+        {
+          "group": "On death",
+          "label": "Area radius",
+          "suffix": "",
+          "metric": "radius",
+          "value": 2.5
+        }
+      ],
+      "artWindow": [
+        {
+          "x": 0.1708860695362091,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.8291139006614685,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.12656250596046448
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.8270041942596436,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.17299577593803406,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.12656250596046448
+        }
+      ],
+      "image": "/assets/cards/monolith.png",
+      "foregroundImage": "/assets/cards/monolith-foreground.png",
+      "backgroundImage": "/assets/cards/monolith-background.png",
+      "frameImage": "/assets/cards/monolith-frame.png",
+      "costIndicatorImage": "/assets/cards/monolith-costIndicator.png"
+    },
+    {
+      "id": "Needle Choir",
+      "name": "Needle Choir",
+      "description": "Three fragile ranged Shardlings that reward a strong frontline.",
+      "type": "Unit",
+      "faction": "Undead",
+      "portrait": "Assets/Art/Cards/Illustrations/Portraits/Needle Choir.png",
+      "details": "Squad: 3 units | Line formation\r\n3x Needle: Health: 80 | Speed: 1.5\r\nTribes: Undead | Ground | Combat unit\r\nRanged | Range: 3.25 | Attack interval: 1.6s",
+      "foreground": "Assets/Art/Cards/Illustrations/Layers/Foregrounds/Needle Choir.png",
+      "background": "Assets/Art/Cards/Illustrations/Layers/Backgrounds/Undead.png",
+      "frame": "Assets/Art/UI/Resources/UI/BattleKit/CardFrameNeutral.png",
+      "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
+      "ultimateCrest": "",
+      "mana": 3,
+      "tags": [
+        "3 units",
+        "Ground",
+        "Ranged"
+      ],
+      "stats": [
+        {
+          "group": "Needle · per unit",
+          "label": "Health",
+          "suffix": "",
+          "metric": "health",
+          "value": 80
+        },
+        {
+          "group": "Needle · per unit",
+          "label": "Movement speed",
+          "suffix": "",
+          "metric": "movementSpeed",
+          "value": 1.5
+        },
+        {
+          "group": "Needle · per unit",
+          "label": "Attack range",
+          "suffix": "",
+          "metric": "attackRange",
+          "value": 3.25
+        },
+        {
+          "group": "Needle · per unit",
+          "label": "Attack interval",
+          "suffix": " sec",
+          "metric": "attackInterval",
+          "value": 1.600000023841858
+        },
+        {
+          "group": "Needle (per unit): Attack damage",
+          "label": "Damage per hit",
+          "suffix": "",
+          "metric": "damage",
+          "value": 90
+        }
+      ],
+      "artWindow": [
+        {
+          "x": 0.1708860695362091,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.8291139006614685,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.12656250596046448
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.8270041942596436,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.17299577593803406,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.12656250596046448
+        }
+      ],
+      "image": "/assets/cards/needle-choir.png",
+      "foregroundImage": "/assets/cards/needle-choir-foreground.png",
+      "backgroundImage": "/assets/cards/needle-choir-background.png",
+      "frameImage": "/assets/cards/needle-choir-frame.png",
+      "costIndicatorImage": "/assets/cards/needle-choir-costIndicator.png"
+    },
+    {
+      "id": "Overclock",
+      "name": "Overclock",
+      "description": "Immediately accelerates allied movement and attacks inside its zone.",
+      "type": "Spell",
+      "faction": "Constructs",
+      "portrait": "Assets/Art/Cards/Illustrations/Portraits/Overclock.png",
+      "details": "Impact radius: 3.5\r\nDuration: 5s | Travel speed: 9\r\nMovement: Parabolic | Origin: SpawnAtCastPoint\r\nPersistent zone ticks every 1s",
+      "foreground": "Assets/Art/Cards/Illustrations/Layers/Foregrounds/Overclock.png",
+      "background": "Assets/Art/Cards/Illustrations/Layers/Backgrounds/Robot.png",
+      "frame": "Assets/Art/UI/Resources/UI/BattleKit/CardFrameSpellNeutral.png",
+      "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
+      "ultimateCrest": "",
+      "mana": 2,
+      "tags": [],
+      "stats": [
+        {
+          "group": "Spell",
+          "label": "Impact radius",
+          "suffix": "",
+          "metric": "impactRadius",
+          "value": 3.5
+        },
+        {
+          "group": "Spell",
+          "label": "Duration",
+          "suffix": " sec",
+          "metric": "duration",
+          "value": 5
+        },
+        {
+          "group": "Spell",
+          "label": "Travel speed",
+          "suffix": "",
+          "metric": "travelSpeed",
+          "value": 9
+        },
+        {
+          "group": "Spell",
+          "label": "Zone interval",
+          "suffix": " sec",
+          "metric": "zoneInterval",
+          "value": 1
+        }
+      ],
+      "artWindow": [
+        {
+          "x": 0.31283602118492126,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.6871640086174011,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.23169417679309845
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.7683058381080627
+        },
+        {
+          "x": 0.6871640086174011,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.31283602118492126,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.7683058381080627
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.23169417679309845
+        }
+      ],
+      "image": "/assets/cards/overclock.png",
+      "foregroundImage": "/assets/cards/overclock-foreground.png",
+      "backgroundImage": "/assets/cards/overclock-background.png",
+      "frameImage": "/assets/cards/overclock-frame.png",
+      "costIndicatorImage": "/assets/cards/overclock-costIndicator.png"
+    },
+    {
+      "id": "Pip",
+      "name": "Pip",
+      "description": "A grounded ranged construct. Fires two simultaneous bolts from its blasters.",
+      "type": "Unit",
+      "faction": "Other",
+      "portrait": "Assets/Art/Cards/Illustrations/Portraits/Pip.png",
+      "details": "Health: 400 | Speed: 1.5\r\nTribes: None | Ground | Combat unit\r\nRanged | Range: 3 | Attack interval: 1.6s",
+      "foreground": "Assets/Art/Cards/Illustrations/Layers/Foregrounds/Pip.png",
+      "background": "Assets/Art/Cards/Illustrations/Layers/Backgrounds/Neutral.png",
+      "frame": "Assets/Art/UI/Resources/UI/BattleKit/CardFrameNeutral.png",
+      "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
+      "ultimateCrest": "",
+      "mana": 2,
+      "tags": [
+        "Ground",
+        "Ranged"
+      ],
+      "stats": [
+        {
+          "group": "Unit stats",
+          "label": "Health",
+          "suffix": "",
+          "metric": "health",
+          "value": 400
+        },
+        {
+          "group": "Unit stats",
+          "label": "Movement speed",
+          "suffix": "",
+          "metric": "movementSpeed",
+          "value": 1.5
+        },
+        {
+          "group": "Unit stats",
+          "label": "Attack range",
+          "suffix": "",
+          "metric": "attackRange",
+          "value": 3
+        },
+        {
+          "group": "Unit stats",
+          "label": "Attack interval",
+          "suffix": " sec",
+          "metric": "attackInterval",
+          "value": 1.600000023841858
+        },
+        {
+          "group": "Attack damage (each of 2 projectiles)",
+          "label": "Damage per hit",
+          "suffix": "",
+          "metric": "damage",
+          "value": 35
+        },
+        {
+          "group": "On death",
+          "label": "Area damage per target",
+          "suffix": "",
+          "metric": "damage",
+          "value": 30
+        },
+        {
+          "group": "On death",
+          "label": "Area radius",
+          "suffix": "",
+          "metric": "radius",
+          "value": 2
+        }
+      ],
+      "artWindow": [
+        {
+          "x": 0.1708860695362091,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.8291139006614685,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.12656250596046448
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.8270041942596436,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.17299577593803406,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.12656250596046448
+        }
+      ],
+      "image": "/assets/cards/pip.png",
+      "foregroundImage": "/assets/cards/pip-foreground.png",
+      "backgroundImage": "/assets/cards/pip-background.png",
+      "frameImage": "/assets/cards/pip-frame.png",
+      "costIndicatorImage": "/assets/cards/pip-costIndicator.png"
+    },
+    {
+      "id": "Pip and Spark",
+      "name": "Pip and Spark",
+      "description": "Deploys 2 constructs.",
+      "type": "Unit",
+      "faction": "Constructs",
+      "portrait": "Assets/Art/Cards/Illustrations/Portraits/Pip and Spark.png",
+      "details": "Squad: 2 units | Line formation\r\n1x Pip and Spark: Health: 800 | Speed: 1.5\r\nTribes: Robot | Ground | Combat unit\r\nMelee | Range: 1.7 | Attack interval: 1.6s\r\nUltimate: Ultimate_test | Required charge: 100\r\nCharge: 20/s, 0/hit, 0/damage taken, 0/kill\r\n1x Pip: Health: 400 | Speed: 1.5\r\nTribes: None | Ground | Combat unit\r\nRanged | Range: 3 | Attack interval: 1.6s",
+      "foreground": "Assets/Art/Cards/Illustrations/Layers/Foregrounds/Pip and Spark.png",
+      "background": "Assets/Art/Cards/Illustrations/Layers/Backgrounds/Robot.png",
+      "frame": "Assets/Art/UI/Resources/UI/BattleKit/CardFrameNeutral.png",
+      "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
+      "ultimateCrest": "Assets/Art/UI/Resources/UI/BattleKit/UltimateCrestNeutral.png",
+      "mana": 3,
+      "tags": [
+        "2 units",
+        "Ground",
+        "Melee",
+        "Ranged"
+      ],
+      "stats": [
+        {
+          "group": "Pip and Spark · per unit",
+          "label": "Health",
+          "suffix": "",
+          "metric": "health",
+          "value": 800
+        },
+        {
+          "group": "Pip and Spark · per unit",
+          "label": "Movement speed",
+          "suffix": "",
+          "metric": "movementSpeed",
+          "value": 1.5
+        },
+        {
+          "group": "Pip and Spark · per unit",
+          "label": "Attack range",
+          "suffix": "",
+          "metric": "attackRange",
+          "value": 1.7000000476837158
+        },
+        {
+          "group": "Pip and Spark · per unit",
+          "label": "Attack interval",
+          "suffix": " sec",
+          "metric": "attackInterval",
+          "value": 1.600000023841858
+        },
+        {
+          "group": "Ultimate: Ultimate test",
+          "label": "Required charge",
+          "suffix": "",
+          "metric": "charge",
+          "value": 100
+        },
+        {
+          "group": "Ultimate: Ultimate test",
+          "label": "Passive charge",
+          "suffix": " / sec",
+          "metric": "passiveCharge",
+          "value": 20
+        },
+        {
+          "group": "Pip · per unit",
+          "label": "Health",
+          "suffix": "",
+          "metric": "health",
+          "value": 400
+        },
+        {
+          "group": "Pip · per unit",
+          "label": "Movement speed",
+          "suffix": "",
+          "metric": "movementSpeed",
+          "value": 1.5
+        },
+        {
+          "group": "Pip · per unit",
+          "label": "Attack range",
+          "suffix": "",
+          "metric": "attackRange",
+          "value": 3
+        },
+        {
+          "group": "Pip · per unit",
+          "label": "Attack interval",
+          "suffix": " sec",
+          "metric": "attackInterval",
+          "value": 1.600000023841858
+        },
+        {
+          "group": "Pip and Spark (per unit): Attack damage",
+          "label": "Damage per hit",
+          "suffix": "",
+          "metric": "damage",
+          "value": 70
+        },
+        {
+          "group": "Pip (per unit): Attack damage (each of 2 projectiles)",
+          "label": "Damage per hit",
+          "suffix": "",
+          "metric": "damage",
+          "value": 35
+        },
+        {
+          "group": "Pip (per unit): On death",
+          "label": "Area damage per target",
+          "suffix": "",
+          "metric": "damage",
+          "value": 30
+        },
+        {
+          "group": "Pip (per unit): On death",
+          "label": "Area radius",
+          "suffix": "",
+          "metric": "radius",
+          "value": 2
+        }
+      ],
+      "artWindow": [
+        {
+          "x": 0.1708860695362091,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.8291139006614685,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.12656250596046448
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.8270041942596436,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.17299577593803406,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.12656250596046448
+        }
+      ],
+      "image": "/assets/cards/pip-and-spark.png",
+      "foregroundImage": "/assets/cards/pip-and-spark-foreground.png",
+      "backgroundImage": "/assets/cards/pip-and-spark-background.png",
+      "frameImage": "/assets/cards/pip-and-spark-frame.png",
+      "costIndicatorImage": "/assets/cards/pip-and-spark-costIndicator.png",
+      "ultimateCrestImage": "/assets/cards/pip-and-spark-ultimateCrest.png"
+    },
+    {
+      "id": "Pip Pair",
+      "name": "Pip Pair",
+      "description": "Deploys 2 constructs.",
+      "type": "Unit",
+      "faction": "Other",
+      "portrait": "Assets/Art/Cards/Illustrations/Portraits/Pip Pair.png",
+      "details": "Squad: 2 units | Line formation\r\n1x Pip: Health: 400 | Speed: 1.5\r\nTribes: None | Ground | Combat unit\r\nRanged | Range: 3 | Attack interval: 1.6s\r\n1x Pip: Health: 400 | Speed: 1.5\r\nTribes: None | Ground | Combat unit\r\nRanged | Range: 3 | Attack interval: 1.6s",
+      "foreground": "Assets/Art/Cards/Illustrations/Layers/Foregrounds/Pip Pair.png",
+      "background": "Assets/Art/Cards/Illustrations/Layers/Backgrounds/Neutral.png",
+      "frame": "Assets/Art/UI/Resources/UI/BattleKit/CardFrameNeutral.png",
+      "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
+      "ultimateCrest": "",
+      "mana": 3,
+      "tags": [
+        "2 units",
+        "Ground",
+        "Ranged"
+      ],
+      "stats": [
+        {
+          "group": "Pip · per unit",
+          "label": "Health",
+          "suffix": "",
+          "metric": "health",
+          "value": 400
+        },
+        {
+          "group": "Pip · per unit",
+          "label": "Movement speed",
+          "suffix": "",
+          "metric": "movementSpeed",
+          "value": 1.5
+        },
+        {
+          "group": "Pip · per unit",
+          "label": "Attack range",
+          "suffix": "",
+          "metric": "attackRange",
+          "value": 3
+        },
+        {
+          "group": "Pip · per unit",
+          "label": "Attack interval",
+          "suffix": " sec",
+          "metric": "attackInterval",
+          "value": 1.600000023841858
+        },
+        {
+          "group": "Pip (per unit): Attack damage (each of 2 projectiles)",
+          "label": "Damage per hit",
+          "suffix": "",
+          "metric": "damage",
+          "value": 35
+        },
+        {
+          "group": "Pip (per unit): On death",
+          "label": "Area damage per target",
+          "suffix": "",
+          "metric": "damage",
+          "value": 30
+        },
+        {
+          "group": "Pip (per unit): On death",
+          "label": "Area radius",
+          "suffix": "",
+          "metric": "radius",
+          "value": 2
+        },
+        {
+          "group": "Pip (per unit): Attack damage (each of 2 projectiles)",
+          "label": "Damage per hit",
+          "suffix": "",
+          "metric": "damage",
+          "value": 35
+        },
+        {
+          "group": "Pip (per unit): On death",
+          "label": "Area damage per target",
+          "suffix": "",
+          "metric": "damage",
+          "value": 30
+        },
+        {
+          "group": "Pip (per unit): On death",
+          "label": "Area radius",
+          "suffix": "",
+          "metric": "radius",
+          "value": 2
+        }
+      ],
+      "artWindow": [
+        {
+          "x": 0.1708860695362091,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.8291139006614685,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.12656250596046448
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.8270041942596436,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.17299577593803406,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.12656250596046448
+        }
+      ],
+      "image": "/assets/cards/pip-pair.png",
+      "foregroundImage": "/assets/cards/pip-pair-foreground.png",
+      "backgroundImage": "/assets/cards/pip-pair-background.png",
+      "frameImage": "/assets/cards/pip-pair-frame.png",
+      "costIndicatorImage": "/assets/cards/pip-pair-costIndicator.png"
+    },
+    {
+      "id": "Plague Husk",
+      "name": "Plague Husk",
+      "description": "Slow structure hunter that leaves corruption when destroyed.",
+      "type": "Unit",
+      "faction": "Undead",
+      "portrait": "Assets/Art/Cards/Illustrations/Portraits/Plague Husk.png",
+      "details": "Health: 1000 | Speed: 1\r\nTribes: Undead | Ground | Combat unit\r\nMelee | Range: 1.8 | Attack interval: 1.7s",
+      "foreground": "Assets/Art/Cards/Illustrations/Layers/Foregrounds/Plague Husk.png",
+      "background": "Assets/Art/Cards/Illustrations/Layers/Backgrounds/Undead.png",
+      "frame": "Assets/Art/UI/Resources/UI/BattleKit/CardFrameNeutral.png",
+      "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
+      "ultimateCrest": "",
+      "mana": 4,
+      "tags": [
+        "Ground",
+        "Melee",
+        "Siege"
+      ],
+      "stats": [
+        {
+          "group": "Unit stats",
+          "label": "Health",
+          "suffix": "",
+          "metric": "health",
+          "value": 1000
+        },
+        {
+          "group": "Unit stats",
+          "label": "Movement speed",
+          "suffix": "",
+          "metric": "movementSpeed",
+          "value": 1
+        },
+        {
+          "group": "Unit stats",
+          "label": "Attack range",
+          "suffix": "",
+          "metric": "attackRange",
+          "value": 1.7999999523162842
+        },
+        {
+          "group": "Unit stats",
+          "label": "Attack interval",
+          "suffix": " sec",
+          "metric": "attackInterval",
+          "value": 1.7000000476837158
+        },
+        {
+          "group": "Attack damage",
+          "label": "Damage per hit",
+          "suffix": "",
+          "metric": "damage",
+          "value": 130
+        },
+        {
+          "group": "On death pool · lingering area",
+          "label": "Damage per tick · units",
+          "suffix": "",
+          "metric": "damage",
+          "value": 35
+        },
+        {
+          "group": "On death pool · lingering area",
+          "label": "Damage per tick · buildings",
+          "suffix": "",
+          "metric": "damage",
+          "value": 8.277027130126953
+        },
+        {
+          "group": "On death pool · lingering area",
+          "label": "Area damage / sec · units",
+          "suffix": "",
+          "metric": "dps",
+          "value": 35
+        },
+        {
+          "group": "On death pool · lingering area",
+          "label": "Tick interval",
+          "suffix": " sec",
+          "metric": "interval",
+          "value": 1
+        },
+        {
+          "group": "On death pool · lingering area",
+          "label": "Area duration",
+          "suffix": " sec",
+          "metric": "duration",
+          "value": 5
+        },
+        {
+          "group": "On death pool · lingering area",
+          "label": "Area radius",
+          "suffix": "",
+          "metric": "radius",
+          "value": 2.700000047683716
+        }
+      ],
+      "artWindow": [
+        {
+          "x": 0.1708860695362091,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.8291139006614685,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.12656250596046448
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.8270041942596436,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.17299577593803406,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.12656250596046448
+        }
+      ],
+      "image": "/assets/cards/plague-husk.png",
+      "foregroundImage": "/assets/cards/plague-husk-foreground.png",
+      "backgroundImage": "/assets/cards/plague-husk-background.png",
+      "frameImage": "/assets/cards/plague-husk-frame.png",
+      "costIndicatorImage": "/assets/cards/plague-husk-costIndicator.png"
+    },
+    {
+      "id": "Rampart",
+      "name": "Rampart",
+      "description": "Periodically launches a marked area shell at an enemy up to 6 units away.",
+      "type": "Unit",
+      "faction": "Constructs",
+      "portrait": "Assets/Art/Cards/Illustrations/Portraits/Rampart.png",
+      "details": "Health: 320 | Speed: 1\r\nTribes: Robot | Ground | Combat unit\r\nRanged | Range: 4.5 | Attack interval: 3s\r\nUltimate: RampartArtilleryUltimate | Required charge: 100\r\nCharge: 5/s, 0/hit, 0/damage taken, 0/kill",
+      "foreground": "Assets/Art/Cards/Illustrations/Layers/Foregrounds/Rampart.png",
+      "background": "Assets/Art/Cards/Illustrations/Layers/Backgrounds/Robot.png",
+      "frame": "Assets/Art/UI/Resources/UI/BattleKit/CardFrameNeutral.png",
+      "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
+      "ultimateCrest": "Assets/Art/UI/Resources/UI/BattleKit/UltimateCrestNeutral.png",
+      "mana": 3,
+      "tags": [
+        "Ground",
+        "Ranged",
+        "Siege"
+      ],
+      "stats": [
+        {
+          "group": "Unit stats",
+          "label": "Health",
+          "suffix": "",
+          "metric": "health",
+          "value": 320
+        },
+        {
+          "group": "Unit stats",
+          "label": "Movement speed",
+          "suffix": "",
+          "metric": "movementSpeed",
+          "value": 1
+        },
+        {
+          "group": "Unit stats",
+          "label": "Attack range",
+          "suffix": "",
+          "metric": "attackRange",
+          "value": 4.5
+        },
+        {
+          "group": "Unit stats",
+          "label": "Attack interval",
+          "suffix": " sec",
+          "metric": "attackInterval",
+          "value": 3
+        },
+        {
+          "group": "Ultimate: RampartArtilleryUltimate",
+          "label": "Required charge",
+          "suffix": "",
+          "metric": "charge",
+          "value": 100
+        },
+        {
+          "group": "Ultimate: RampartArtilleryUltimate",
+          "label": "Passive charge",
+          "suffix": " / sec",
+          "metric": "passiveCharge",
+          "value": 5
+        },
+        {
+          "group": "Attack damage",
+          "label": "Damage per hit",
+          "suffix": "",
+          "metric": "damage",
+          "value": 210
+        }
+      ],
+      "artWindow": [
+        {
+          "x": 0.1708860695362091,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.8291139006614685,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.12656250596046448
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.8270041942596436,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.17299577593803406,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.12656250596046448
+        }
+      ],
+      "image": "/assets/cards/rampart.png",
+      "foregroundImage": "/assets/cards/rampart-foreground.png",
+      "backgroundImage": "/assets/cards/rampart-background.png",
+      "frameImage": "/assets/cards/rampart-frame.png",
+      "costIndicatorImage": "/assets/cards/rampart-costIndicator.png",
+      "ultimateCrestImage": "/assets/cards/rampart-ultimateCrest.png"
+    },
+    {
+      "id": "Reactor Strike",
+      "name": "Reactor Strike",
+      "description": "Lobbed blast that leaves a damaging electrical field.",
+      "type": "Spell",
+      "faction": "Constructs",
+      "portrait": "Assets/Art/Cards/Illustrations/Portraits/Reactor Strike.png",
+      "details": "Impact radius: 3.1\r\nDuration: 5s | Travel speed: 9\r\nMovement: Parabolic | Origin: LobFromPlayerBase\r\nPersistent zone ticks every 1s",
+      "foreground": "Assets/Art/Cards/Illustrations/Layers/Foregrounds/Reactor Strike.png",
+      "background": "Assets/Art/Cards/Illustrations/Layers/Backgrounds/Robot.png",
+      "frame": "Assets/Art/UI/Resources/UI/BattleKit/CardFrameSpellNeutral.png",
+      "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
+      "ultimateCrest": "",
+      "mana": 5,
+      "tags": [],
+      "stats": [
+        {
+          "group": "Spell",
+          "label": "Impact radius",
+          "suffix": "",
+          "metric": "impactRadius",
+          "value": 3.0999999046325684
+        },
+        {
+          "group": "Spell",
+          "label": "Duration",
+          "suffix": " sec",
+          "metric": "duration",
+          "value": 5
+        },
+        {
+          "group": "Spell",
+          "label": "Travel speed",
+          "suffix": "",
+          "metric": "travelSpeed",
+          "value": 9
+        },
+        {
+          "group": "Spell",
+          "label": "Zone interval",
+          "suffix": " sec",
+          "metric": "zoneInterval",
+          "value": 1
+        },
+        {
+          "group": "Spell damage · lingering area",
+          "label": "Damage per tick · units",
+          "suffix": "",
+          "metric": "damage",
+          "value": 160
+        },
+        {
+          "group": "Spell damage · lingering area",
+          "label": "Damage per tick · buildings",
+          "suffix": "",
+          "metric": "damage",
+          "value": 80
+        },
+        {
+          "group": "Spell damage · lingering area",
+          "label": "Area damage / sec · units",
+          "suffix": "",
+          "metric": "dps",
+          "value": 160
+        },
+        {
+          "group": "Spell damage · lingering area",
+          "label": "Tick interval",
+          "suffix": " sec",
+          "metric": "interval",
+          "value": 1
+        },
+        {
+          "group": "Spell damage · lingering area",
+          "label": "Area duration",
+          "suffix": " sec",
+          "metric": "duration",
+          "value": 5
+        },
+        {
+          "group": "Spell damage · lingering area",
+          "label": "Area radius",
+          "suffix": "",
+          "metric": "radius",
+          "value": 3.0999999046325684
+        }
+      ],
+      "artWindow": [
+        {
+          "x": 0.31283602118492126,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.6871640086174011,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.23169417679309845
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.7683058381080627
+        },
+        {
+          "x": 0.6871640086174011,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.31283602118492126,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.7683058381080627
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.23169417679309845
+        }
+      ],
+      "image": "/assets/cards/reactor-strike.png",
+      "foregroundImage": "/assets/cards/reactor-strike-foreground.png",
+      "backgroundImage": "/assets/cards/reactor-strike-background.png",
+      "frameImage": "/assets/cards/reactor-strike-frame.png",
+      "costIndicatorImage": "/assets/cards/reactor-strike-costIndicator.png"
+    },
+    {
+      "id": "undead_raise_the_fallen",
+      "name": "Reassemble",
+      "description": "Summons Shardlings based on recent deaths near the cast point.",
+      "type": "Spell",
+      "faction": "Undead",
+      "portrait": "Assets/Art/Cards/Illustrations/Portraits/Reassemble.png",
+      "details": "Impact radius: 4\r\nDuration: 0s | Travel speed: 9\r\nMovement: Parabolic | Origin: SpawnAtCastPoint",
+      "foreground": "Assets/Art/Cards/Illustrations/Layers/Foregrounds/Reassemble.png",
+      "background": "Assets/Art/Cards/Illustrations/Layers/Backgrounds/Undead.png",
+      "frame": "Assets/Art/UI/Resources/UI/BattleKit/CardFrameSpellNeutral.png",
+      "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
+      "ultimateCrest": "",
+      "mana": 4,
+      "tags": [],
+      "stats": [
+        {
+          "group": "Spell",
+          "label": "Impact radius",
+          "suffix": "",
+          "metric": "impactRadius",
+          "value": 4
+        },
+        {
+          "group": "Spell",
+          "label": "Duration",
+          "suffix": " sec",
+          "metric": "duration",
+          "value": 0
+        },
+        {
+          "group": "Spell",
+          "label": "Travel speed",
+          "suffix": "",
+          "metric": "travelSpeed",
+          "value": 9
+        }
+      ],
+      "artWindow": [
+        {
+          "x": 0.31283602118492126,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.6871640086174011,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.23169417679309845
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.7683058381080627
+        },
+        {
+          "x": 0.6871640086174011,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.31283602118492126,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.7683058381080627
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.23169417679309845
+        }
+      ],
+      "image": "/assets/cards/undead-raise-the-fallen.png",
+      "foregroundImage": "/assets/cards/undead-raise-the-fallen-foreground.png",
+      "backgroundImage": "/assets/cards/undead-raise-the-fallen-background.png",
+      "frameImage": "/assets/cards/undead-raise-the-fallen-frame.png",
+      "costIndicatorImage": "/assets/cards/undead-raise-the-fallen-costIndicator.png"
+    },
+    {
+      "id": "Robot Miner",
+      "name": "Robot Miner",
+      "description": "Harvests mana mines.",
+      "type": "Unit",
+      "faction": "Constructs",
+      "portrait": "Assets/Art/Cards/Illustrations/Portraits/Robot Miner.png",
+      "details": "Health: 270 | Speed: 1.5\r\nTribes: Robot | Ground | Robot Miner\r\nMelee | Range: 1.6 | Attack interval: 1.4s",
+      "foreground": "Assets/Art/Cards/Illustrations/Layers/Foregrounds/Robot Miner.png",
+      "background": "Assets/Art/Cards/Illustrations/Layers/Backgrounds/Robot.png",
+      "frame": "Assets/Art/UI/Resources/UI/BattleKit/CardFrameNeutral.png",
+      "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
+      "ultimateCrest": "",
+      "mana": 1,
+      "tags": [
+        "Ground",
+        "Melee",
+        "Miner"
+      ],
+      "stats": [
+        {
+          "group": "Unit stats",
+          "label": "Health",
+          "suffix": "",
+          "metric": "health",
+          "value": 270
+        },
+        {
+          "group": "Unit stats",
+          "label": "Movement speed",
+          "suffix": "",
+          "metric": "movementSpeed",
+          "value": 1.5
+        },
+        {
+          "group": "Unit stats",
+          "label": "Attack range",
+          "suffix": "",
+          "metric": "attackRange",
+          "value": 1.600000023841858
+        },
+        {
+          "group": "Unit stats",
+          "label": "Attack interval",
+          "suffix": " sec",
+          "metric": "attackInterval",
+          "value": 1.399999976158142
+        },
+        {
+          "group": "Attack damage",
+          "label": "Damage per hit",
+          "suffix": "",
+          "metric": "damage",
+          "value": 30
+        }
+      ],
+      "artWindow": [
+        {
+          "x": 0.1708860695362091,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.8291139006614685,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.12656250596046448
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.8270041942596436,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.17299577593803406,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.12656250596046448
+        }
+      ],
+      "image": "/assets/cards/robot-miner.png",
+      "foregroundImage": "/assets/cards/robot-miner-foreground.png",
+      "backgroundImage": "/assets/cards/robot-miner-background.png",
+      "frameImage": "/assets/cards/robot-miner-frame.png",
+      "costIndicatorImage": "/assets/cards/robot-miner-costIndicator.png"
+    },
+    {
+      "id": "Rotball",
+      "name": "Rotball",
+      "description": "Two fast rolling undead flesh balls that seek structures and detonate at close range or on death.",
+      "type": "Unit",
+      "faction": "Undead",
+      "portrait": "Assets/Art/Cards/Illustrations/Portraits/Rotball.png",
+      "details": "Squad: 2 units | Line formation\r\n2x Rotball: Health: 120 | Speed: 2\r\nTribes: Undead | Ground | Combat unit\r\nMelee | Range: 1.5 | Attack interval: 1.3s",
+      "foreground": "Assets/Art/Cards/Illustrations/Layers/Foregrounds/Rotball.png",
+      "background": "Assets/Art/Cards/Illustrations/Layers/Backgrounds/Undead.png",
+      "frame": "Assets/Art/UI/Resources/UI/BattleKit/CardFrameNeutral.png",
+      "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
+      "ultimateCrest": "",
+      "mana": 2,
+      "tags": [
+        "2 units",
+        "Contact detonation",
+        "Ground",
+        "Siege"
+      ],
+      "stats": [
+        {
+          "group": "Rotball · per unit",
+          "label": "Health",
+          "suffix": "",
+          "metric": "health",
+          "value": 120
+        },
+        {
+          "group": "Rotball · per unit",
+          "label": "Movement speed",
+          "suffix": "",
+          "metric": "movementSpeed",
+          "value": 2
+        },
+        {
+          "group": "Rotball · per unit",
+          "label": "Attack range",
+          "suffix": "",
+          "metric": "attackRange",
+          "value": 1.5
+        },
+        {
+          "group": "Rotball · per unit",
+          "label": "Attack interval",
+          "suffix": " sec",
+          "metric": "attackInterval",
+          "value": 1.2999999523162842
+        },
+        {
+          "group": "Rotball (per unit): On death",
+          "label": "Area damage per target · units",
+          "suffix": "",
+          "metric": "damage",
+          "value": 225
+        },
+        {
+          "group": "Rotball (per unit): On death",
+          "label": "Area damage per target · buildings",
+          "suffix": "",
+          "metric": "damage",
+          "value": 450
+        },
+        {
+          "group": "Rotball (per unit): On death",
+          "label": "Area radius",
+          "suffix": "",
+          "metric": "radius",
+          "value": 1.25
+        }
+      ],
+      "artWindow": [
+        {
+          "x": 0.1708860695362091,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.8291139006614685,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.12656250596046448
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.8270041942596436,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.17299577593803406,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.12656250596046448
+        }
+      ],
+      "image": "/assets/cards/rotball.png",
+      "foregroundImage": "/assets/cards/rotball-foreground.png",
+      "backgroundImage": "/assets/cards/rotball-background.png",
+      "frameImage": "/assets/cards/rotball-frame.png",
+      "costIndicatorImage": "/assets/cards/rotball-costIndicator.png"
+    },
+    {
+      "id": "Secondlight",
+      "name": "Secondlight",
+      "description": "Rebuilds once after defeat; untargetable and inactive throughout reconstruction.",
+      "type": "Unit",
+      "faction": "Undead",
+      "portrait": "Assets/Art/Cards/Illustrations/Portraits/Secondlight.png",
+      "details": "Health: 1480 | Speed: 1.5\r\nTribes: Undead | Ground | Combat unit\r\nMelee | Range: 1.8 | Attack interval: 2s",
+      "foreground": "Assets/Art/Cards/Illustrations/Layers/Foregrounds/Secondlight.png",
+      "background": "Assets/Art/Cards/Illustrations/Layers/Backgrounds/Undead.png",
+      "frame": "Assets/Art/UI/Resources/UI/BattleKit/CardFrameNeutral.png",
+      "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
+      "ultimateCrest": "",
+      "mana": 4,
+      "tags": [
+        "Ground",
+        "Melee"
+      ],
+      "stats": [
+        {
+          "group": "Unit stats",
+          "label": "Health",
+          "suffix": "",
+          "metric": "health",
+          "value": 1480
+        },
+        {
+          "group": "Unit stats",
+          "label": "Movement speed",
+          "suffix": "",
+          "metric": "movementSpeed",
+          "value": 1.5
+        },
+        {
+          "group": "Unit stats",
+          "label": "Attack range",
+          "suffix": "",
+          "metric": "attackRange",
+          "value": 1.7999999523162842
+        },
+        {
+          "group": "Unit stats",
+          "label": "Attack interval",
+          "suffix": " sec",
+          "metric": "attackInterval",
+          "value": 2
+        },
+        {
+          "group": "Attack damage",
+          "label": "Damage per hit",
+          "suffix": "",
+          "metric": "damage",
+          "value": 140
+        }
+      ],
+      "artWindow": [
+        {
+          "x": 0.1708860695362091,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.8291139006614685,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.12656250596046448
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.8270041942596436,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.17299577593803406,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.12656250596046448
+        }
+      ],
+      "image": "/assets/cards/secondlight.png",
+      "foregroundImage": "/assets/cards/secondlight-foreground.png",
+      "backgroundImage": "/assets/cards/secondlight-background.png",
+      "frameImage": "/assets/cards/secondlight-frame.png",
+      "costIndicatorImage": "/assets/cards/secondlight-costIndicator.png"
+    },
+    {
+      "id": "Shardlings",
+      "name": "Shardlings",
+      "description": "Six fragile Shardlings that overwhelm isolated targets.",
+      "type": "Unit",
+      "faction": "Undead",
+      "portrait": "Assets/Art/Cards/Illustrations/Portraits/Shardlings.png",
+      "details": "Squad: 6 units | Grid formation\r\n6x Shardling: Health: 200 | Speed: 1.5\r\nTribes: Undead | Ground | Combat unit\r\nMelee | Range: 1.6 | Attack interval: 1.4s",
+      "foreground": "Assets/Art/Cards/Illustrations/Layers/Foregrounds/Shardlings.png",
+      "background": "Assets/Art/Cards/Illustrations/Layers/Backgrounds/Undead.png",
+      "frame": "Assets/Art/UI/Resources/UI/BattleKit/CardFrameNeutral.png",
+      "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
+      "ultimateCrest": "",
+      "mana": 4,
+      "tags": [
+        "6 units",
+        "Ground",
+        "Melee"
+      ],
+      "stats": [
+        {
+          "group": "Shardling · per unit",
+          "label": "Health",
+          "suffix": "",
+          "metric": "health",
+          "value": 200
+        },
+        {
+          "group": "Shardling · per unit",
+          "label": "Movement speed",
+          "suffix": "",
+          "metric": "movementSpeed",
+          "value": 1.5
+        },
+        {
+          "group": "Shardling · per unit",
+          "label": "Attack range",
+          "suffix": "",
+          "metric": "attackRange",
+          "value": 1.600000023841858
+        },
+        {
+          "group": "Shardling · per unit",
+          "label": "Attack interval",
+          "suffix": " sec",
+          "metric": "attackInterval",
+          "value": 1.399999976158142
+        },
+        {
+          "group": "Shardling (per unit): Attack damage",
+          "label": "Damage per hit",
+          "suffix": "",
+          "metric": "damage",
+          "value": 46
+        }
+      ],
+      "artWindow": [
+        {
+          "x": 0.1708860695362091,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.8291139006614685,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.12656250596046448
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.8270041942596436,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.17299577593803406,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.12656250596046448
+        }
+      ],
+      "image": "/assets/cards/shardlings.png",
+      "foregroundImage": "/assets/cards/shardlings-foreground.png",
+      "backgroundImage": "/assets/cards/shardlings-background.png",
+      "frameImage": "/assets/cards/shardlings-frame.png",
+      "costIndicatorImage": "/assets/cards/shardlings-costIndicator.png"
+    },
+    {
+      "id": "Skitter Pack",
+      "name": "Skitter Pack",
+      "description": "Three fast constructs that prioritize wounded enemies.",
+      "type": "Unit",
+      "faction": "Constructs",
+      "portrait": "Assets/Art/Cards/Illustrations/Portraits/Skitter Pack.png",
+      "details": "Squad: 3 units | Circle formation\r\n3x Skitter: Health: 350 | Speed: 2\r\nTribes: Robot | Ground | Combat unit\r\nMelee | Range: 1.6 | Attack interval: 1.3s",
+      "foreground": "Assets/Art/Cards/Illustrations/Layers/Foregrounds/Skitter Pack.png",
+      "background": "Assets/Art/Cards/Illustrations/Layers/Backgrounds/Robot.png",
+      "frame": "Assets/Art/UI/Resources/UI/BattleKit/CardFrameNeutral.png",
+      "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
+      "ultimateCrest": "",
+      "mana": 3,
+      "tags": [
+        "3 units",
+        "Ground",
+        "Melee"
+      ],
+      "stats": [
+        {
+          "group": "Skitter · per unit",
+          "label": "Health",
+          "suffix": "",
+          "metric": "health",
+          "value": 350
+        },
+        {
+          "group": "Skitter · per unit",
+          "label": "Movement speed",
+          "suffix": "",
+          "metric": "movementSpeed",
+          "value": 2
+        },
+        {
+          "group": "Skitter · per unit",
+          "label": "Attack range",
+          "suffix": "",
+          "metric": "attackRange",
+          "value": 1.600000023841858
+        },
+        {
+          "group": "Skitter · per unit",
+          "label": "Attack interval",
+          "suffix": " sec",
+          "metric": "attackInterval",
+          "value": 1.2999999523162842
+        },
+        {
+          "group": "Skitter (per unit): Attack damage",
+          "label": "Damage per hit",
+          "suffix": "",
+          "metric": "damage",
+          "value": 90
+        }
+      ],
+      "artWindow": [
+        {
+          "x": 0.1708860695362091,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.8291139006614685,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.12656250596046448
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.8270041942596436,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.17299577593803406,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.12656250596046448
+        }
+      ],
+      "image": "/assets/cards/skitter-pack.png",
+      "foregroundImage": "/assets/cards/skitter-pack-foreground.png",
+      "backgroundImage": "/assets/cards/skitter-pack-background.png",
+      "frameImage": "/assets/cards/skitter-pack-frame.png",
+      "costIndicatorImage": "/assets/cards/skitter-pack-costIndicator.png"
+    },
+    {
+      "id": "Soul Devourer",
+      "name": "Soul Devourer",
+      "description": "Absorbs four nearby fallen souls from either team to charge an area attack.",
+      "type": "Unit",
+      "faction": "Undead",
+      "portrait": "Assets/Art/Cards/Illustrations/Portraits/Soul Devourer.png",
+      "details": "Health: 720 | Speed: 1.5\r\nTribes: Undead | Ground | Combat unit\r\nMelee | Range: 2 | Attack interval: 1.4s\r\nUltimate: SoulDevourerRelease | Required charge: 100\r\nCharge: 0/s, 0/hit, 0/damage taken, 0/kill",
+      "foreground": "Assets/Art/Cards/Illustrations/Layers/Foregrounds/Soul Devourer.png",
+      "background": "Assets/Art/Cards/Illustrations/Layers/Backgrounds/Undead.png",
+      "frame": "Assets/Art/UI/Resources/UI/BattleKit/CardFrameNeutral.png",
+      "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
+      "ultimateCrest": "Assets/Art/UI/Resources/UI/BattleKit/UltimateCrestNeutral.png",
+      "mana": 5,
+      "tags": [
+        "Ground",
+        "Melee"
+      ],
+      "stats": [
+        {
+          "group": "Unit stats",
+          "label": "Health",
+          "suffix": "",
+          "metric": "health",
+          "value": 720
+        },
+        {
+          "group": "Unit stats",
+          "label": "Movement speed",
+          "suffix": "",
+          "metric": "movementSpeed",
+          "value": 1.5
+        },
+        {
+          "group": "Unit stats",
+          "label": "Attack range",
+          "suffix": "",
+          "metric": "attackRange",
+          "value": 2
+        },
+        {
+          "group": "Unit stats",
+          "label": "Attack interval",
+          "suffix": " sec",
+          "metric": "attackInterval",
+          "value": 1.399999976158142
+        },
+        {
+          "group": "Ultimate: SoulDevourerRelease",
+          "label": "Required charge",
+          "suffix": "",
+          "metric": "charge",
+          "value": 100
+        },
+        {
+          "group": "Ultimate: SoulDevourerRelease",
+          "label": "Passive charge",
+          "suffix": " / sec",
+          "metric": "passiveCharge",
+          "value": 0
+        },
+        {
+          "group": "Attack damage",
+          "label": "Damage per hit",
+          "suffix": "",
+          "metric": "damage",
+          "value": 105
+        }
+      ],
+      "artWindow": [
+        {
+          "x": 0.1708860695362091,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.8291139006614685,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.12656250596046448
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.8270041942596436,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.17299577593803406,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.12656250596046448
+        }
+      ],
+      "image": "/assets/cards/soul-devourer.png",
+      "foregroundImage": "/assets/cards/soul-devourer-foreground.png",
+      "backgroundImage": "/assets/cards/soul-devourer-background.png",
+      "frameImage": "/assets/cards/soul-devourer-frame.png",
+      "costIndicatorImage": "/assets/cards/soul-devourer-costIndicator.png",
+      "ultimateCrestImage": "/assets/cards/soul-devourer-ultimateCrest.png"
+    },
+    {
+      "id": "Static Lock",
+      "name": "Static Lock",
+      "description": "Substantially slows enemies inside a short-lived disruption zone.",
+      "type": "Spell",
+      "faction": "Constructs",
+      "portrait": "Assets/Art/Cards/Illustrations/Portraits/Static Lock.png",
+      "details": "Impact radius: 3.2\r\nDuration: 4s | Travel speed: 9\r\nMovement: Parabolic | Origin: SpawnAtCastPoint\r\nPersistent zone ticks every 0.75s",
+      "foreground": "Assets/Art/Cards/Illustrations/Layers/Foregrounds/Static Lock.png",
+      "background": "Assets/Art/Cards/Illustrations/Layers/Backgrounds/Robot.png",
+      "frame": "Assets/Art/UI/Resources/UI/BattleKit/CardFrameSpellNeutral.png",
+      "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
+      "ultimateCrest": "",
+      "mana": 2,
+      "tags": [],
+      "stats": [
+        {
+          "group": "Spell",
+          "label": "Impact radius",
+          "suffix": "",
+          "metric": "impactRadius",
+          "value": 3.200000047683716
+        },
+        {
+          "group": "Spell",
+          "label": "Duration",
+          "suffix": " sec",
+          "metric": "duration",
+          "value": 4
+        },
+        {
+          "group": "Spell",
+          "label": "Travel speed",
+          "suffix": "",
+          "metric": "travelSpeed",
+          "value": 9
+        },
+        {
+          "group": "Spell",
+          "label": "Zone interval",
+          "suffix": " sec",
+          "metric": "zoneInterval",
+          "value": 0.75
+        }
+      ],
+      "artWindow": [
+        {
+          "x": 0.31283602118492126,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.6871640086174011,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.23169417679309845
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.7683058381080627
+        },
+        {
+          "x": 0.6871640086174011,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.31283602118492126,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.7683058381080627
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.23169417679309845
+        }
+      ],
+      "image": "/assets/cards/static-lock.png",
+      "foregroundImage": "/assets/cards/static-lock-foreground.png",
+      "backgroundImage": "/assets/cards/static-lock-background.png",
+      "frameImage": "/assets/cards/static-lock-frame.png",
+      "costIndicatorImage": "/assets/cards/static-lock-costIndicator.png"
+    },
+    {
+      "id": "Tesla",
+      "name": "Tesla",
+      "description": "Fires weaker chain bursts through up to three enemies. Conducts Lodestone's lightning ultimate.",
+      "type": "Unit",
+      "faction": "Constructs",
+      "portrait": "Assets/Art/Cards/Illustrations/Portraits/Tesla.png",
+      "details": "Health: 300 | Speed: 1.5\r\nTribes: Robot | Ground | Combat unit\r\nRanged | Range: 3.5 | Attack interval: 1.7s",
+      "foreground": "Assets/Art/Cards/Illustrations/Layers/Foregrounds/Tesla.png",
+      "background": "Assets/Art/Cards/Illustrations/Layers/Backgrounds/Robot.png",
+      "frame": "Assets/Art/UI/Resources/UI/BattleKit/CardFrameNeutral.png",
+      "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
+      "ultimateCrest": "",
+      "mana": 2,
+      "tags": [
+        "Ground",
+        "Ranged"
+      ],
+      "stats": [
+        {
+          "group": "Unit stats",
+          "label": "Health",
+          "suffix": "",
+          "metric": "health",
+          "value": 300
+        },
+        {
+          "group": "Unit stats",
+          "label": "Movement speed",
+          "suffix": "",
+          "metric": "movementSpeed",
+          "value": 1.5
+        },
+        {
+          "group": "Unit stats",
+          "label": "Attack range",
+          "suffix": "",
+          "metric": "attackRange",
+          "value": 3.5
+        },
+        {
+          "group": "Unit stats",
+          "label": "Attack interval",
+          "suffix": " sec",
+          "metric": "attackInterval",
+          "value": 1.7000000476837158
+        },
+        {
+          "group": "Attack damage",
+          "label": "Area damage per target",
+          "suffix": "",
+          "metric": "damage",
+          "value": 153
+        },
+        {
+          "group": "Attack damage",
+          "label": "Area radius",
+          "suffix": "",
+          "metric": "radius",
+          "value": 3.200000047683716
+        }
+      ],
+      "artWindow": [
+        {
+          "x": 0.1708860695362091,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.8291139006614685,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.12656250596046448
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.8270041942596436,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.17299577593803406,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.12656250596046448
+        }
+      ],
+      "image": "/assets/cards/tesla.png",
+      "foregroundImage": "/assets/cards/tesla-foreground.png",
+      "backgroundImage": "/assets/cards/tesla-background.png",
+      "frameImage": "/assets/cards/tesla-frame.png",
+      "costIndicatorImage": "/assets/cards/tesla-costIndicator.png"
+    },
+    {
+      "id": "Tesla Conductor",
+      "name": "Tesla Conductor",
+      "description": "Ranged electrical attacker that punishes clustered enemies.",
+      "type": "Unit",
+      "faction": "Constructs",
+      "portrait": "Assets/Art/Cards/Illustrations/Portraits/Tesla Conductor.png",
+      "details": "Health: 650 | Speed: 1.5\r\nTribes: Robot | Ground | Combat unit\r\nRanged | Range: 4 | Attack interval: 1.4s",
+      "foreground": "Assets/Art/Cards/Illustrations/Layers/Foregrounds/Tesla Conductor.png",
+      "background": "Assets/Art/Cards/Illustrations/Layers/Backgrounds/Robot.png",
+      "frame": "Assets/Art/UI/Resources/UI/BattleKit/CardFrameNeutral.png",
+      "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
+      "ultimateCrest": "",
+      "mana": 5,
+      "tags": [
+        "Ground",
+        "Ranged"
+      ],
+      "stats": [
+        {
+          "group": "Unit stats",
+          "label": "Health",
+          "suffix": "",
+          "metric": "health",
+          "value": 650
+        },
+        {
+          "group": "Unit stats",
+          "label": "Movement speed",
+          "suffix": "",
+          "metric": "movementSpeed",
+          "value": 1.5
+        },
+        {
+          "group": "Unit stats",
+          "label": "Attack range",
+          "suffix": "",
+          "metric": "attackRange",
+          "value": 4
+        },
+        {
+          "group": "Unit stats",
+          "label": "Attack interval",
+          "suffix": " sec",
+          "metric": "attackInterval",
+          "value": 1.399999976158142
+        },
+        {
+          "group": "Attack damage",
+          "label": "Area damage per target",
+          "suffix": "",
+          "metric": "damage",
+          "value": 160
+        },
+        {
+          "group": "Attack damage",
+          "label": "Area radius",
+          "suffix": "",
+          "metric": "radius",
+          "value": 0.5
+        }
+      ],
+      "artWindow": [
+        {
+          "x": 0.1708860695362091,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.8291139006614685,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.12656250596046448
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.8270041942596436,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.17299577593803406,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.12656250596046448
+        }
+      ],
+      "image": "/assets/cards/tesla-conductor.png",
+      "foregroundImage": "/assets/cards/tesla-conductor-foreground.png",
+      "backgroundImage": "/assets/cards/tesla-conductor-background.png",
+      "frameImage": "/assets/cards/tesla-conductor-frame.png",
+      "costIndicatorImage": "/assets/cards/tesla-conductor-costIndicator.png"
+    },
+    {
+      "id": "Tesla Relay",
+      "name": "Tesla Relay",
+      "description": "Slow ranged construct whose attack chains through up to three enemies.",
+      "type": "Unit",
+      "faction": "Constructs",
+      "portrait": "Assets/Art/Cards/Illustrations/Portraits/Tesla Relay.png",
+      "details": "Health: 650 | Speed: 1\r\nTribes: Robot | Ground | Combat unit\r\nRanged | Range: 4 | Attack interval: 1.4s\r\nUltimate: Ultimate_LighteningRod | Required charge: 100\r\nCharge: 10/s, 10/hit, 5/damage taken, 25/kill",
+      "foreground": "Assets/Art/Cards/Illustrations/Layers/Foregrounds/Tesla Relay.png",
+      "background": "Assets/Art/Cards/Illustrations/Layers/Backgrounds/Robot.png",
+      "frame": "Assets/Art/UI/Resources/UI/BattleKit/CardFrameNeutral.png",
+      "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
+      "ultimateCrest": "Assets/Art/UI/Resources/UI/BattleKit/UltimateCrestNeutral.png",
+      "mana": 5,
+      "tags": [
+        "Ground",
+        "Ranged"
+      ],
+      "stats": [
+        {
+          "group": "Unit stats",
+          "label": "Health",
+          "suffix": "",
+          "metric": "health",
+          "value": 650
+        },
+        {
+          "group": "Unit stats",
+          "label": "Movement speed",
+          "suffix": "",
+          "metric": "movementSpeed",
+          "value": 1
+        },
+        {
+          "group": "Unit stats",
+          "label": "Attack range",
+          "suffix": "",
+          "metric": "attackRange",
+          "value": 4
+        },
+        {
+          "group": "Unit stats",
+          "label": "Attack interval",
+          "suffix": " sec",
+          "metric": "attackInterval",
+          "value": 1.399999976158142
+        },
+        {
+          "group": "Ultimate: Ultimate LighteningRod",
+          "label": "Required charge",
+          "suffix": "",
+          "metric": "charge",
+          "value": 100
+        },
+        {
+          "group": "Ultimate: Ultimate LighteningRod",
+          "label": "Passive charge",
+          "suffix": " / sec",
+          "metric": "passiveCharge",
+          "value": 10
+        },
+        {
+          "group": "Ultimate: Ultimate LighteningRod",
+          "label": "Charge per hit",
+          "suffix": "",
+          "metric": "chargePerHit",
+          "value": 10
+        },
+        {
+          "group": "Ultimate: Ultimate LighteningRod",
+          "label": "Charge per damage taken",
+          "suffix": "",
+          "metric": "chargePerDamage",
+          "value": 5
+        },
+        {
+          "group": "Ultimate: Ultimate LighteningRod",
+          "label": "Charge per kill",
+          "suffix": "",
+          "metric": "chargePerKill",
+          "value": 25
+        },
+        {
+          "group": "Attack damage",
+          "label": "Area damage per target",
+          "suffix": "",
+          "metric": "damage",
+          "value": 160
+        },
+        {
+          "group": "Attack damage",
+          "label": "Area radius",
+          "suffix": "",
+          "metric": "radius",
+          "value": 3.200000047683716
+        }
+      ],
+      "artWindow": [
+        {
+          "x": 0.1708860695362091,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.8291139006614685,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.12656250596046448
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.8270041942596436,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.17299577593803406,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.12656250596046448
+        }
+      ],
+      "image": "/assets/cards/tesla-relay.png",
+      "foregroundImage": "/assets/cards/tesla-relay-foreground.png",
+      "backgroundImage": "/assets/cards/tesla-relay-background.png",
+      "frameImage": "/assets/cards/tesla-relay-frame.png",
+      "costIndicatorImage": "/assets/cards/tesla-relay-costIndicator.png",
+      "ultimateCrestImage": "/assets/cards/tesla-relay-ultimateCrest.png"
+    },
+    {
+      "id": "Wisp",
+      "name": "Wisp",
+      "description": "Flying short-range soul drain. Damage ramps while connected; steals health only from units, never buildings.",
+      "type": "Unit",
+      "faction": "Undead",
+      "portrait": "Assets/Art/Cards/Illustrations/Portraits/Wisp.png",
+      "details": "Health: 150 | Speed: 1.75\r\nTribes: Undead | Flying | Combat unit\r\nRanged | Range: 2.5 | Attack interval: 1.2s",
+      "foreground": "Assets/Art/Cards/Illustrations/Layers/Foregrounds/Wisp.png",
+      "background": "Assets/Art/Cards/Illustrations/Layers/Backgrounds/Undead.png",
+      "frame": "Assets/Art/UI/Resources/UI/BattleKit/CardFrameNeutral.png",
+      "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
+      "ultimateCrest": "",
+      "mana": 2,
+      "tags": [
+        "Flying",
+        "Ranged"
+      ],
+      "stats": [
+        {
+          "group": "Unit stats",
+          "label": "Health",
+          "suffix": "",
+          "metric": "health",
+          "value": 150
+        },
+        {
+          "group": "Unit stats",
+          "label": "Movement speed",
+          "suffix": "",
+          "metric": "movementSpeed",
+          "value": 1.75
+        },
+        {
+          "group": "Unit stats",
+          "label": "Attack range",
+          "suffix": "",
+          "metric": "attackRange",
+          "value": 2.5
+        },
+        {
+          "group": "Unit stats",
+          "label": "Attack interval",
+          "suffix": " sec",
+          "metric": "attackInterval",
+          "value": 1.2000000476837158
+        },
+        {
+          "group": "Attack damage",
+          "label": "Base channel payload",
+          "suffix": "",
+          "metric": "damage",
+          "value": 90
+        }
+      ],
+      "artWindow": [
+        {
+          "x": 0.1708860695362091,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.8291139006614685,
+          "y": 0.0390625
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.12656250596046448
+        },
+        {
+          "x": 0.947257399559021,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.8270041942596436,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.17299577593803406,
+          "y": 0.9609375
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.870312511920929
+        },
+        {
+          "x": 0.0527426153421402,
+          "y": 0.12656250596046448
+        }
+      ],
+      "image": "/assets/cards/wisp.png",
+      "foregroundImage": "/assets/cards/wisp-foreground.png",
+      "backgroundImage": "/assets/cards/wisp-background.png",
+      "frameImage": "/assets/cards/wisp-frame.png",
+      "costIndicatorImage": "/assets/cards/wisp-costIndicator.png"
+    }
+  ]
+}
