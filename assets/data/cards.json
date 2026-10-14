@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-14T03:03:48.3167163+00:00",
+  "exportedAt": "2026-10-14T20:42:10.2650192+00:00",
   "cards": [
     {
       "id": "Aegis",
@@ -16,10 +16,19 @@
       "ultimateCrest": "Assets/Art/UI/Resources/UI/BattleKit/UltimateCrestNeutral.png",
       "mana": 4,
       "tags": [
+        "4 Mana",
+        "Combat unit",
         "Flying",
-        "Melee"
+        "Melee",
+        "Robot",
+        "Targets: Ground, Air, Structures, Bases",
+        "Ultimate-bearing",
+        "Unit"
       ],
       "behaviors": [],
+      "notes": [
+        "Aegis — Ultimate: Aegis Ward"
+      ],
       "stats": [
         {
           "group": "Unit stats",
@@ -134,10 +143,16 @@
       "ultimateCrest": "",
       "mana": 3,
       "tags": [
+        "3 Mana",
+        "Combat unit",
         "Ground",
-        "Melee"
+        "Melee",
+        "Robot",
+        "Targets: Ground, Structures, Bases",
+        "Unit"
       ],
       "behaviors": [],
+      "notes": [],
       "stats": [
         {
           "group": "Unit stats",
@@ -237,13 +252,20 @@
       "ultimateCrest": "",
       "mana": 7,
       "tags": [
+        "7 Mana",
+        "Combat unit",
         "Contact detonation",
         "Ground",
-        "Siege"
+        "Melee",
+        "Siege",
+        "Targets: Structures, Bases",
+        "Undead",
+        "Unit"
       ],
       "behaviors": [
         "Corpse Wagon — on death: spawns 2 × Plague Husk."
       ],
+      "notes": [],
       "stats": [
         {
           "group": "Unit stats",
@@ -336,11 +358,20 @@
       "ultimateCrest": "",
       "mana": 2,
       "tags": [
+        "2 Mana",
         "3 units",
+        "Combat unit",
         "Ground",
-        "Melee"
+        "Melee",
+        "Targets: Ground, Structures, Bases",
+        "Undead",
+        "Unit"
       ],
       "behaviors": [],
+      "notes": [
+        "3 units · Circle formation",
+        "3 × Crawling Hand · stats per unit"
+      ],
       "stats": [
         {
           "group": "Crawling Hand · per unit",
@@ -432,8 +463,14 @@
       "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
       "ultimateCrest": "",
       "mana": 2,
-      "tags": [],
+      "tags": [
+        "2 Mana",
+        "Spell"
+      ],
       "behaviors": [],
+      "notes": [
+        "Movement: Parabolic · Origin: SpawnAtCastPoint"
+      ],
       "stats": [
         {
           "group": "Spell",
@@ -512,11 +549,18 @@
       "ultimateCrest": "",
       "mana": 2,
       "tags": [
+        "2 Mana",
         "Ground",
         "Melee",
-        "Miner"
+        "Miner",
+        "Robot",
+        "Targets: Ground, Structures, Bases, Mana mines",
+        "Unit"
       ],
       "behaviors": [],
+      "notes": [
+        "Delver — Ability: Delver Burrow"
+      ],
       "stats": [
         {
           "group": "Unit stats",
@@ -622,8 +666,14 @@
       "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
       "ultimateCrest": "",
       "mana": 2,
-      "tags": [],
+      "tags": [
+        "2 Mana",
+        "Spell"
+      ],
       "behaviors": [],
+      "notes": [
+        "Movement: Parabolic · Origin: SpawnAtCastPoint"
+      ],
       "stats": [
         {
           "group": "Spell",
@@ -709,11 +759,20 @@
       "ultimateCrest": "Assets/Art/UI/Resources/UI/BattleKit/UltimateCrestNeutral.png",
       "mana": 4,
       "tags": [
+        "4 Mana",
+        "Combat unit",
         "Ground",
-        "Ranged"
+        "Ranged",
+        "Targets: Ground, Air, Structures, Bases",
+        "Ultimate-bearing",
+        "Undead",
+        "Unit"
       ],
       "behaviors": [
         "Echo Caller — ultimate: spawns 2 × Shardling."
+      ],
+      "notes": [
+        "Echo Caller — Ultimate: Ultimate Bone Caller"
       ],
       "stats": [
         {
@@ -828,8 +887,14 @@
       "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
       "ultimateCrest": "",
       "mana": 4,
-      "tags": [],
+      "tags": [
+        "4 Mana",
+        "Spell"
+      ],
       "behaviors": [],
+      "notes": [
+        "Movement: Parabolic · Origin: LobFromPlayerBase"
+      ],
       "stats": [
         {
           "group": "Spell",
@@ -929,11 +994,20 @@
       "ultimateCrest": "Assets/Art/UI/Resources/UI/BattleKit/UltimateCrestNeutral.png",
       "mana": 5,
       "tags": [
+        "5 Mana",
+        "Combat unit",
         "Ground",
-        "Melee"
+        "Melee",
+        "Robot",
+        "Targets: Ground, Structures, Bases",
+        "Ultimate-bearing",
+        "Unit"
       ],
       "behaviors": [
         "Gearling Foundry — ultimate: spawns 1 × Gearling."
+      ],
+      "notes": [
+        "Gearling Foundry — Ultimate: Ultimate Replicator"
       ],
       "stats": [
         {
@@ -1043,10 +1117,19 @@
       "mana": 5,
       "tags": [
         "4 units",
+        "5 Mana",
+        "Combat unit",
         "Ground",
-        "Melee"
+        "Melee",
+        "Robot",
+        "Targets: Ground, Structures, Bases",
+        "Unit"
       ],
       "behaviors": [],
+      "notes": [
+        "4 units · Grid formation",
+        "4 × Gearling · stats per unit"
+      ],
       "stats": [
         {
           "group": "Gearling · per unit",
@@ -1139,10 +1222,16 @@
       "ultimateCrest": "",
       "mana": 3,
       "tags": [
+        "3 Mana",
+        "Combat unit",
         "Flying",
-        "Ranged"
+        "Ranged",
+        "Robot",
+        "Targets: Ground, Air, Structures, Bases",
+        "Unit"
       ],
       "behaviors": [],
+      "notes": [],
       "stats": [
         {
           "group": "Unit stats",
@@ -1234,8 +1323,14 @@
       "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
       "ultimateCrest": "",
       "mana": 3,
-      "tags": [],
+      "tags": [
+        "3 Mana",
+        "Spell"
+      ],
       "behaviors": [],
+      "notes": [
+        "Movement: Parabolic · Origin: SpawnAtCastPoint"
+      ],
       "stats": [
         {
           "group": "Spell",
@@ -1320,8 +1415,14 @@
       "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
       "ultimateCrest": "",
       "mana": 3,
-      "tags": [],
+      "tags": [
+        "3 Mana",
+        "Spell"
+      ],
       "behaviors": [],
+      "notes": [
+        "Movement: Parabolic · Origin: SpawnAtCastPoint"
+      ],
       "stats": [
         {
           "group": "Spell",
@@ -1449,10 +1550,16 @@
       "ultimateCrest": "",
       "mana": 4,
       "tags": [
+        "4 Mana",
+        "Combat unit",
         "Ground",
-        "Melee"
+        "Melee",
+        "Targets: Ground, Structures, Bases",
+        "Undead",
+        "Unit"
       ],
       "behaviors": [],
+      "notes": [],
       "stats": [
         {
           "group": "Unit stats",
@@ -1545,10 +1652,16 @@
       "ultimateCrest": "",
       "mana": 3,
       "tags": [
+        "3 Mana",
+        "Combat unit",
         "Ground",
-        "Melee"
+        "Melee",
+        "Targets: Ground, Structures, Bases",
+        "Undead",
+        "Unit"
       ],
       "behaviors": [],
+      "notes": [],
       "stats": [
         {
           "group": "Unit stats",
@@ -1641,10 +1754,16 @@
       "ultimateCrest": "",
       "mana": 6,
       "tags": [
+        "6 Mana",
+        "Combat unit",
         "Ground",
-        "Ranged"
+        "Ranged",
+        "Robot",
+        "Targets: Ground, Air, Structures, Bases",
+        "Unit"
       ],
       "behaviors": [],
+      "notes": [],
       "stats": [
         {
           "group": "Unit stats",
@@ -1744,10 +1863,16 @@
       "ultimateCrest": "",
       "mana": 4,
       "tags": [
+        "4 Mana",
+        "Combat unit",
         "Flying",
-        "Melee"
+        "Melee",
+        "Robot",
+        "Targets: Ground, Air, Structures, Bases",
+        "Unit"
       ],
       "behaviors": [],
+      "notes": [],
       "stats": [
         {
           "group": "Unit stats",
@@ -1840,10 +1965,16 @@
       "ultimateCrest": "",
       "mana": 6,
       "tags": [
+        "6 Mana",
+        "Combat unit",
         "Ground",
-        "Melee"
+        "Melee",
+        "Targets: Ground, Structures, Bases",
+        "Undead",
+        "Unit"
       ],
       "behaviors": [],
+      "notes": [],
       "stats": [
         {
           "group": "Unit stats",
@@ -1950,11 +2081,20 @@
       "ultimateCrest": "",
       "mana": 3,
       "tags": [
+        "3 Mana",
         "3 units",
+        "Combat unit",
         "Ground",
-        "Ranged"
+        "Ranged",
+        "Targets: Ground, Air, Structures, Bases",
+        "Undead",
+        "Unit"
       ],
       "behaviors": [],
+      "notes": [
+        "3 units · Line formation",
+        "3 × Needle · stats per unit"
+      ],
       "stats": [
         {
           "group": "Needle · per unit",
@@ -2046,8 +2186,14 @@
       "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
       "ultimateCrest": "",
       "mana": 2,
-      "tags": [],
+      "tags": [
+        "2 Mana",
+        "Spell"
+      ],
       "behaviors": [],
+      "notes": [
+        "Movement: Parabolic · Origin: SpawnAtCastPoint"
+      ],
       "stats": [
         {
           "group": "Spell",
@@ -2133,10 +2279,15 @@
       "ultimateCrest": "",
       "mana": 2,
       "tags": [
+        "2 Mana",
+        "Combat unit",
         "Ground",
-        "Ranged"
+        "Ranged",
+        "Targets: Ground, Structures, Bases",
+        "Unit"
       ],
       "behaviors": [],
+      "notes": [],
       "stats": [
         {
           "group": "Unit stats",
@@ -2244,11 +2395,23 @@
       "mana": 3,
       "tags": [
         "2 units",
+        "3 Mana",
+        "Combat unit",
         "Ground",
         "Melee",
-        "Ranged"
+        "Ranged",
+        "Robot",
+        "Targets: Ground, Structures, Bases",
+        "Ultimate-bearing",
+        "Unit"
       ],
       "behaviors": [],
+      "notes": [
+        "2 units · Line formation",
+        "1 × Spark · stats per unit",
+        "1 × Pip · stats per unit",
+        "Spark — Ultimate: Ultimate test"
+      ],
       "stats": [
         {
           "group": "Pip · per unit",
@@ -2413,10 +2576,18 @@
       "mana": 3,
       "tags": [
         "2 units",
+        "3 Mana",
+        "Combat unit",
         "Ground",
-        "Ranged"
+        "Ranged",
+        "Targets: Ground, Structures, Bases",
+        "Unit"
       ],
       "behaviors": [],
+      "notes": [
+        "2 units · Line formation",
+        "2 × Pip · stats per unit"
+      ],
       "stats": [
         {
           "group": "Pip · per unit",
@@ -2523,11 +2694,17 @@
       "ultimateCrest": "",
       "mana": 4,
       "tags": [
+        "4 Mana",
+        "Combat unit",
         "Ground",
         "Melee",
-        "Siege"
+        "Siege",
+        "Targets: Structures, Bases",
+        "Undead",
+        "Unit"
       ],
       "behaviors": [],
+      "notes": [],
       "stats": [
         {
           "group": "Unit stats",
@@ -2662,11 +2839,20 @@
       "ultimateCrest": "Assets/Art/UI/Resources/UI/BattleKit/UltimateCrestNeutral.png",
       "mana": 3,
       "tags": [
+        "3 Mana",
+        "Combat unit",
         "Ground",
         "Ranged",
-        "Siege"
+        "Robot",
+        "Siege",
+        "Targets: Ground, Air, Structures, Bases",
+        "Ultimate-bearing",
+        "Unit"
       ],
       "behaviors": [],
+      "notes": [
+        "Rampart — Ultimate: Rampart Artillery Ultimate"
+      ],
       "stats": [
         {
           "group": "Unit stats",
@@ -2787,8 +2973,14 @@
       "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
       "ultimateCrest": "",
       "mana": 5,
-      "tags": [],
+      "tags": [
+        "5 Mana",
+        "Spell"
+      ],
       "behaviors": [],
+      "notes": [
+        "Movement: Parabolic · Origin: LobFromPlayerBase"
+      ],
       "stats": [
         {
           "group": "Spell",
@@ -2915,8 +3107,14 @@
       "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
       "ultimateCrest": "",
       "mana": 4,
-      "tags": [],
+      "tags": [
+        "4 Mana",
+        "Spell"
+      ],
       "behaviors": [],
+      "notes": [
+        "Movement: Parabolic · Origin: SpawnAtCastPoint"
+      ],
       "stats": [
         {
           "group": "Spell",
@@ -2995,11 +3193,16 @@
       "ultimateCrest": "",
       "mana": 1,
       "tags": [
+        "1 Mana",
         "Ground",
         "Melee",
-        "Miner"
+        "Miner",
+        "Robot",
+        "Targets: Ground, Structures, Bases, Mana mines",
+        "Unit"
       ],
       "behaviors": [],
+      "notes": [],
       "stats": [
         {
           "group": "Unit stats",
@@ -3092,12 +3295,22 @@
       "ultimateCrest": "",
       "mana": 2,
       "tags": [
+        "2 Mana",
         "2 units",
+        "Combat unit",
         "Contact detonation",
         "Ground",
-        "Siege"
+        "Melee",
+        "Siege",
+        "Targets: Structures, Bases",
+        "Undead",
+        "Unit"
       ],
       "behaviors": [],
+      "notes": [
+        "2 units · Line formation",
+        "2 × Rotball · stats per unit"
+      ],
       "stats": [
         {
           "group": "Rotball · per unit",
@@ -3204,10 +3417,16 @@
       "ultimateCrest": "",
       "mana": 4,
       "tags": [
+        "4 Mana",
+        "Combat unit",
         "Ground",
-        "Melee"
+        "Melee",
+        "Targets: Ground, Structures, Bases",
+        "Undead",
+        "Unit"
       ],
       "behaviors": [],
+      "notes": [],
       "stats": [
         {
           "group": "Unit stats",
@@ -3300,11 +3519,20 @@
       "ultimateCrest": "",
       "mana": 4,
       "tags": [
+        "4 Mana",
         "6 units",
+        "Combat unit",
         "Ground",
-        "Melee"
+        "Melee",
+        "Targets: Ground, Structures, Bases",
+        "Undead",
+        "Unit"
       ],
       "behaviors": [],
+      "notes": [
+        "6 units · Grid formation",
+        "6 × Shardling · stats per unit"
+      ],
       "stats": [
         {
           "group": "Shardling · per unit",
@@ -3397,11 +3625,20 @@
       "ultimateCrest": "",
       "mana": 3,
       "tags": [
+        "3 Mana",
         "3 units",
+        "Combat unit",
         "Ground",
-        "Melee"
+        "Melee",
+        "Robot",
+        "Targets: Ground, Structures, Bases",
+        "Unit"
       ],
       "behaviors": [],
+      "notes": [
+        "3 units · Circle formation",
+        "3 × Skitter · stats per unit"
+      ],
       "stats": [
         {
           "group": "Skitter · per unit",
@@ -3494,10 +3731,19 @@
       "ultimateCrest": "Assets/Art/UI/Resources/UI/BattleKit/UltimateCrestNeutral.png",
       "mana": 5,
       "tags": [
+        "5 Mana",
+        "Combat unit",
         "Ground",
-        "Melee"
+        "Melee",
+        "Targets: Ground, Structures, Bases",
+        "Ultimate-bearing",
+        "Undead",
+        "Unit"
       ],
       "behaviors": [],
+      "notes": [
+        "Soul Devourer — Ultimate: Soul Devourer Release"
+      ],
       "stats": [
         {
           "group": "Unit stats",
@@ -3618,8 +3864,14 @@
       "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
       "ultimateCrest": "",
       "mana": 2,
-      "tags": [],
+      "tags": [
+        "2 Mana",
+        "Spell"
+      ],
       "behaviors": [],
+      "notes": [
+        "Movement: Parabolic · Origin: SpawnAtCastPoint"
+      ],
       "stats": [
         {
           "group": "Spell",
@@ -3705,10 +3957,16 @@
       "ultimateCrest": "",
       "mana": 2,
       "tags": [
+        "2 Mana",
+        "Combat unit",
         "Ground",
-        "Ranged"
+        "Ranged",
+        "Robot",
+        "Targets: Ground, Air, Structures, Bases",
+        "Unit"
       ],
       "behaviors": [],
+      "notes": [],
       "stats": [
         {
           "group": "Unit stats",
@@ -3808,10 +4066,16 @@
       "ultimateCrest": "",
       "mana": 5,
       "tags": [
+        "5 Mana",
+        "Combat unit",
         "Ground",
-        "Ranged"
+        "Ranged",
+        "Robot",
+        "Targets: Ground, Air, Structures, Bases",
+        "Unit"
       ],
       "behaviors": [],
+      "notes": [],
       "stats": [
         {
           "group": "Unit stats",
@@ -3911,10 +4175,19 @@
       "ultimateCrest": "Assets/Art/UI/Resources/UI/BattleKit/UltimateCrestNeutral.png",
       "mana": 5,
       "tags": [
+        "5 Mana",
+        "Combat unit",
         "Ground",
-        "Ranged"
+        "Ranged",
+        "Robot",
+        "Targets: Ground, Air, Structures, Bases",
+        "Ultimate-bearing",
+        "Unit"
       ],
       "behaviors": [],
+      "notes": [
+        "Tesla Relay — Ultimate: Ultimate Lightening Rod"
+      ],
       "stats": [
         {
           "group": "Unit stats",
@@ -4057,10 +4330,16 @@
       "ultimateCrest": "",
       "mana": 2,
       "tags": [
+        "2 Mana",
+        "Combat unit",
         "Flying",
-        "Ranged"
+        "Ranged",
+        "Targets: Ground, Air, Structures, Bases",
+        "Undead",
+        "Unit"
       ],
       "behaviors": [],
+      "notes": [],
       "stats": [
         {
           "group": "Unit stats",

@@ -45,3 +45,15 @@ test('Corpse Wagon displays its authored two-Husk death trigger and contact dama
   const html=pages.find(([route])=>route==='units/corpse-wagon')[2];
   assert.ok(html.includes('spawns 2 × Plague Husk'));
 });
+test('website includes app targeting, squad and spell details without frame controls',()=>{
+  const miner=pages.find(([route])=>route==='units/robot-miner')[2];
+  assert.ok(miner.includes('Targets: Ground, Structures, Bases, Mana mines'));
+  const squad=pages.find(([route])=>route==='units/pip-and-spark')[2];
+  assert.ok(squad.includes('Ultimate-bearing'));
+  assert.ok(squad.includes('1 × Spark · stats per unit'));
+  assert.ok(squad.includes('1 × Pip · stats per unit'));
+  assert.ok(squad.includes('Line formation'));
+  const fireball=pages.find(([route])=>route==='units/fireball')[2];
+  assert.ok(fireball.includes('Movement: Parabolic · Origin: LobFromPlayerBase'));
+  for(const [, ,html] of pages) assert.ok(!/FrameUnlock|FrameEquip|FrameConfirm|Unlock frame/i.test(html));
+});
