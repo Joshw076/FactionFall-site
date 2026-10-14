@@ -657,3 +657,7 @@ ol, ul { padding-left: 24px; }
 @media(max-width:760px) { .brand .brand-name { font-size: 32px; } .hero-deck { min-height: 400px; } .hero-card-fan { max-width: 460px; height: 360px; } .catalog-art { padding: 8px 2px 0; } }
 @media(max-width:420px) { .hero-card-fan { height: 300px; } .hero-deck { min-height: 340px; } .brand .brand-name { font-size: 29px; } }
 @media(prefers-reduced-motion:reduce) { .catalog-card:hover { transform: none; } }
+.card-behaviors { margin-top: 28px; padding: 22px; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; }
+.card-behaviors h2 { margin: 0 0 12px; font-size: 20px; }
+.card-behaviors ul { margin: 0; padding-left: 22px; color: var(--muted); }
+.card-behaviors li + li { margin-top: 8px; }

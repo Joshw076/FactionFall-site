@@ -28,3 +28,20 @@ test('squad stats remain per member and hostile text is escaped',()=>{
   assert.ok(!markup.includes('<script>alert(1)</script>'));
   assert.ok(markup.includes('&lt;script&gt;'));
 });
+test('Pip and Spark have two member panels with their own damage and ultimate',()=>{
+  const card=catalog.cards.find(c=>c.name==='Pip and Spark');
+  assert.deepEqual([...new Set(card.stats.map(s=>s.group))],['Pip · per unit','Spark · per unit']);
+  assert.equal(card.stats.find(s=>s.group.startsWith('Spark')&&s.label==='Attack: Damage per hit').value,70);
+  assert.equal(card.stats.find(s=>s.group.startsWith('Spark')&&s.label==='Ultimate: Damage per hit').value,85);
+  assert.equal(card.stats.find(s=>s.group.startsWith('Pip')&&s.label.includes('2 projectiles')).value,35);
+  const html=pages.find(([route])=>route==='units/pip-and-spark')[2];
+  assert.ok(!html.includes('<h2>Pip and Spark'));
+  assert.equal((html.match(/class="stat-group"/g)||[]).length,2);
+});
+test('Corpse Wagon displays its authored two-Husk death trigger and contact damage',()=>{
+  const card=catalog.cards.find(c=>c.name==='Corpse Wagon');
+  assert.ok(card.behaviors.some(note=>note.includes('on death: spawns 2 × Plague Husk')));
+  assert.equal(card.stats.find(s=>s.label==='Contact: Damage per hit').value,450);
+  const html=pages.find(([route])=>route==='units/corpse-wagon')[2];
+  assert.ok(html.includes('spawns 2 × Plague Husk'));
+});

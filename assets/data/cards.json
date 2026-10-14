@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-14T02:55:14.0285764+00:00",
+  "exportedAt": "2026-10-14T03:03:48.3167163+00:00",
   "cards": [
     {
       "id": "Aegis",
@@ -19,6 +19,7 @@
         "Flying",
         "Melee"
       ],
+      "behaviors": [],
       "stats": [
         {
           "group": "Unit stats",
@@ -49,32 +50,32 @@
           "value": 1.7999999523162842
         },
         {
-          "group": "Ultimate: AegisWard",
-          "label": "Required charge",
+          "group": "Unit stats",
+          "label": "Attack: Damage per hit",
+          "suffix": "",
+          "metric": "damage",
+          "value": 30
+        },
+        {
+          "group": "Unit stats",
+          "label": "Ultimate required charge",
           "suffix": "",
           "metric": "charge",
           "value": 100
         },
         {
-          "group": "Ultimate: AegisWard",
-          "label": "Passive charge",
+          "group": "Unit stats",
+          "label": "Ultimate passive charge",
           "suffix": " / sec",
           "metric": "passiveCharge",
           "value": 5.55555534362793
         },
         {
-          "group": "Ultimate: AegisWard",
+          "group": "Unit stats",
           "label": "Charge per damage taken",
           "suffix": "",
           "metric": "chargePerDamage",
           "value": 10
-        },
-        {
-          "group": "Attack damage",
-          "label": "Damage per hit",
-          "suffix": "",
-          "metric": "damage",
-          "value": 30
         }
       ],
       "artWindow": [
@@ -136,6 +137,7 @@
         "Ground",
         "Melee"
       ],
+      "behaviors": [],
       "stats": [
         {
           "group": "Unit stats",
@@ -166,15 +168,15 @@
           "value": 2
         },
         {
-          "group": "Attack damage",
-          "label": "Area damage per target",
+          "group": "Unit stats",
+          "label": "Attack: Area damage per target",
           "suffix": "",
           "metric": "damage",
           "value": 70
         },
         {
-          "group": "Attack damage",
-          "label": "Area radius",
+          "group": "Unit stats",
+          "label": "Attack: Area radius",
           "suffix": "",
           "metric": "radius",
           "value": 1
@@ -239,6 +241,9 @@
         "Ground",
         "Siege"
       ],
+      "behaviors": [
+        "Corpse Wagon — on death: spawns 2 × Plague Husk."
+      ],
       "stats": [
         {
           "group": "Unit stats",
@@ -269,8 +274,8 @@
           "value": 1
         },
         {
-          "group": "Contact damage",
-          "label": "Damage per hit",
+          "group": "Unit stats",
+          "label": "Contact: Damage per hit",
           "suffix": "",
           "metric": "damage",
           "value": 450
@@ -335,6 +340,7 @@
         "Ground",
         "Melee"
       ],
+      "behaviors": [],
       "stats": [
         {
           "group": "Crawling Hand · per unit",
@@ -365,8 +371,8 @@
           "value": 1.7999999523162842
         },
         {
-          "group": "Crawling Hand (per unit): Attack damage",
-          "label": "Damage per hit",
+          "group": "Crawling Hand · per unit",
+          "label": "Attack: Damage per hit",
           "suffix": "",
           "metric": "damage",
           "value": 30
@@ -427,6 +433,7 @@
       "ultimateCrest": "",
       "mana": 2,
       "tags": [],
+      "behaviors": [],
       "stats": [
         {
           "group": "Spell",
@@ -509,6 +516,7 @@
         "Melee",
         "Miner"
       ],
+      "behaviors": [],
       "stats": [
         {
           "group": "Unit stats",
@@ -539,25 +547,25 @@
           "value": 1.399999976158142
         },
         {
-          "group": "Ability: DelverBurrow",
-          "label": "Required charge",
+          "group": "Unit stats",
+          "label": "Attack: Damage per hit",
+          "suffix": "",
+          "metric": "damage",
+          "value": 60
+        },
+        {
+          "group": "Unit stats",
+          "label": "Ultimate required charge",
           "suffix": "",
           "metric": "charge",
           "value": 100
         },
         {
-          "group": "Ability: DelverBurrow",
-          "label": "Passive charge",
+          "group": "Unit stats",
+          "label": "Ultimate passive charge",
           "suffix": " / sec",
           "metric": "passiveCharge",
           "value": 20
-        },
-        {
-          "group": "Attack damage",
-          "label": "Damage per hit",
-          "suffix": "",
-          "metric": "damage",
-          "value": 60
         }
       ],
       "artWindow": [
@@ -615,6 +623,7 @@
       "ultimateCrest": "",
       "mana": 2,
       "tags": [],
+      "behaviors": [],
       "stats": [
         {
           "group": "Spell",
@@ -703,6 +712,9 @@
         "Ground",
         "Ranged"
       ],
+      "behaviors": [
+        "Echo Caller — ultimate: spawns 2 × Shardling."
+      ],
       "stats": [
         {
           "group": "Unit stats",
@@ -733,32 +745,32 @@
           "value": 1.2999999523162842
         },
         {
-          "group": "Ultimate: Ultimate BoneCaller",
-          "label": "Required charge",
-          "suffix": "",
-          "metric": "charge",
-          "value": 64
-        },
-        {
-          "group": "Ultimate: Ultimate BoneCaller",
-          "label": "Passive charge",
-          "suffix": " / sec",
-          "metric": "passiveCharge",
-          "value": 8
-        },
-        {
-          "group": "Attack damage",
-          "label": "Area damage per target",
+          "group": "Unit stats",
+          "label": "Attack: Area damage per target",
           "suffix": "",
           "metric": "damage",
           "value": 190
         },
         {
-          "group": "Attack damage",
-          "label": "Area radius",
+          "group": "Unit stats",
+          "label": "Attack: Area radius",
           "suffix": "",
           "metric": "radius",
           "value": 0.20000000298023224
+        },
+        {
+          "group": "Unit stats",
+          "label": "Ultimate required charge",
+          "suffix": "",
+          "metric": "charge",
+          "value": 64
+        },
+        {
+          "group": "Unit stats",
+          "label": "Ultimate passive charge",
+          "suffix": " / sec",
+          "metric": "passiveCharge",
+          "value": 8
         }
       ],
       "artWindow": [
@@ -817,6 +829,7 @@
       "ultimateCrest": "",
       "mana": 4,
       "tags": [],
+      "behaviors": [],
       "stats": [
         {
           "group": "Spell",
@@ -919,6 +932,9 @@
         "Ground",
         "Melee"
       ],
+      "behaviors": [
+        "Gearling Foundry — ultimate: spawns 1 × Gearling."
+      ],
       "stats": [
         {
           "group": "Unit stats",
@@ -949,25 +965,25 @@
           "value": 1.2999999523162842
         },
         {
-          "group": "Ultimate: Ultimate Replicator",
-          "label": "Required charge",
+          "group": "Unit stats",
+          "label": "Attack: Damage per hit",
+          "suffix": "",
+          "metric": "damage",
+          "value": 190
+        },
+        {
+          "group": "Unit stats",
+          "label": "Ultimate required charge",
           "suffix": "",
           "metric": "charge",
           "value": 60
         },
         {
-          "group": "Ultimate: Ultimate Replicator",
-          "label": "Passive charge",
+          "group": "Unit stats",
+          "label": "Ultimate passive charge",
           "suffix": " / sec",
           "metric": "passiveCharge",
           "value": 10
-        },
-        {
-          "group": "Attack damage",
-          "label": "Damage per hit",
-          "suffix": "",
-          "metric": "damage",
-          "value": 190
         }
       ],
       "artWindow": [
@@ -1030,6 +1046,7 @@
         "Ground",
         "Melee"
       ],
+      "behaviors": [],
       "stats": [
         {
           "group": "Gearling · per unit",
@@ -1060,8 +1077,8 @@
           "value": 1.600000023841858
         },
         {
-          "group": "Gearling (per unit): Attack damage",
-          "label": "Damage per hit",
+          "group": "Gearling · per unit",
+          "label": "Attack: Damage per hit",
           "suffix": "",
           "metric": "damage",
           "value": 70
@@ -1125,6 +1142,7 @@
         "Flying",
         "Ranged"
       ],
+      "behaviors": [],
       "stats": [
         {
           "group": "Unit stats",
@@ -1155,8 +1173,8 @@
           "value": 1.100000023841858
         },
         {
-          "group": "Attack damage",
-          "label": "Damage per hit",
+          "group": "Unit stats",
+          "label": "Attack: Damage per hit",
           "suffix": "",
           "metric": "damage",
           "value": 160
@@ -1217,6 +1235,7 @@
       "ultimateCrest": "",
       "mana": 3,
       "tags": [],
+      "behaviors": [],
       "stats": [
         {
           "group": "Spell",
@@ -1302,6 +1321,7 @@
       "ultimateCrest": "",
       "mana": 3,
       "tags": [],
+      "behaviors": [],
       "stats": [
         {
           "group": "Spell",
@@ -1432,6 +1452,7 @@
         "Ground",
         "Melee"
       ],
+      "behaviors": [],
       "stats": [
         {
           "group": "Unit stats",
@@ -1462,8 +1483,8 @@
           "value": 1.399999976158142
         },
         {
-          "group": "Attack damage",
-          "label": "Damage per hit",
+          "group": "Unit stats",
+          "label": "Attack: Damage per hit",
           "suffix": "",
           "metric": "damage",
           "value": 60
@@ -1527,6 +1548,7 @@
         "Ground",
         "Melee"
       ],
+      "behaviors": [],
       "stats": [
         {
           "group": "Unit stats",
@@ -1557,8 +1579,8 @@
           "value": 1.7000000476837158
         },
         {
-          "group": "Attack damage",
-          "label": "Damage per hit",
+          "group": "Unit stats",
+          "label": "Attack: Damage per hit",
           "suffix": "",
           "metric": "damage",
           "value": 110
@@ -1622,6 +1644,7 @@
         "Ground",
         "Ranged"
       ],
+      "behaviors": [],
       "stats": [
         {
           "group": "Unit stats",
@@ -1652,15 +1675,15 @@
           "value": 4.5
         },
         {
-          "group": "Attack damage",
-          "label": "Area damage per target",
+          "group": "Unit stats",
+          "label": "Attack: Area damage per target",
           "suffix": "",
           "metric": "damage",
           "value": 120
         },
         {
-          "group": "Attack damage",
-          "label": "Area radius",
+          "group": "Unit stats",
+          "label": "Attack: Area radius",
           "suffix": "",
           "metric": "radius",
           "value": 0.3499999940395355
@@ -1724,6 +1747,7 @@
         "Flying",
         "Melee"
       ],
+      "behaviors": [],
       "stats": [
         {
           "group": "Unit stats",
@@ -1754,8 +1778,8 @@
           "value": 1.5
         },
         {
-          "group": "Attack damage",
-          "label": "Damage per hit",
+          "group": "Unit stats",
+          "label": "Attack: Damage per hit",
           "suffix": "",
           "metric": "damage",
           "value": 60
@@ -1819,6 +1843,7 @@
         "Ground",
         "Melee"
       ],
+      "behaviors": [],
       "stats": [
         {
           "group": "Unit stats",
@@ -1849,22 +1874,22 @@
           "value": 2.700000047683716
         },
         {
-          "group": "Attack damage",
-          "label": "Damage per hit",
+          "group": "Unit stats",
+          "label": "Attack: Damage per hit",
           "suffix": "",
           "metric": "damage",
           "value": 180
         },
         {
-          "group": "On death",
-          "label": "Area damage per target",
+          "group": "Unit stats",
+          "label": "On death: Area damage per target",
           "suffix": "",
           "metric": "damage",
           "value": 265
         },
         {
-          "group": "On death",
-          "label": "Area radius",
+          "group": "Unit stats",
+          "label": "On death: Area radius",
           "suffix": "",
           "metric": "radius",
           "value": 2.5
@@ -1929,6 +1954,7 @@
         "Ground",
         "Ranged"
       ],
+      "behaviors": [],
       "stats": [
         {
           "group": "Needle · per unit",
@@ -1959,8 +1985,8 @@
           "value": 1.600000023841858
         },
         {
-          "group": "Needle (per unit): Attack damage",
-          "label": "Damage per hit",
+          "group": "Needle · per unit",
+          "label": "Attack: Damage per hit",
           "suffix": "",
           "metric": "damage",
           "value": 90
@@ -2021,6 +2047,7 @@
       "ultimateCrest": "",
       "mana": 2,
       "tags": [],
+      "behaviors": [],
       "stats": [
         {
           "group": "Spell",
@@ -2109,6 +2136,7 @@
         "Ground",
         "Ranged"
       ],
+      "behaviors": [],
       "stats": [
         {
           "group": "Unit stats",
@@ -2139,22 +2167,22 @@
           "value": 1.600000023841858
         },
         {
-          "group": "Attack damage (each of 2 projectiles)",
-          "label": "Damage per hit",
+          "group": "Unit stats",
+          "label": "Attack (each of 2 projectiles): Damage per hit",
           "suffix": "",
           "metric": "damage",
           "value": 35
         },
         {
-          "group": "On death",
-          "label": "Area damage per target",
+          "group": "Unit stats",
+          "label": "On death: Area damage per target",
           "suffix": "",
           "metric": "damage",
           "value": 30
         },
         {
-          "group": "On death",
-          "label": "Area radius",
+          "group": "Unit stats",
+          "label": "On death: Area radius",
           "suffix": "",
           "metric": "radius",
           "value": 2
@@ -2220,49 +2248,8 @@
         "Melee",
         "Ranged"
       ],
+      "behaviors": [],
       "stats": [
-        {
-          "group": "Pip and Spark · per unit",
-          "label": "Health",
-          "suffix": "",
-          "metric": "health",
-          "value": 800
-        },
-        {
-          "group": "Pip and Spark · per unit",
-          "label": "Movement speed",
-          "suffix": "",
-          "metric": "movementSpeed",
-          "value": 1.5
-        },
-        {
-          "group": "Pip and Spark · per unit",
-          "label": "Attack range",
-          "suffix": "",
-          "metric": "attackRange",
-          "value": 1.7000000476837158
-        },
-        {
-          "group": "Pip and Spark · per unit",
-          "label": "Attack interval",
-          "suffix": " sec",
-          "metric": "attackInterval",
-          "value": 1.600000023841858
-        },
-        {
-          "group": "Ultimate: Ultimate test",
-          "label": "Required charge",
-          "suffix": "",
-          "metric": "charge",
-          "value": 100
-        },
-        {
-          "group": "Ultimate: Ultimate test",
-          "label": "Passive charge",
-          "suffix": " / sec",
-          "metric": "passiveCharge",
-          "value": 20
-        },
         {
           "group": "Pip · per unit",
           "label": "Health",
@@ -2292,32 +2279,81 @@
           "value": 1.600000023841858
         },
         {
-          "group": "Pip and Spark (per unit): Attack damage",
-          "label": "Damage per hit",
-          "suffix": "",
-          "metric": "damage",
-          "value": 70
-        },
-        {
-          "group": "Pip (per unit): Attack damage (each of 2 projectiles)",
-          "label": "Damage per hit",
+          "group": "Pip · per unit",
+          "label": "Attack (each of 2 projectiles): Damage per hit",
           "suffix": "",
           "metric": "damage",
           "value": 35
         },
         {
-          "group": "Pip (per unit): On death",
-          "label": "Area damage per target",
+          "group": "Pip · per unit",
+          "label": "On death: Area damage per target",
           "suffix": "",
           "metric": "damage",
           "value": 30
         },
         {
-          "group": "Pip (per unit): On death",
-          "label": "Area radius",
+          "group": "Pip · per unit",
+          "label": "On death: Area radius",
           "suffix": "",
           "metric": "radius",
           "value": 2
+        },
+        {
+          "group": "Spark · per unit",
+          "label": "Health",
+          "suffix": "",
+          "metric": "health",
+          "value": 800
+        },
+        {
+          "group": "Spark · per unit",
+          "label": "Movement speed",
+          "suffix": "",
+          "metric": "movementSpeed",
+          "value": 1.5
+        },
+        {
+          "group": "Spark · per unit",
+          "label": "Attack range",
+          "suffix": "",
+          "metric": "attackRange",
+          "value": 1.7000000476837158
+        },
+        {
+          "group": "Spark · per unit",
+          "label": "Attack interval",
+          "suffix": " sec",
+          "metric": "attackInterval",
+          "value": 1.600000023841858
+        },
+        {
+          "group": "Spark · per unit",
+          "label": "Attack: Damage per hit",
+          "suffix": "",
+          "metric": "damage",
+          "value": 70
+        },
+        {
+          "group": "Spark · per unit",
+          "label": "Ultimate: Damage per hit",
+          "suffix": "",
+          "metric": "damage",
+          "value": 85
+        },
+        {
+          "group": "Spark · per unit",
+          "label": "Ultimate required charge",
+          "suffix": "",
+          "metric": "charge",
+          "value": 100
+        },
+        {
+          "group": "Spark · per unit",
+          "label": "Ultimate passive charge",
+          "suffix": " / sec",
+          "metric": "passiveCharge",
+          "value": 20
         }
       ],
       "artWindow": [
@@ -2380,6 +2416,7 @@
         "Ground",
         "Ranged"
       ],
+      "behaviors": [],
       "stats": [
         {
           "group": "Pip · per unit",
@@ -2410,43 +2447,22 @@
           "value": 1.600000023841858
         },
         {
-          "group": "Pip (per unit): Attack damage (each of 2 projectiles)",
-          "label": "Damage per hit",
+          "group": "Pip · per unit",
+          "label": "Attack (each of 2 projectiles): Damage per hit",
           "suffix": "",
           "metric": "damage",
           "value": 35
         },
         {
-          "group": "Pip (per unit): On death",
-          "label": "Area damage per target",
+          "group": "Pip · per unit",
+          "label": "On death: Area damage per target",
           "suffix": "",
           "metric": "damage",
           "value": 30
         },
         {
-          "group": "Pip (per unit): On death",
-          "label": "Area radius",
-          "suffix": "",
-          "metric": "radius",
-          "value": 2
-        },
-        {
-          "group": "Pip (per unit): Attack damage (each of 2 projectiles)",
-          "label": "Damage per hit",
-          "suffix": "",
-          "metric": "damage",
-          "value": 35
-        },
-        {
-          "group": "Pip (per unit): On death",
-          "label": "Area damage per target",
-          "suffix": "",
-          "metric": "damage",
-          "value": 30
-        },
-        {
-          "group": "Pip (per unit): On death",
-          "label": "Area radius",
+          "group": "Pip · per unit",
+          "label": "On death: Area radius",
           "suffix": "",
           "metric": "radius",
           "value": 2
@@ -2511,6 +2527,7 @@
         "Melee",
         "Siege"
       ],
+      "behaviors": [],
       "stats": [
         {
           "group": "Unit stats",
@@ -2541,50 +2558,50 @@
           "value": 1.7000000476837158
         },
         {
-          "group": "Attack damage",
-          "label": "Damage per hit",
+          "group": "Unit stats",
+          "label": "Attack: Damage per hit",
           "suffix": "",
           "metric": "damage",
           "value": 130
         },
         {
-          "group": "On death pool · lingering area",
-          "label": "Damage per tick · units",
+          "group": "Unit stats",
+          "label": "On death pool · lingering area: Damage per tick · units",
           "suffix": "",
           "metric": "damage",
           "value": 35
         },
         {
-          "group": "On death pool · lingering area",
-          "label": "Damage per tick · buildings",
+          "group": "Unit stats",
+          "label": "On death pool · lingering area: Damage per tick · buildings",
           "suffix": "",
           "metric": "damage",
           "value": 8.277027130126953
         },
         {
-          "group": "On death pool · lingering area",
-          "label": "Area damage / sec · units",
+          "group": "Unit stats",
+          "label": "On death pool · lingering area: Area damage / sec · units",
           "suffix": "",
           "metric": "dps",
           "value": 35
         },
         {
-          "group": "On death pool · lingering area",
-          "label": "Tick interval",
+          "group": "Unit stats",
+          "label": "On death pool · lingering area: Tick interval",
           "suffix": " sec",
           "metric": "interval",
           "value": 1
         },
         {
-          "group": "On death pool · lingering area",
-          "label": "Area duration",
+          "group": "Unit stats",
+          "label": "On death pool · lingering area: Area duration",
           "suffix": " sec",
           "metric": "duration",
           "value": 5
         },
         {
-          "group": "On death pool · lingering area",
-          "label": "Area radius",
+          "group": "Unit stats",
+          "label": "On death pool · lingering area: Area radius",
           "suffix": "",
           "metric": "radius",
           "value": 2.700000047683716
@@ -2649,6 +2666,7 @@
         "Ranged",
         "Siege"
       ],
+      "behaviors": [],
       "stats": [
         {
           "group": "Unit stats",
@@ -2679,25 +2697,39 @@
           "value": 3
         },
         {
-          "group": "Ultimate: RampartArtilleryUltimate",
-          "label": "Required charge",
+          "group": "Unit stats",
+          "label": "Attack: Damage per hit",
+          "suffix": "",
+          "metric": "damage",
+          "value": 210
+        },
+        {
+          "group": "Unit stats",
+          "label": "Ultimate: Area damage per target",
+          "suffix": "",
+          "metric": "damage",
+          "value": 250
+        },
+        {
+          "group": "Unit stats",
+          "label": "Ultimate: Area radius",
+          "suffix": "",
+          "metric": "radius",
+          "value": 1.5
+        },
+        {
+          "group": "Unit stats",
+          "label": "Ultimate required charge",
           "suffix": "",
           "metric": "charge",
           "value": 100
         },
         {
-          "group": "Ultimate: RampartArtilleryUltimate",
-          "label": "Passive charge",
+          "group": "Unit stats",
+          "label": "Ultimate passive charge",
           "suffix": " / sec",
           "metric": "passiveCharge",
           "value": 5
-        },
-        {
-          "group": "Attack damage",
-          "label": "Damage per hit",
-          "suffix": "",
-          "metric": "damage",
-          "value": 210
         }
       ],
       "artWindow": [
@@ -2756,6 +2788,7 @@
       "ultimateCrest": "",
       "mana": 5,
       "tags": [],
+      "behaviors": [],
       "stats": [
         {
           "group": "Spell",
@@ -2883,6 +2916,7 @@
       "ultimateCrest": "",
       "mana": 4,
       "tags": [],
+      "behaviors": [],
       "stats": [
         {
           "group": "Spell",
@@ -2965,6 +2999,7 @@
         "Melee",
         "Miner"
       ],
+      "behaviors": [],
       "stats": [
         {
           "group": "Unit stats",
@@ -2995,8 +3030,8 @@
           "value": 1.399999976158142
         },
         {
-          "group": "Attack damage",
-          "label": "Damage per hit",
+          "group": "Unit stats",
+          "label": "Attack: Damage per hit",
           "suffix": "",
           "metric": "damage",
           "value": 30
@@ -3062,6 +3097,7 @@
         "Ground",
         "Siege"
       ],
+      "behaviors": [],
       "stats": [
         {
           "group": "Rotball · per unit",
@@ -3092,22 +3128,22 @@
           "value": 1.2999999523162842
         },
         {
-          "group": "Rotball (per unit): On death",
-          "label": "Area damage per target · units",
+          "group": "Rotball · per unit",
+          "label": "On death: Area damage per target · units",
           "suffix": "",
           "metric": "damage",
           "value": 225
         },
         {
-          "group": "Rotball (per unit): On death",
-          "label": "Area damage per target · buildings",
+          "group": "Rotball · per unit",
+          "label": "On death: Area damage per target · buildings",
           "suffix": "",
           "metric": "damage",
           "value": 450
         },
         {
-          "group": "Rotball (per unit): On death",
-          "label": "Area radius",
+          "group": "Rotball · per unit",
+          "label": "On death: Area radius",
           "suffix": "",
           "metric": "radius",
           "value": 1.25
@@ -3171,6 +3207,7 @@
         "Ground",
         "Melee"
       ],
+      "behaviors": [],
       "stats": [
         {
           "group": "Unit stats",
@@ -3201,8 +3238,8 @@
           "value": 2
         },
         {
-          "group": "Attack damage",
-          "label": "Damage per hit",
+          "group": "Unit stats",
+          "label": "Attack: Damage per hit",
           "suffix": "",
           "metric": "damage",
           "value": 140
@@ -3267,6 +3304,7 @@
         "Ground",
         "Melee"
       ],
+      "behaviors": [],
       "stats": [
         {
           "group": "Shardling · per unit",
@@ -3297,8 +3335,8 @@
           "value": 1.399999976158142
         },
         {
-          "group": "Shardling (per unit): Attack damage",
-          "label": "Damage per hit",
+          "group": "Shardling · per unit",
+          "label": "Attack: Damage per hit",
           "suffix": "",
           "metric": "damage",
           "value": 46
@@ -3363,6 +3401,7 @@
         "Ground",
         "Melee"
       ],
+      "behaviors": [],
       "stats": [
         {
           "group": "Skitter · per unit",
@@ -3393,8 +3432,8 @@
           "value": 1.2999999523162842
         },
         {
-          "group": "Skitter (per unit): Attack damage",
-          "label": "Damage per hit",
+          "group": "Skitter · per unit",
+          "label": "Attack: Damage per hit",
           "suffix": "",
           "metric": "damage",
           "value": 90
@@ -3458,6 +3497,7 @@
         "Ground",
         "Melee"
       ],
+      "behaviors": [],
       "stats": [
         {
           "group": "Unit stats",
@@ -3488,25 +3528,39 @@
           "value": 1.399999976158142
         },
         {
-          "group": "Ultimate: SoulDevourerRelease",
-          "label": "Required charge",
+          "group": "Unit stats",
+          "label": "Attack: Damage per hit",
+          "suffix": "",
+          "metric": "damage",
+          "value": 105
+        },
+        {
+          "group": "Unit stats",
+          "label": "Ultimate: Area damage per target",
+          "suffix": "",
+          "metric": "damage",
+          "value": 240
+        },
+        {
+          "group": "Unit stats",
+          "label": "Ultimate: Area radius",
+          "suffix": "",
+          "metric": "radius",
+          "value": 2.200000047683716
+        },
+        {
+          "group": "Unit stats",
+          "label": "Ultimate required charge",
           "suffix": "",
           "metric": "charge",
           "value": 100
         },
         {
-          "group": "Ultimate: SoulDevourerRelease",
-          "label": "Passive charge",
+          "group": "Unit stats",
+          "label": "Ultimate passive charge",
           "suffix": " / sec",
           "metric": "passiveCharge",
           "value": 0
-        },
-        {
-          "group": "Attack damage",
-          "label": "Damage per hit",
-          "suffix": "",
-          "metric": "damage",
-          "value": 105
         }
       ],
       "artWindow": [
@@ -3565,6 +3619,7 @@
       "ultimateCrest": "",
       "mana": 2,
       "tags": [],
+      "behaviors": [],
       "stats": [
         {
           "group": "Spell",
@@ -3653,6 +3708,7 @@
         "Ground",
         "Ranged"
       ],
+      "behaviors": [],
       "stats": [
         {
           "group": "Unit stats",
@@ -3683,15 +3739,15 @@
           "value": 1.7000000476837158
         },
         {
-          "group": "Attack damage",
-          "label": "Area damage per target",
+          "group": "Unit stats",
+          "label": "Attack: Area damage per target",
           "suffix": "",
           "metric": "damage",
           "value": 153
         },
         {
-          "group": "Attack damage",
-          "label": "Area radius",
+          "group": "Unit stats",
+          "label": "Attack: Area radius",
           "suffix": "",
           "metric": "radius",
           "value": 3.200000047683716
@@ -3755,6 +3811,7 @@
         "Ground",
         "Ranged"
       ],
+      "behaviors": [],
       "stats": [
         {
           "group": "Unit stats",
@@ -3785,15 +3842,15 @@
           "value": 1.399999976158142
         },
         {
-          "group": "Attack damage",
-          "label": "Area damage per target",
+          "group": "Unit stats",
+          "label": "Attack: Area damage per target",
           "suffix": "",
           "metric": "damage",
           "value": 160
         },
         {
-          "group": "Attack damage",
-          "label": "Area radius",
+          "group": "Unit stats",
+          "label": "Attack: Area radius",
           "suffix": "",
           "metric": "radius",
           "value": 0.5
@@ -3857,6 +3914,7 @@
         "Ground",
         "Ranged"
       ],
+      "behaviors": [],
       "stats": [
         {
           "group": "Unit stats",
@@ -3887,53 +3945,60 @@
           "value": 1.399999976158142
         },
         {
-          "group": "Ultimate: Ultimate LighteningRod",
-          "label": "Required charge",
+          "group": "Unit stats",
+          "label": "Attack: Area damage per target",
+          "suffix": "",
+          "metric": "damage",
+          "value": 160
+        },
+        {
+          "group": "Unit stats",
+          "label": "Attack: Area radius",
+          "suffix": "",
+          "metric": "radius",
+          "value": 3.200000047683716
+        },
+        {
+          "group": "Unit stats",
+          "label": "Ultimate: Damage per hit",
+          "suffix": "",
+          "metric": "damage",
+          "value": 35
+        },
+        {
+          "group": "Unit stats",
+          "label": "Ultimate required charge",
           "suffix": "",
           "metric": "charge",
           "value": 100
         },
         {
-          "group": "Ultimate: Ultimate LighteningRod",
-          "label": "Passive charge",
+          "group": "Unit stats",
+          "label": "Ultimate passive charge",
           "suffix": " / sec",
           "metric": "passiveCharge",
           "value": 10
         },
         {
-          "group": "Ultimate: Ultimate LighteningRod",
+          "group": "Unit stats",
           "label": "Charge per hit",
           "suffix": "",
           "metric": "chargePerHit",
           "value": 10
         },
         {
-          "group": "Ultimate: Ultimate LighteningRod",
+          "group": "Unit stats",
           "label": "Charge per damage taken",
           "suffix": "",
           "metric": "chargePerDamage",
           "value": 5
         },
         {
-          "group": "Ultimate: Ultimate LighteningRod",
+          "group": "Unit stats",
           "label": "Charge per kill",
           "suffix": "",
           "metric": "chargePerKill",
           "value": 25
-        },
-        {
-          "group": "Attack damage",
-          "label": "Area damage per target",
-          "suffix": "",
-          "metric": "damage",
-          "value": 160
-        },
-        {
-          "group": "Attack damage",
-          "label": "Area radius",
-          "suffix": "",
-          "metric": "radius",
-          "value": 3.200000047683716
         }
       ],
       "artWindow": [
@@ -3995,6 +4060,7 @@
         "Flying",
         "Ranged"
       ],
+      "behaviors": [],
       "stats": [
         {
           "group": "Unit stats",
@@ -4025,8 +4091,8 @@
           "value": 1.2000000476837158
         },
         {
-          "group": "Attack damage",
-          "label": "Base channel payload",
+          "group": "Unit stats",
+          "label": "Attack: Base channel payload",
           "suffix": "",
           "metric": "damage",
           "value": 90
