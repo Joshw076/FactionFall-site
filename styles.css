@@ -86,7 +86,7 @@ a:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; border-ra
   font-size: 22px;
   text-shadow: none;
 }
-.brand span:last-child {
+.brand .brand-name > span {
   display: block;
   margin-top: 5px;
   color: #91a9c5;
@@ -626,7 +626,7 @@ ol, ul { padding-left: 24px; }
 
 /* Game branding and card presentation */
 @font-face { font-family: Bangers; src: url('/assets/brand/Bangers-Regular.ttf') format('truetype'); font-display: swap; }
-.brand .brand-name { color: #ffcf63; font: 38px/1.12 'Carter One', sans-serif; text-shadow: 0 3px 0 #72522a; letter-spacing: -.02em; }
+.brand .brand-name { color: #f3d68a; font: 42px/1.12 'Carter One', sans-serif; text-shadow: 0 3px 0 #72522a; letter-spacing: -.02em; }
 .brand .brand-name > span { display: block; margin-top: 7px; text-shadow: none; font-size: 9px; }
 .brand-crest { width: 56px; height: 56px; }
 .hero-deck { position: relative; min-height: 460px; display: flex; flex-direction: column; justify-content: center; isolation: isolate; }
