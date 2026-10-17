@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-14T20:42:10.2650192+00:00",
+  "exportedAt": "2026-10-16T19:28:58.9012508+00:00",
   "cards": [
     {
       "id": "Aegis",
@@ -878,17 +878,18 @@
       "name": "Fireball",
       "description": "Lobs a projectile at the selected area.",
       "type": "Spell",
-      "faction": "Constructs",
+      "faction": "Neutral",
       "portrait": "Assets/Art/Cards/Illustrations/Portraits/Fireball.png",
       "details": "Impact radius: 2\r\nDuration: 0s | Travel speed: 8\r\nMovement: Parabolic | Origin: LobFromPlayerBase",
       "foreground": "Assets/Art/Cards/Illustrations/Layers/Foregrounds/Fireball.png",
-      "background": "Assets/Art/Cards/Illustrations/Layers/Backgrounds/Robot.png",
+      "background": "Assets/Art/Cards/Illustrations/Layers/Backgrounds/Neutral.png",
       "frame": "Assets/Art/UI/Resources/UI/BattleKit/CardFrameSpellNeutral.png",
       "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
       "ultimateCrest": "",
       "mana": 4,
       "tags": [
         "4 Mana",
+        "Neutral",
         "Spell"
       ],
       "behaviors": [],
@@ -1314,17 +1315,18 @@
       "name": "Healing Aura",
       "description": "Immediately repairs allied units and continues healing the area.",
       "type": "Spell",
-      "faction": "Constructs",
+      "faction": "Neutral",
       "portrait": "Assets/Art/Cards/Illustrations/Portraits/Healing Aura.png",
       "details": "Impact radius: 3.4\r\nDuration: 4s | Travel speed: 9\r\nMovement: Parabolic | Origin: SpawnAtCastPoint\r\nPersistent zone ticks every 1s",
       "foreground": "Assets/Art/Cards/Illustrations/Layers/Foregrounds/Healing Aura.png",
-      "background": "Assets/Art/Cards/Illustrations/Layers/Backgrounds/Robot.png",
+      "background": "Assets/Art/Cards/Illustrations/Layers/Backgrounds/Neutral.png",
       "frame": "Assets/Art/UI/Resources/UI/BattleKit/CardFrameSpellNeutral.png",
       "costIndicator": "Assets/Art/UI/Resources/UI/BattleKit/CostGem.png",
       "ultimateCrest": "",
       "mana": 3,
       "tags": [
         "3 Mana",
+        "Neutral",
         "Spell"
       ],
       "behaviors": [],
