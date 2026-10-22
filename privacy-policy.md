@@ -42,6 +42,8 @@ Multiplayer records include player identifiers, names and profile image URLs, te
 
 To validate results and prevent invalid rewards, we store player-submitted results and bounded gameplay evidence: reported duration, card and resource events, sequence and timing, team, amounts, source identifiers, unit spawn identifiers and types, evidence hashes, and validation outcomes or rejection reasons. These reports are linked to participants. Gameplay analytics are not automatically anonymous.
 
+The current code also supports compact diagnostics for online games against the AI: a match-linked summary of the AI policy version, deck identifier and contents fingerprint, map, weather, result, duration, mana use, damage, captures, placement failures, and learning outcome counts. A small sample of matches includes up to six AI decision examples. These diagnostics are linked to the submitting account and match; they do not contain chat or a recording of the battlefield. The database is configured to expire these diagnostic summaries after seven days, with asynchronous deletion, and account deletion removes the linked summaries. Provider logs, backups and their retention are separate. Deployment and device collection must be verified before describing this collection as active in a published release.
+
 Other participants receive information needed to join and play matches, including player profile and connection information. The client integrates Unity Authentication and Relay for multiplayer identity and traffic routing. Unity's processing is separate from our game account database.
 
 **Before publication:** [Confirm the released multiplayer configuration, Unity data categories and privacy link, retention, and provider deletion procedures.]
