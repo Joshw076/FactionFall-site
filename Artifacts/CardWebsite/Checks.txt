@@ -1,0 +1,7 @@
+Game export: 2026-11-03T01:08:40.8793043+00:00
+PASS 55 released cards, 431 artwork references byte-identical to game; all exported display rows and artwork masks match.
+PASS desktop hover produces distinct artwork-plane motion, both tilt directions captured; pointer exit resets; reduced-motion disables movement.
+PASS desktop and 390x844 mobile gallery/details: images loaded, no horizontal overflow; spell and squad labels match game.
+PASS without JavaScript: all gallery links, art and exact detail stats remain available.
+PASS no browser script, asset-loading or CSP errors.
+PASS touch emulation: hover hints hidden, touch movement leaves cards static and scrolling is unmodified; homepage fan hover also works.

@@ -1,59 +1,66 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
-import { makeUnitsPages, cardSlug } from '../units-pages.mjs';
+import { makeUnitsPages, cardSlug,cardFace,cardArtStyles } from '../units-pages.mjs';
 import { filterCards } from '../card-filter.js';
-const catalog = JSON.parse(await readFile(new URL('../assets/data/cards.json',import.meta.url),'utf8'));
-const pages = makeUnitsPages(catalog);
-test('every registry card has a static detail page and usable artwork', async()=>{
+const catalog=JSON.parse(await readFile(new URL('../assets/data/cards.json',import.meta.url),'utf8'));
+const pages=makeUnitsPages(catalog);
+const page=id=>pages.find(([route])=>route===`units/${cardSlug(id)}`)[2];
+
+test('every released registry card has a static detail page and complete layered artwork',async()=>{
   assert.equal(pages.length,catalog.cards.length+1);
-  for(const card of catalog.cards){
-    assert.ok(pages.some(([route])=>route===`units/${cardSlug(card.id)}`));
+  for(const card of catalog.cards) {
     assert.ok(pages[0][2].includes(`href="/units/${cardSlug(card.id)}"`));
-    await readFile(new URL('..'+card.image,import.meta.url));
+    for(const path of [card.image,card.frameImage,card.costIndicatorImage,card.backgroundImage,card.foregroundImage,card.ultimateCrestImage,...card.layers.map(p=>p.image)].filter(Boolean))
+      await readFile(new URL('..'+path,import.meta.url));
+    assert.ok(card.layers.length>=2,card.id);
+    assert.equal(new Set(card.layers.map(p=>p.id)).size,card.layers.length);
   }
 });
-test('combined filters find contact detonation and return an empty state for no match',()=>{
+test('combined filters and mana sorting still work',()=>{
   const cards=catalog.cards.map(c=>({...c,search:[c.name,c.description,...c.tags].join(' ').toLowerCase()}));
-  assert.deepEqual(filterCards(cards,{search:'contact detonation',faction:'Undead'}).map(c=>c.name),['Corpse Wagon','Rotball']);
+  assert.deepEqual(filterCards(cards,{search:'corpse wagon',faction:'Undead',type:'Unit'}).map(c=>c.name),['Corpse Wagon']);
   assert.equal(filterCards(cards,{search:'no-such-card'}).length,0);
-  const sorted=filterCards(cards,{sort:'mana'});
-  assert.ok(sorted.every((c,i)=>!i||c.mana>=sorted[i-1].mana));
+  const sorted=filterCards(cards,{sort:'mana'});assert.ok(sorted.every((c,i)=>!i||c.mana>=sorted[i-1].mana));
 });
-test('squad stats remain per member and hostile text is escaped',()=>{
-  const squad=pages.find(([route])=>route==='units/skitter-pack');
-  assert.ok(squad[2].includes('per unit'));
-  const sample=structuredClone(catalog); sample.cards[0].name='<script>alert(1)</script>';
-  const markup=makeUnitsPages(sample).map(p=>p[2]).join('');
-  assert.ok(!markup.includes('<script>alert(1)</script>'));
-  assert.ok(markup.includes('&lt;script&gt;'));
+test('all exact game display values and notes appear in detail pages; text is escaped',()=>{
+  for(const card of catalog.cards) {
+    const html=page(card.id);
+    for(const row of card.displayRows) {
+      const escaped=row.label.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&#39;');
+      assert.ok(html.includes(escaped),`${card.id}: ${row.label}`);
+      if(row.kind==='stat')assert.ok(html.includes(`fill-${Math.round(row.percent)}`));
+    }
+  }
+  const sample=structuredClone(catalog);sample.cards[0].name='<script>alert(1)</script>';
+  const html=makeUnitsPages(sample).map(p=>p[2]).join('');assert.ok(!html.includes('<script>alert(1)</script>'));assert.ok(html.includes('&lt;script&gt;'));
 });
-test('Pip and Spark have two member panels with their own damage and ultimate',()=>{
-  const card=catalog.cards.find(c=>c.name==='Pip and Spark');
-  assert.deepEqual([...new Set(card.stats.map(s=>s.group))],['Pip · per unit','Spark · per unit']);
-  assert.equal(card.stats.find(s=>s.group.startsWith('Spark')&&s.label==='Attack: Damage per hit').value,70);
-  assert.equal(card.stats.find(s=>s.group.startsWith('Spark')&&s.label==='Ultimate: Damage per hit').value,85);
-  assert.equal(card.stats.find(s=>s.group.startsWith('Pip')&&s.label.includes('2 projectiles')).value,35);
-  const html=pages.find(([route])=>route==='units/pip-and-spark')[2];
-  assert.ok(!html.includes('<h2>Pip and Spark'));
-  assert.equal((html.match(/class="stat-group"/g)||[]).length,2);
+test('squad explanation is concise and mixed members use their real displayed names',()=>{
+  const squad=page('Pip and Spark');
+  assert.ok(squad.includes('Deploys 2 units'));assert.ok(squad.includes('Stats below are for each unit.'));
+  assert.ok(squad.includes('>Spark<'));assert.ok(squad.includes('>Pip<'));
+  assert.ok(!squad.includes('Line formation'));assert.ok(!squad.includes('stats per unit'));
+  assert.ok(page('Skitter Pack').includes('Stats below are for each unit.'));
 });
-test('Corpse Wagon displays its authored two-Husk death trigger and contact damage',()=>{
-  const card=catalog.cards.find(c=>c.name==='Corpse Wagon');
-  assert.ok(card.behaviors.some(note=>note.includes('on death: spawns 2 × Plague Husk')));
-  assert.equal(card.stats.find(s=>s.label==='Contact: Damage per hit').value,450);
-  const html=pages.find(([route])=>route==='units/corpse-wagon')[2];
-  assert.ok(html.includes('spawns 2 × Plague Husk'));
+test('spell delivery and timing mirror game presentation without internal enum names',()=>{
+  const fireball=page('Fireball');
+  assert.ok(fireball.includes('Launched from Main Base'));
+  assert.ok(fireball.includes('8 units / sec'));assert.ok(fireball.includes('2 units'));
+  assert.ok(!fireball.includes('LobFromPlayerBase'));assert.ok(!fireball.includes('Movement: Parabolic'));
+  assert.ok(!fireball.includes('0 sec'));assert.ok(!fireball.includes('Visual duration'));
+  const quake=page('Earthquake');assert.ok(quake.includes('Appears at the selected location'));assert.ok(!quake.includes('Travel speed'));
+  assert.match(page('Bastion'),/Every [0-9.]+ sec/);
 });
-test('website includes app targeting, squad and spell details without frame controls',()=>{
-  const miner=pages.find(([route])=>route==='units/robot-miner')[2];
-  assert.ok(miner.includes('Targets: Ground, Structures, Bases, Mana mines'));
-  const squad=pages.find(([route])=>route==='units/pip-and-spark')[2];
-  assert.ok(squad.includes('Ultimate-bearing'));
-  assert.ok(squad.includes('1 × Spark · stats per unit'));
-  assert.ok(squad.includes('1 × Pip · stats per unit'));
-  assert.ok(squad.includes('Line formation'));
-  const fireball=pages.find(([route])=>route==='units/fireball')[2];
-  assert.ok(fireball.includes('Movement: Parabolic · Origin: LobFromPlayerBase'));
-  for(const [, ,html] of pages) assert.ok(!/FrameUnlock|FrameEquip|FrameConfirm|Unlock frame/i.test(html));
+test('depth masks, semantic plane order, variable costs and frame geometry are game sourced',()=>{
+  assert.equal(catalog.depth.maximumTiltDegrees,9);
+  assert.ok(cardArtStyles(catalog).includes('clip-path:polygon('));
+  for(const card of catalog.cards) {
+    const html=cardFace(card);
+    assert.ok(html.includes('game-card-stage'));
+    let index=-1;
+    for(const plane of card.layers) {const next=html.indexOf(`src="${plane.image}"`,index+1);assert.ok(next>index);index=next;}
+    if(card.layers.some(p=>p.popout))assert.ok(html.includes('game-popout'));
+    if(card.variableManaCost)assert.ok(html.includes(`>${card.costLabel}</span>`));
+  }
+  for(const [,,html]of pages)assert.ok(!/FrameUnlock|FrameEquip|FrameConfirm|Unlock frame/i.test(html));
 });

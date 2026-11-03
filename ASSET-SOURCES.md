@@ -21,12 +21,23 @@ The build copies these assets to `dist/assets`. Images and fonts are served from
 
 ## Website card browser
 
-The `/units` page and its 39 static detail pages use `assets/data/cards.json`, exported read-only from Unity's canonical `Assets/Resources/CardRegistry.asset` by `Assets/Editor/WebsiteCardCatalogExport.cs`. Health, movement, range, intervals, charge, spell stats and damage come from the app definitions and `CardDamageDetails.Read`, without assumed buffs. This is a build-time snapshot, not a live backend feed.
+The `/units` gallery and its 55 detail pages use only released cards from Unity's canonical `Assets/Resources/CardRegistry.asset`. The snapshot is exported by `Assets/Editor/WebsiteCardCatalogExport.cs`; no gameplay definitions or balance values are modified.
 
-Refresh by running Unity's `CRR.EditorTools.WebsiteCardCatalogExport.Export`, then `node scripts/import-game-cards.mjs C:/Users/jjwil/CardFall` and `node build.mjs` here. The import preserves canonical IDs and numeric values. The catalog uses the actual app card art, faction backgrounds, frames and cost gems. The reviewed Blender renders remain in the homepage showcase. No Study B models are introduced. Cards without faction tribe metadata appear under Other rather than assigning a faction.
+Detail notes, section headings, displayed values, attack timing and comparison-bar percentages are produced by the same `CardsPanelView.RenderGameplayStats` method used by both the collection and deck inspector. The website does not reconstruct spell delivery enums or squad formations. This preserves the game's player-facing spell delivery, radius, duration, travel speed, swarm count/per-unit explanation, and Pip/Spark member labels. Descriptions and tags also come from the app definitions. Frame purchases, ownership and account controls are excluded.
 
-Search/filter/sort is progressive enhancement; every card and detail route is usable without JavaScript. No authentication, cookies, owned-card data or account requests are needed for this catalog. Preview changes remain local until deployed.
+Artwork uses the game's current neutral frame shapes, outline-free neutral mana gems, faction backgrounds, art-window polygons and all 146 semantic foreground planes from `UI/CardArtworkDepthCatalog`. The catalog points to generated layers authored from `Tools/CardIllustrations/detail-layer-plan.json`; neither the layer plan nor the artwork is edited by this website import. Hover tilt and differential layer movement use the exported `CardDepthSettings` values. The website applies the same overscan and per-plane parallax, with a CSS perspective presentation. Popout planes have a separate mask above the top edge. This is a browser implementation of the game's visual treatment, not the Unity renderer.
 
-Card detail export now keeps each squad member's base, attack, contact, death damage and ultimate payload in one panel. The legacy `Pip and Spark` UnitDefinition is presented as Spark only within the Pip and Spark card; the source asset and gameplay names are preserved. Death and ultimate spawn effects are read from the authored SpawnUnitsEffectDefinition, including counts and spawned unit names. Damage still uses CardDamageDetails effect traversal and target multipliers, with projectile counts made explicit; it is not estimated DPS.
+Typography uses the existing Carter One and Bangers copies, plus the game's Nunito SemiBold/Bold files and accompanying OFL license. All assets are served locally with the existing restrictive Content Security Policy; no third-party scripts, sensors, authentication or analytics are required.
 
-Gameplay tags, including Targets, are exported directly from CardsPanelView.GameplayTags, shared with the app UI. Squad formation/member counts, ability headings, and spell movement/origin are included as card notes. Frame unlocks, ownership and purchase controls are not exported. Refresh the Unity export and website snapshot whenever game card details change.
+Refresh:
+
+1. Run `CRR.EditorTools.WebsiteCardCatalogExport.Export` in Unity (or the existing `websitecardexport` editor command).
+2. Run `node scripts/import-game-cards.mjs C:/Users/jjwil/CardFall` here.
+3. Run `node --test` and `node build.mjs`.
+4. Run `node preview.mjs` to review at `http://127.0.0.1:4173/units`.
+
+The importer requires the current display-row/depth schema, preserves released IDs, checks asset paths stay inside the game checkout, and deduplicates shared textures. Re-export after game detail or artwork changes. This is a build-time snapshot, not a live backend feed.
+
+Without JavaScript, the gallery, artwork, card links and detail stats remain available. Hover movement uses only pointer input, settles on exit, and stops under reduced-motion preferences. Touch scrolling is not intercepted. Filters and sorting remain progressive enhancements.
+
+`Artifacts/CardWebsite/Checks.txt` records local asset parity and browser verification. The gallery and left/right tilt captures, spell and mixed-squad detail captures, and 390px mobile layouts are saved beside it. These checks cover local Edge rendering and responsive layout, not production deployment or a physical phone. Changes remain local until deployed.
